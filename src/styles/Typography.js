@@ -6,4 +6,10 @@ export const typographyCSS = css`
     font-family: ${fonts.body};
     font-weight: 400;
   }
+
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 400;
+  }
 `;
