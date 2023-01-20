@@ -12,6 +12,9 @@ const HeaderNav = styled.header`
   z-index: 10;
   position: relative;
   background-color: #FFFFFF;
+  height: 4rem;
+  display: flex;
+  align-items: center;
 `;
 
 const Nav = styled.nav`
@@ -46,7 +49,6 @@ const StyledNavLink = styled(NavLink)`
   background-color: transparent;
 
   &.active {
-    color: ${colors.gradient1};
     background-color: ${transparentize(0.95, colors.black)};
   }
 

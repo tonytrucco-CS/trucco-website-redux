@@ -13,8 +13,7 @@ const Box = styled.div`
       return css`
         box-shadow: 0 0.5rem 1rem ${transparentize(0.9, colors.black)};
         padding: 2rem;
-        margin-top: -9rem;
-        `;
+      `;
     } else {
       return css`
         padding: 1rem;

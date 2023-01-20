@@ -3,7 +3,7 @@ import { breakpoints } from "../constants/variables";
 
 const Div = styled.div`
   width: 100%;
-  max-width: ${breakpoints.xl};
+  max-width: ${breakpoints.lg};
   margin: 0 auto;
   padding: 0 1rem;
 `;

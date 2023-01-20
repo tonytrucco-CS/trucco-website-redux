@@ -3,7 +3,7 @@ import Gradient from "../components/Gradient";
 const Contact = () => {
   return (
     <>
-      <Gradient title="Contact" />
+      <Gradient />
       <p>Contact goes here.</p>
     </>
   )

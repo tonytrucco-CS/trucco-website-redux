@@ -20,6 +20,7 @@ export const globalCSS = css`
   }
 
   body {
+    background-image: url('/white-paper-background.jpg');
     background-color: ${colors.white};
     font-family: ${fonts.body};
   }

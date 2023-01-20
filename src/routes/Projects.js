@@ -3,7 +3,7 @@ import Gradient from "../components/Gradient";
 const Projects = () => {
   return (
     <>
-      <Gradient title="Projects" />
+      <Gradient />
       <p>Projects go here.</p>
     </>
   )

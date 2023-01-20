@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Card from "../components/Card";
 import Container from "../components/Container";
 import Gradient from "../components/Gradient";
+import Hero from "../components/Hero";
 
 const Grid = styled.section`
   display: grid;
@@ -12,8 +13,9 @@ const Grid = styled.section`
 const Home = () => {
   return (
     <>
-      <Gradient title="tonytrucco.com" />
+      <Gradient />
       <Container>
+        <Hero title="tonytrucco.com" />
         <Card hero>
           <Grid>
             <Card to='projects' linkText="View Projects">
