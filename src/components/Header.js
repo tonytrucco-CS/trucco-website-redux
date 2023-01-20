@@ -1,34 +1,57 @@
+import { transparentize } from "polished";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { colors } from "../constants/variables";
+import Button from "./Button";
 import Container from "./Container";
 import Logo from "./Logo";
 
 const HeaderNav = styled.header`
   width: 100%;
-  border-bottom: solid 1px pink;
+  box-shadow: 0 0.5rem 2rem ${transparentize(0.66, colors.black)};
+  z-index: 10;
+  position: relative;
+  background-color: #FFFFFF;
 `;
 
 const Nav = styled.nav`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+`;
+
+const Left = styled.div`
+  display: flex;
   gap: 1rem;
+  align-items: center;
 `;
 
 const Ul = styled.ul`
   list-style-type: none;
   display: flex;
-  gap: 1rem;
   margin: 0;
   padding: 0;
 `;
 
 const Li = styled.li`
   margin: 0;
+  `;
 
-  a {
-    padding: 1rem;
-    display: block;
-    text-decoration: none;
+const StyledNavLink = styled(NavLink)`
+  color: ${colors.button};
+  padding: 1rem 1.5rem;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: transparent;
+
+  &.active {
+    color: ${colors.gradient1};
+    background-color: ${transparentize(0.95, colors.black)};
+  }
+
+  &:hover {
+    background-color: ${transparentize(0.95, colors.black)};
   }
 `;
 
@@ -37,24 +60,24 @@ const Header = () => {
     <HeaderNav>
       <Container>
         <Nav>
-          <Logo />
-          <Ul>
-            <Li>
-              <NavLink to="projects">Projects</NavLink>
-            </Li>
-            <Li>
-              <NavLink to="designs">Designs</NavLink>
-            </Li>
-            <Li>
-              <NavLink to="process">Process</NavLink>
-            </Li>
-            <Li>
-              <NavLink to="about">About</NavLink>
-            </Li>
-            <Li>
-              <NavLink to="contact">Contact</NavLink>
-            </Li>
-          </Ul>
+          <Left>
+            <Logo />
+            <Ul>
+              <Li>
+                <StyledNavLink to="projects">Projects</StyledNavLink>
+              </Li>
+              <Li>
+                <StyledNavLink to="designs">Designs</StyledNavLink>
+              </Li>
+              <Li>
+                <StyledNavLink to="process">Process</StyledNavLink>
+              </Li>
+              <Li>
+                <StyledNavLink to="about">About</StyledNavLink>
+              </Li>
+            </Ul>
+          </Left>
+          <Button to="contact" size='sm'>Contact</Button>
         </Nav>
       </Container>
     </HeaderNav>

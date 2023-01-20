@@ -1,18 +1,19 @@
 import styled from "styled-components";
+import { colors } from "../constants/variables";
 import Container from "./Container";
 
 const Div = styled.div`
   background: rgb(82,11,153);
-  background: linear-gradient(160deg, rgba(82,11,153,1) 0%, rgba(240,84,7,1) 100%);
-  min-height: 10rem;
+  background: linear-gradient(160deg, ${colors.gradient1} 0%, ${colors.gradient2} 100%);
+  min-height: 20rem;
   width: 100%;
   display: flex;
   align-items: flex-end;
 `;
 
 const H1 = styled.h1`
-  color: white;
-  padding-bottom: 3rem;
+  color: ${colors.white};
+  padding-bottom: 10rem;
   text-transform: uppercase;
   font-weight: 300;
 `;

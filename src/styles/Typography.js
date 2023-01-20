@@ -9,7 +9,7 @@ export const typographyCSS = css`
 
   h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
   }
 `;

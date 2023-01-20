@@ -12,3 +12,19 @@ export const fonts = {
   body: 'Roboto, sans-serif',
   header: 'Roboto, sans-serif',
 };
+
+export const colors = {
+  black: '#010101',
+  white: '#F8F8F8',
+  gradient1: '#520B99',
+  gradient2: '#F05507',
+  pureWhite: '#FFFFFF',
+  lightGray: '#D6D6D6',
+  midGray: '#666666',
+  button: '#1B1B1B',
+};
+
+export const defaults = {
+  text: colors.black,
+  border: colors.lightGray,
+};
