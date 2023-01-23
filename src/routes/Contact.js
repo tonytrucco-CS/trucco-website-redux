@@ -1,10 +1,11 @@
+import { Outlet } from "react-router-dom";
 import Gradient from "../components/Gradient";
 
 const Contact = () => {
   return (
     <>
       <Gradient />
-      <p>Contact goes here.</p>
+      <Outlet />
     </>
   )
 }

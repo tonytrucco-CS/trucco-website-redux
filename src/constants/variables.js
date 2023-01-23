@@ -9,8 +9,8 @@ export const breakpoints = {
 };
 
 export const fonts = {
-  body: 'Roboto, sans-serif',
-  header: 'Merriweather, sans-serif',
+  sansserif: 'Roboto, sans-serif',
+  serif: 'Merriweather, sans-serif',
 };
 
 export const colors = {

@@ -40,13 +40,13 @@ const LinkSection = styled.section`
 `;
 
 const H1 = styled.h1`
-  font-family: ${fonts.header};
+  font-family: ${fonts.serif};
   font-size: 1.75rem;
   color: ${colors.midGray};
 `;
 
 const H2 = styled.h2`
-  font-family: ${fonts.header};
+  font-family: ${fonts.serif};
   font-size: 1.25rem;
   color: ${colors.midGray};
   margin: 1rem 0 0;

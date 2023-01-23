@@ -1,10 +1,11 @@
+import { Outlet } from "react-router-dom";
 import Gradient from "../components/Gradient";
 
 const About = () => {
   return (
     <>
       <Gradient />
-      <p>About goes here.</p>
+      <Outlet />
     </>
   )
 }

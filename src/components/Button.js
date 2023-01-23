@@ -28,7 +28,7 @@ const StyledButton = styled.button`
   }}
   border-radius: 0.35rem;
   display: flex;
-  font-family: ${fonts.body};
+  font-family: ${fonts.sansserif};
   font-weight: 300;
   align-items: center;
   justify-content: center;
@@ -82,7 +82,7 @@ const StyledLink = styled(Link)`
   }}
   border-radius: 0.35rem;
   display: flex;
-  font-family: ${fonts.body};
+  font-family: ${fonts.sansserif};
   font-weight: 300;
   align-items: center;
   justify-content: center;

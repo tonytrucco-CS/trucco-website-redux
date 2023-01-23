@@ -11,7 +11,7 @@ const HeaderNav = styled.header`
   box-shadow: 0 0.5rem 2rem ${transparentize(0.66, colors.black)};
   z-index: 10;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: ${colors.pureWhite};
   height: 4rem;
   display: flex;
   align-items: center;

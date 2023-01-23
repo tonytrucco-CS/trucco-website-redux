@@ -1,10 +1,11 @@
+import { Outlet } from "react-router-dom";
 import Gradient from "../components/Gradient";
 
 const Process = () => {
   return (
     <>
       <Gradient />
-      <p>Process goes here.</p>
+      <Outlet />
     </>
   )
 }

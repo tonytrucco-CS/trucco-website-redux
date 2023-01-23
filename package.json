@@ -37,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/tonytrucco-CS/trucco-website-redux.git",
+  "author": "Tony Trucco <ironnmetal@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {}
 }
