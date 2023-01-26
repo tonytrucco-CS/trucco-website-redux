@@ -9,7 +9,7 @@ import ErrorPage from './routes/ErrorPage';
 import Home from './routes/Home';
 import Process from './routes/Process';
 import Projects from './routes/Projects';
-import IndexProjects from './routes/projects/IndexProjects';
+import ProIntro from './routes/projects/Index';
 import Project from './routes/projects/Project';
 import { GlobalStyle } from './styles/GlobalStyle';
 
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             children: [
               {
                 index: true,
-                element: <IndexProjects />,
+                element: <ProIntro />,
               },
               {
                 path: "winhalf",

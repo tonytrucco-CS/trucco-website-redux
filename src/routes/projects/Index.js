@@ -2,7 +2,7 @@ import Card from "../../components/Card";
 import Container from "../../components/Container";
 import Hero from "../../components/Hero";
 
-const IndexProjects = () => {
+const Index = () => {
   return (
     <Container>
       <Hero title="Projects" />
@@ -16,4 +16,4 @@ const IndexProjects = () => {
   )
 }
 
-export default IndexProjects;
+export default Index;
