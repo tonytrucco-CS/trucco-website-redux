@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { fonts } from '../constants/variables';
+import { colors, fonts } from '../constants/variables';
 
 export const typographyCSS = css`
   body {
@@ -13,14 +13,27 @@ export const typographyCSS = css`
     font-weight: 400;
   }
 
-  p {
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+
+    &:not(:first-of-type) {
+      margin-top: 2rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: ${colors.midGray};
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  p, li {
     line-height: 1.5;
-    margin: 0 auto;
-    max-width: 35em;
     font-size: 1.25rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
     font-family: ${fonts.serif};
+    margin-top: 0;
   }
 `;

@@ -5,7 +5,7 @@ import Hero from "../../components/Hero";
 const Index = () => {
   return (
     <Container>
-      <Hero title="Projects" />
+      <Hero title="Projects" limited />
       <Card hero>
         <p>What you'll find on this page is a collection of projects that I'ved worked on as 
         a contractor and a full-time employee. I try to approach each client and situation with 

@@ -1,7 +1,7 @@
 import { transparentize } from "polished";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { colors } from "../constants/variables";
+import { colors, fonts } from "../constants/variables";
 import Button from "./Button";
 import Container from "./Container";
 import Logo from "./Logo";
@@ -47,6 +47,8 @@ const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
   background-color: transparent;
+  font-family: ${fonts.sansserif};
+  font-size: 1rem;
 
   &.active {
     background-color: ${transparentize(0.95, colors.black)};

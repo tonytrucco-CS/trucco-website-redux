@@ -5,14 +5,19 @@ import Button from "./Button";
 
 const Box = styled.div`
   background-color: ${colors.white};
-  display: block;
-  min-height: 50vh;
   border-radius: 0.125rem;
   ${props => {
     if (props.hero) {
       return css`
+        display: ${props => props.$flex ? 'flex' : null};
+        justify-content: ${props => props.$flex ? 'center' : null};
         box-shadow: 0 0.5rem 1rem ${transparentize(0.9, colors.black)};
         padding: 2rem;
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+          margin-bottom: 4rem;
+        }
       `;
     } else {
       return css`
@@ -23,9 +28,9 @@ const Box = styled.div`
   }}
 `;
 
-const Card = ({children, hero, to, linkText}) => {
+const Card = ({children, hero, to, linkText, flex}) => {
   return (
-    <Box hero={hero}>
+    <Box hero={hero} $flex={flex}>
       {children}
       {
         to && linkText &&

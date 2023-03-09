@@ -1,7 +1,6 @@
-import { transparentize } from "polished";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { colors, defaults, fonts } from "../constants/variables";
+import { colors, fonts } from "../constants/variables";
+import Chip from "./Chip";
 import Container from "./Container";
 import Logo from "./Logo";
 
@@ -52,27 +51,6 @@ const H2 = styled.h2`
   margin: 1rem 0 0;
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: ${colors.button};
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  width: fit-content;
-  border: solid 1px transparent;
-  transition: box-shadow 0.3s, background-color 0.3s, border 0.3s;
-
-  &:hover {
-    background-color: ${transparentize(0.9, colors.black)};
-  }
-
-  &:focus {
-    outline: none;
-    border: solid 1px ${defaults.border};
-    box-shadow: 0 0 0 3px ${transparentize(0.95, colors.black)};
-  }
-`;
-
 const A = styled.a`
   text-decoration: none;
   color: ${colors.button};
@@ -105,11 +83,11 @@ const Footer = () => {
           <LinkSection aria-label="Website links for tonytrucco.com">
             <H1>tonytrucco.com</H1>
             <Flex>
-              <StyledLink to="projects">Projects</StyledLink>
-              <StyledLink to="designs">Designs</StyledLink>
-              <StyledLink to="process">Process</StyledLink>
-              <StyledLink to="about">About</StyledLink>
-              <StyledLink to="contact">Contact</StyledLink>
+              <Chip to="projects" label="Projects" />
+              <Chip to="designs" label="Designs" />
+              <Chip to="process" label="Process" />
+              <Chip to="about" label="About" />
+              <Chip to="contact" label="Contact" />
             </Flex>
           </LinkSection>
           <LinkSection aria-labelledby="connect" direction="end">

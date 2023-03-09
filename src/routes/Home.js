@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 const Grid = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 100%;
   grid-gap: 2rem;
 `;
 

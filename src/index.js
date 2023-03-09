@@ -10,6 +10,9 @@ import Home from './routes/Home';
 import Process from './routes/Process';
 import Projects from './routes/Projects';
 import ProIntro from './routes/projects/Index';
+import DesIndex from './routes/designs/Index';
+import ProcessIntro from './routes/process/Index';
+import AboutIndex from './routes/about/Index';
 import Project from './routes/projects/Project';
 import { GlobalStyle } from './styles/GlobalStyle';
 
@@ -44,14 +47,35 @@ const router = createBrowserRouter([
           {
             path: "designs",
             element: <Designs />,
+            errorElement: <ErrorPage />,
+            children: [
+              {
+                index: true,
+                element: <DesIndex />,
+              },
+            ],
           },
           {
             path: "process",
             element: <Process />,
+            errorElement: <ErrorPage />,
+            children: [
+              {
+                index: true,
+                element: <ProcessIntro />,
+              },
+            ],
           },
           {
             path: "about",
             element: <About />,
+            errorElement: <ErrorPage />,
+            children: [
+              {
+                index: true,
+                element: <AboutIndex />
+              }
+            ]
           },
           {
             path: "contact",
