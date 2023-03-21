@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import Card from "../components/Card";
-import Container from "../components/Container";
-import Gradient from "../components/Gradient";
-import Hero from "../components/Hero";
+import styled from 'styled-components';
+import Card from '../components/Card';
+import Container from '../components/Container';
+import Gradient from '../components/Gradient';
+import Hero from '../components/Hero';
 
 const Grid = styled.section`
   display: grid;
@@ -19,20 +19,16 @@ const Home = () => {
         <Hero title="tonytrucco.com" />
         <Card hero>
           <Grid>
-            <Card to='projects' linkText="View Projects">
+            <Card to="projects" linkText="View Projects">
               test
             </Card>
-            <Card>
-              another
-            </Card>
-            <Card>
-              third
-            </Card>
+            <Card>another</Card>
+            <Card>third</Card>
           </Grid>
         </Card>
       </Container>
     </>
-  )
-}
+  );
+};
 
 export default Home;

@@ -18,7 +18,7 @@ import { GlobalStyle } from './styles/GlobalStyle';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
             element: <Home />,
           },
           {
-            path: "projects",
+            path: 'projects',
             element: <Projects />,
             errorElement: <ErrorPage />,
             children: [
@@ -39,13 +39,13 @@ const router = createBrowserRouter([
                 element: <ProIntro />,
               },
               {
-                path: "winhalf",
+                path: 'winhalf',
                 element: <Project id="winhalf" />,
               },
             ],
           },
           {
-            path: "designs",
+            path: 'designs',
             element: <Designs />,
             errorElement: <ErrorPage />,
             children: [
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
             ],
           },
           {
-            path: "process",
+            path: 'process',
             element: <Process />,
             errorElement: <ErrorPage />,
             children: [
@@ -67,21 +67,21 @@ const router = createBrowserRouter([
             ],
           },
           {
-            path: "about",
+            path: 'about',
             element: <About />,
             errorElement: <ErrorPage />,
             children: [
               {
                 index: true,
-                element: <AboutIndex />
-              }
-            ]
+                element: <AboutIndex />,
+              },
+            ],
           },
           {
-            path: "contact",
+            path: 'contact',
             element: <Contact />,
           },
-        ]
+        ],
       },
     ],
   },

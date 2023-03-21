@@ -1,16 +1,12 @@
-import WinHalf from "./WinHalf"
+import WinHalf from './WinHalf';
 
-const Project = ({id}) => {
+const Project = ({ id }) => {
   switch (id) {
-    case "winhalf":
-      return (
-        <WinHalf />
-      )
+    case 'winhalf':
+      return <WinHalf />;
     default:
-      return (
-        null
-      )
+      return null;
   }
-}
+};
 
 export default Project;

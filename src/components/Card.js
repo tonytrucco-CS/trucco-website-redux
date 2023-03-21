@@ -1,16 +1,16 @@
-import { transparentize } from "polished";
-import styled, { css } from "styled-components"
-import { colors } from "../constants/variables";
-import Button from "./Button";
+import { transparentize } from 'polished';
+import styled, { css } from 'styled-components';
+import { colors } from '../constants/variables';
+import Button from './Button';
 
 const Box = styled.div`
   background-color: ${colors.white};
   border-radius: 0.125rem;
-  ${props => {
+  ${(props) => {
     if (props.hero) {
       return css`
-        display: ${props => props.$flex ? 'flex' : null};
-        justify-content: ${props => props.$flex ? 'center' : null};
+        display: ${(props) => (props.$flex ? 'flex' : null)};
+        justify-content: ${(props) => (props.$flex ? 'center' : null)};
         box-shadow: 0 0.5rem 1rem ${transparentize(0.9, colors.black)};
         padding: 2rem;
         margin-bottom: 2rem;
@@ -28,18 +28,17 @@ const Box = styled.div`
   }}
 `;
 
-const Card = ({children, hero, to, linkText, flex}) => {
+const Card = ({ children, hero, to, linkText, flex }) => {
   return (
     <Box hero={hero} $flex={flex}>
       {children}
-      {
-        to && linkText &&
+      {to && linkText && (
         <Button block to={to}>
           {linkText}
         </Button>
-      }
+      )}
     </Box>
-  )
-}
+  );
+};
 
 export default Card;

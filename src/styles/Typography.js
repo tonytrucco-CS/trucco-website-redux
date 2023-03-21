@@ -30,7 +30,8 @@ export const typographyCSS = css`
     margin-bottom: 0.5rem;
   }
 
-  p, li {
+  p,
+  li {
     line-height: 1.5;
     font-size: 1.25rem;
     font-family: ${fonts.serif};

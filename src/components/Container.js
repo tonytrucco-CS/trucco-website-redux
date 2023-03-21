@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { breakpoints } from "../constants/variables";
+import styled from 'styled-components';
+import { breakpoints } from '../constants/variables';
 
 const Div = styled.div`
   width: 100%;
@@ -8,12 +8,8 @@ const Div = styled.div`
   padding: 0 1rem;
 `;
 
-const Container = ({children, ...props}) => {
-  return (
-    <Div {...props}>
-      {children}
-    </Div>
-  )
-}
+const Container = ({ children, ...props }) => {
+  return <Div {...props}>{children}</Div>;
+};
 
 export default Container;

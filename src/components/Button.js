@@ -33,7 +33,7 @@ const StyledButton = styled.button`
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  width: ${props => props.block ? '100%' : 'auto'};
+  width: ${(props) => (props.block ? '100%' : 'auto')};
   transition: background-color 0.3s, box-shadow 0.3s;
 
   &:hover:not([disabled]) {
@@ -87,7 +87,7 @@ const StyledLink = styled(Link)`
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  width: ${props => props.block ? '100%' : 'auto'};
+  width: ${(props) => (props.block ? '100%' : 'auto')};
   transition: background-color 0.3s, box-shadow 0.3s;
 
   &:hover:not([disabled]) {
@@ -149,7 +149,7 @@ const Button = ({
       >
         {children}
       </StyledLink>
-    )
+    );
   }
 };
 

@@ -1,9 +1,13 @@
-import styled from "styled-components";
-import { colors } from "../constants/variables";
+import styled from 'styled-components';
+import { colors } from '../constants/variables';
 
 const Div = styled.div`
-  background: rgb(82,11,153);
-  background: linear-gradient(160deg, ${colors.gradient1} 0%, ${colors.gradient2} 130%);
+  background: rgb(82, 11, 153);
+  background: linear-gradient(
+    160deg,
+    ${colors.gradient1} 0%,
+    ${colors.gradient2} 130%
+  );
   min-height: 20rem;
   width: 100%;
   display: flex;
@@ -15,9 +19,7 @@ const Div = styled.div`
 `;
 
 const Gradient = () => {
-  return (
-    <Div />
-  )
-}
+  return <Div />;
+};
 
 export default Gradient;

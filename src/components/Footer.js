@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { colors, fonts } from "../constants/variables";
-import Chip from "./Chip";
-import Container from "./Container";
-import Logo from "./Logo";
+import styled from 'styled-components';
+import { colors, fonts } from '../constants/variables';
+import Chip from './Chip';
+import Container from './Container';
+import Logo from './Logo';
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -35,7 +35,7 @@ const LinkSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: ${props => props.direction === 'end' ? 'flex-end' : null};
+  align-items: ${(props) => (props.direction === 'end' ? 'flex-end' : null)};
 `;
 
 const H1 = styled.h1`
@@ -98,10 +98,34 @@ const Footer = () => {
             </Flex>
             <H2>My profiles</H2>
             <Flex>
-              <A href="https://www.linkedin.com/in/tonytrucco/" target="_blank" rel="noopener noreferer">LinkedIn</A>
-              <A href="https://github.com/tonytrucco-CS" target="_blank" rel="noopener noreferer">Github</A>
-              <A href="https://steamcommunity.com/id/ironnmetal/" target="_blank" rel="noopener noreferer">Steam</A>
-              <A href="https://www.instagram.com/orion_in_winter/" target="_blank" rel="noopener noreferer">Instagram</A>
+              <A
+                href="https://www.linkedin.com/in/tonytrucco/"
+                target="_blank"
+                rel="noopener noreferer"
+              >
+                LinkedIn
+              </A>
+              <A
+                href="https://github.com/tonytrucco-CS"
+                target="_blank"
+                rel="noopener noreferer"
+              >
+                Github
+              </A>
+              <A
+                href="https://steamcommunity.com/id/ironnmetal/"
+                target="_blank"
+                rel="noopener noreferer"
+              >
+                Steam
+              </A>
+              <A
+                href="https://www.instagram.com/orion_in_winter/"
+                target="_blank"
+                rel="noopener noreferer"
+              >
+                Instagram
+              </A>
             </Flex>
             <small>
               <A
@@ -116,7 +140,7 @@ const Footer = () => {
         </Grid>
       </Container>
     </StyledFooter>
-  )
-}
+  );
+};
 
 export default Footer;

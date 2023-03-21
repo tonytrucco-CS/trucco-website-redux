@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { defaults } from "../constants/variables";
+import styled from 'styled-components';
+import { defaults } from '../constants/variables';
 
 const StyledHR = styled.hr`
   padding: 0;
@@ -8,9 +8,7 @@ const StyledHR = styled.hr`
 `;
 
 const Hr = () => {
-  return (
-    <StyledHR />
-  )
-}
+  return <StyledHR />;
+};
 
 export default Hr;

@@ -1,9 +1,9 @@
-import { transparentize } from "polished";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { colors, defaults } from "../constants/variables";
-import Button from "./Button";
-import CardImg from "./CardImg";
+import { transparentize } from 'polished';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { colors, defaults } from '../constants/variables';
+import Button from './Button';
+import CardImg from './CardImg';
 
 const Card = styled.div`
   background-color: ${colors.white};
@@ -26,29 +26,22 @@ const H3 = styled.h3`
   }
 `;
 
-const LinkCard = ({to, linkText, tags = [], src, alt}) => {
+const LinkCard = ({ to, linkText, tags = [], src, alt }) => {
   return (
     <Card>
       <Link to={to}>
-        <CardImg
-          src={src}
-          alt={alt}
-        />
+        <CardImg src={src} alt={alt} />
       </Link>
       <Flex>
-        {
-          tags.map((tag, index) => {
-            return (
-              <H3 key={index}>{tag}</H3>
-            )
-          })
-        }
+        {tags.map((tag, index) => {
+          return <H3 key={index}>{tag}</H3>;
+        })}
       </Flex>
       <Button to={to} block>
         {linkText}
       </Button>
     </Card>
-  )
-}
+  );
+};
 
 export default LinkCard;

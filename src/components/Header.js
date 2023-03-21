@@ -1,10 +1,10 @@
-import { transparentize } from "polished";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-import { colors, fonts } from "../constants/variables";
-import Button from "./Button";
-import Container from "./Container";
-import Logo from "./Logo";
+import { transparentize } from 'polished';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+import { colors, fonts } from '../constants/variables';
+import Button from './Button';
+import Container from './Container';
+import Logo from './Logo';
 
 const HeaderNav = styled.header`
   width: 100%;
@@ -38,7 +38,7 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   margin: 0;
-  `;
+`;
 
 const StyledNavLink = styled(NavLink)`
   color: ${colors.button};
@@ -81,11 +81,13 @@ const Header = () => {
               </Li>
             </Ul>
           </Left>
-          <Button to="contact" size='sm'>Contact</Button>
+          <Button to="contact" size="sm">
+            Contact
+          </Button>
         </Nav>
       </Container>
     </HeaderNav>
-  )
-}
+  );
+};
 
 export default Header;

@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom";
-import Gradient from "../components/Gradient";
+import { Outlet } from 'react-router-dom';
+import Gradient from '../components/Gradient';
 
 const Process = () => {
   return (
@@ -7,7 +7,7 @@ const Process = () => {
       <Gradient />
       <Outlet />
     </>
-  )
-}
+  );
+};
 
 export default Process;

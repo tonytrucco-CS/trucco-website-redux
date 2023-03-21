@@ -1,8 +1,8 @@
-import { transparentize } from "polished";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-import styled from "styled-components";
-import { colors, defaults } from "../constants/variables";
+import { transparentize } from 'polished';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import styled from 'styled-components';
+import { colors, defaults } from '../constants/variables';
 
 const StyledHash = styled(HashLink)`
   text-decoration: none;
@@ -48,20 +48,16 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Chip = ({label, hash, to}) => {
+const Chip = ({ label, hash, to }) => {
   if (hash) {
     return (
       <StyledHash smooth to={to}>
         {label}
       </StyledHash>
-    )
+    );
   } else {
-    return (
-      <StyledLink to={to}>
-        {label}
-      </StyledLink>
-    )
+    return <StyledLink to={to}>{label}</StyledLink>;
   }
-}
+};
 
 export default Chip;

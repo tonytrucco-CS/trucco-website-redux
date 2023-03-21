@@ -1,6 +1,6 @@
-import Card from "../../components/Card";
-import Container from "../../components/Container";
-import Hero from "../../components/Hero";
+import Card from '../../components/Card';
+import Container from '../../components/Container';
+import Hero from '../../components/Hero';
 
 const WinHalf = () => {
   return (
@@ -10,7 +10,7 @@ const WinHalf = () => {
         <p>WinHalf text.</p>
       </Card>
     </Container>
-  )
-}
+  );
+};
 
 export default WinHalf;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledMain = styled.main`
   width: 100%;
@@ -7,12 +7,8 @@ const StyledMain = styled.main`
   margin: 0;
 `;
 
-const Main = ({children}) => {
-  return (
-    <StyledMain>
-      {children}
-    </StyledMain>
-  )
-}
+const Main = ({ children }) => {
+  return <StyledMain>{children}</StyledMain>;
+};
 
 export default Main;

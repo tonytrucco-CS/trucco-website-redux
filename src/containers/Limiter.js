@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Div = styled.div`
   max-width: 75ch;
@@ -6,11 +6,7 @@ const Div = styled.div`
 `;
 
 const Limiter = ({ children }) => {
-  return (
-    <Div>
-      {children}
-    </Div>
-  )
-}
+  return <Div>{children}</Div>;
+};
 
 export default Limiter;
