@@ -1,6 +1,6 @@
 import { transparentize } from 'polished';
 import styled, { css } from 'styled-components';
-import { colors } from '../constants/variables';
+import { breakpoints, colors } from '../constants/variables';
 import Button from './Button';
 
 const Box = styled.div`
@@ -17,6 +17,10 @@ const Box = styled.div`
 
         &:last-of-type {
           margin-bottom: 4rem;
+        }
+
+        @media only screen and (max-width: ${breakpoints.sm}) {
+          padding: 1rem;
         }
       `;
     } else {

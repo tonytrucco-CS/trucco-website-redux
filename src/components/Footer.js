@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, fonts } from '../constants/variables';
+import { breakpoints, colors, fonts } from '../constants/variables';
 import Chip from './Chip';
 import Container from './Container';
 import Logo from './Logo';
@@ -18,6 +18,10 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 8rem 1fr 1fr;
   grid-gap: 3rem;
+
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Copy = styled.div`
@@ -25,10 +29,16 @@ const Copy = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+
+  @media only screen and (max-width: ${breakpoints.md}) {
+    max-width: 10em;
+    margin: 0 auto;
+  }
 `;
 
 const Small = styled.small`
   color: ${colors.midGray};
+  white-space: nowrap;
 `;
 
 const LinkSection = styled.section`
@@ -36,6 +46,10 @@ const LinkSection = styled.section`
   flex-direction: column;
   gap: 1rem;
   align-items: ${(props) => (props.direction === 'end' ? 'flex-end' : null)};
+
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    align-items: center;
+  }
 `;
 
 const H1 = styled.h1`
@@ -68,6 +82,16 @@ const A = styled.a`
 const Flex = styled.div`
   display: flex;
   gap: 1rem;
+
+  @media only screen and (max-width: ${breakpoints.md}) {
+    flex-direction: column;
+    text-align: right;
+  }
+
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    text-align: center;
+    align-items: center;
+  }
 `;
 
 const Footer = () => {

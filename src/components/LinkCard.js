@@ -10,6 +10,9 @@ const Card = styled.div`
   border-radius: 0.125rem;
   padding: 1rem;
   background-color: ${transparentize(0.97, colors.black)};
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `;
 
 const Flex = styled.div`
@@ -18,7 +21,7 @@ const Flex = styled.div`
 `;
 
 const H3 = styled.h3`
-  margin-top: 0;
+  margin: 0;
   font-size: 1rem;
   &:not(:last-of-type) {
     border-right: solid 1px ${defaults.border};
@@ -32,14 +35,14 @@ const LinkCard = ({ to, linkText, tags = [], src, alt }) => {
       <Link to={to}>
         <CardImg src={src} alt={alt} />
       </Link>
+      <Button to={to} block>
+        {linkText}
+      </Button>
       <Flex>
         {tags.map((tag, index) => {
           return <H3 key={index}>{tag}</H3>;
         })}
       </Flex>
-      <Button to={to} block>
-        {linkText}
-      </Button>
     </Card>
   );
 };

@@ -21,7 +21,7 @@ const Index = () => {
   return (
     <Container>
       <Hero title="Process" limited />
-      <Card hero flex>
+      <Card hero>
         <Limiter>
           <h2>What is process?</h2>
           <p>
@@ -30,8 +30,8 @@ const Index = () => {
           </p>
           <p>
             When people think of process, they think of something laborious and
-            time consuming. Often it's considered, and then discarded in lieu of
-            "getting work done". The truth is, however, that a good process
+            time consuming. Often it's considered, and then discarded in favor
+            of "getting work done". The truth is, however, that a good process
             accelerates productivity and limits the amount of rework down the
             line. When I work with companies and clients, this is what I try to
             keep in mind.
@@ -49,8 +49,20 @@ const Index = () => {
           </Nav>
         </Limiter>
       </Card>
-      <Card hero flex>
+      <Card hero>
         <Limiter>
+          <img
+            src="https://ik.imagekit.io/ti4score/Portfolio/diamond_design.svg?updatedAt=1679427387742"
+            alt="Double Diamond design methodology, which starts with a problem, expands out during discovery, condenses as a problem is defined, then expands again as solutions are created and finally condenses once more on the final solution."
+          />
+          <small>
+            Any design process is almost never rigidly sequential. Steps loop
+            back and sometimes repeat. The double diamond design system above
+            illustrates the natural expansion and contraction of every design
+            flow; the problem space is explored until the problem is properly
+            defined, then solutions are rapidly built and tested until the final
+            product is delivered.
+          </small>
           <h2 id="discovery">
             <Span>Step 1:</Span> Discovery
           </h2>
@@ -60,12 +72,12 @@ const Index = () => {
             first thing I do is ask questions. Any good designer will tell you
             that the problem they've been given is almost never the actual
             problem that needs solving. It is up to me to discover what is
-            actually going on, and then find a solution.
+            actually going on, and then help the client find a solution.
           </p>
           <p>
             Asking questions, however, is about more than just getting to the
             root problem. It's also about learning as much as I can about the
-            client and whomever is going to be using whatever solution I design.
+            client and whomever is going to be using whatever solution I create.
           </p>
           <h3>
             <Span>Step 1a (optional):</Span> Meet with SMEs
@@ -92,7 +104,7 @@ const Index = () => {
             I think of sketching, what I'm really thinking about is creating a
             mental model of the system I'm dealing with. Afterall, how can I
             confidently give my client a reliable solution if I don't have an
-            understanding of their arena?
+            understanding of the space I'm working in?
           </p>
           <p>
             Sometimes a sketch can be a conversation. This means talking to the
@@ -101,12 +113,6 @@ const Index = () => {
             can accurately articulate this scenario to the client—either through
             a sketch or a conversation—that I feel confident enough to begin
             designing in earnest.
-          </p>
-          <p>
-            You will notice at this point that I've barely done any work that
-            could traditionally be considered design. It would be tempting to
-            say, "you haven't done anything!" But I can promise that this early
-            effort pays off in the end.
           </p>
 
           <Hr />

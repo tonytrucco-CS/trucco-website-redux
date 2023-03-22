@@ -22,8 +22,8 @@ const Index = () => {
           <p>
             My name is Tony Trucco, and I am a Director of UI/UX. That means I
             create and advocate for friendly, intuitive, easy-to-use experiences
-            for the web and mobile. I got my start back in 2008, which means
-            I've been creating meaningful experiences for over 14 years.
+            for the web and mobile. I got my start back in 2008, so I've been
+            creating meaningful experiences for over 14 years.
           </p>
           <p>
             In addition to my design skills, I also have a strong foundation in
@@ -47,10 +47,10 @@ const Index = () => {
           <p>A more formal resume can be found here.</p>
           <h3>Places I've been</h3>
           <p>
-            I have worked for almost every type of company there is; from a
+            I have experience with almost every type of company there is; from a
             startup of fewer than 10 people to multi-national corporations with
-            thousands of employees across the globe. I have worked for
-            businesses in the following sectors:
+            thousands of employees across the globe. Specifically, I have worked
+            in the following sectors:
           </p>
           <ul>
             <li>Education</li>
@@ -70,16 +70,16 @@ const Index = () => {
             leader for a well-crafted design process.
           </p>
           <p>
-            I have worked on short-term, simple projects as well as complex
-            redesigns of entire frontend systems. I have led user interviews and
-            conducted surveys for internal and external customers. I have
-            built—and even rebuilt—internal tools to improve processes, making
-            them better/faster/cheaper.
+            I have worked on short-term projects as well as complex redesigns of
+            entire frontend systems. I have led user interviews and conducted
+            surveys for internal and external customers. I have built—and even
+            rebuilt—internal tools to improve processes, making them
+            better/faster/cheaper.
           </p>
           <p>
             Lastly, I have engaged with many C-levels to both propose and
             discuss design solutions. I know how to have a meaningful
-            conversation that will balance design needs with business needs.
+            conversation that will balance design needs with business goals.
           </p>
 
           <Hr />
@@ -113,10 +113,9 @@ const Index = () => {
             fan of just about every board game (except Monopoly).
           </p>
           <p>
-            This is starting to feel like a dating profile, but I am also deeply
-            invested in Renaissance Festivals. I like to dress up in all kinds
-            of outfits and absorb the experience of everyone around me doing the
-            same. Skol!
+            Lastly, I am very into Renaissance Festivals. I like to dress up in
+            all kinds of outfits and absorb the experience of everyone around me
+            doing the same. Skol!
           </p>
         </Limiter>
       </Card>

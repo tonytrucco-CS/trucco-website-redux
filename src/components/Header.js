@@ -2,9 +2,11 @@ import { transparentize } from 'polished';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { colors, fonts } from '../constants/variables';
+import useWindowDimensions from '../utils/helpers';
 import Button from './Button';
 import Container from './Container';
 import Logo from './Logo';
+import MobileNav from './MobileNav';
 
 const HeaderNav = styled.header`
   width: 100%;
@@ -28,6 +30,8 @@ const Left = styled.div`
   gap: 1rem;
   align-items: center;
 `;
+
+const Right = styled.div``;
 
 const Ul = styled.ul`
   list-style-type: none;
@@ -59,31 +63,55 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
+const LINKS = [
+  {
+    to: 'projects',
+    label: 'Projects',
+  },
+  {
+    to: 'designs',
+    label: 'Designs',
+  },
+  {
+    to: 'process',
+    label: 'Process',
+  },
+  {
+    to: 'about',
+    label: 'About',
+  },
+];
+
 const Header = () => {
+  const { width } = useWindowDimensions();
+
   return (
     <HeaderNav>
       <Container>
         <Nav>
           <Left>
             <Logo />
-            <Ul>
-              <Li>
-                <StyledNavLink to="projects">Projects</StyledNavLink>
-              </Li>
-              <Li>
-                <StyledNavLink to="designs">Designs</StyledNavLink>
-              </Li>
-              <Li>
-                <StyledNavLink to="process">Process</StyledNavLink>
-              </Li>
-              <Li>
-                <StyledNavLink to="about">About</StyledNavLink>
-              </Li>
-            </Ul>
+            {width > 1024 && (
+              <Ul>
+                {LINKS.map((link) => {
+                  return (
+                    <Li key={link.to}>
+                      <StyledNavLink to={link.to}>{link.label}</StyledNavLink>
+                    </Li>
+                  );
+                })}
+              </Ul>
+            )}
           </Left>
-          <Button to="contact" size="sm">
-            Contact
-          </Button>
+          <Right>
+            {width > 1024 ? (
+              <Button to="contact" size="sm">
+                Contact
+              </Button>
+            ) : (
+              <MobileNav links={LINKS} />
+            )}
+          </Right>
         </Nav>
       </Container>
     </HeaderNav>

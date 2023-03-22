@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../constants/variables';
+import { breakpoints, colors } from '../constants/variables';
 import Limiter from '../containers/Limiter';
 
 const H1 = styled.h1`
@@ -7,6 +7,11 @@ const H1 = styled.h1`
   padding-top: 5rem;
   text-transform: uppercase;
   font-weight: 300;
+
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
 `;
 
 const Hero = ({ title, limited = false }) => {

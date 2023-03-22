@@ -17,7 +17,7 @@ const StyledButton = styled.button`
       case 'sm':
         return css`
           padding: ${props.square ? '0.5rem' : '0.5rem 1rem'};
-          font-size: 1.25rem;
+          font-size: 1rem;
         `;
       default:
         return css`
@@ -33,7 +33,7 @@ const StyledButton = styled.button`
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  width: ${(props) => (props.block ? '100%' : 'auto')};
+  width: ${(props) => (props.$block ? '100%' : 'fit-content')};
   transition: background-color 0.3s, box-shadow 0.3s;
 
   &:hover:not([disabled]) {
@@ -87,7 +87,7 @@ const StyledLink = styled(Link)`
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  width: ${(props) => (props.block ? '100%' : 'auto')};
+  width: ${(props) => (props.$block ? '100%' : 'fit-content')};
   transition: background-color 0.3s, box-shadow 0.3s;
 
   &:hover:not([disabled]) {
@@ -131,7 +131,7 @@ const Button = ({
         active={active}
         size={size}
         square={square}
-        block={block}
+        $block={block}
       >
         {children}
       </StyledButton>
@@ -146,6 +146,7 @@ const Button = ({
         size={size}
         square={square}
         to={to}
+        $block={block}
       >
         {children}
       </StyledLink>

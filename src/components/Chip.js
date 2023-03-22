@@ -1,5 +1,5 @@
 import { transparentize } from 'polished';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import styled from 'styled-components';
 import { colors, defaults } from '../constants/variables';
@@ -26,7 +26,7 @@ const StyledHash = styled(HashLink)`
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   text-decoration: none;
   color: ${colors.button};
   font-size: 1rem;
@@ -37,8 +37,17 @@ const StyledLink = styled(Link)`
   transition: box-shadow 0.3s, background-color 0.3s, border 0.3s;
   background-color: ${transparentize(0.9, colors.black)};
 
-  &:hover {
+  &:hover:not(.active) {
     background-color: ${transparentize(0.85, colors.black)};
+  }
+
+  &.active {
+    background-color: ${colors.black};
+    color: ${colors.white};
+
+    &:hover {
+      background-color: ${transparentize(0.2, colors.black)};
+    }
   }
 
   &:focus {
