@@ -42,6 +42,22 @@ const router = createBrowserRouter([
                 path: 'winhalf',
                 element: <Project id="winhalf" />,
               },
+              {
+                path: 'ebth',
+                element: <Project id="ebth" />,
+              },
+              {
+                path: 'twilight-imperium-score-tracker',
+                element: <Project id="ti4" />,
+              },
+              {
+                path: 'mindfully-website',
+                element: <Project id="mindfully-website" />,
+              },
+              {
+                path: 'mindfully-app',
+                element: <Project id="mindfully-app" />,
+              },
             ],
           },
           {

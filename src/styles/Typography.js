@@ -57,4 +57,8 @@ export const typographyCSS = css`
     font-family: ${fonts.serif};
     line-height: 1.5;
   }
+
+  a {
+    color: ${colors.blue};
+  }
 `;

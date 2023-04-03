@@ -6,10 +6,11 @@ import Hero from '../components/Hero';
 import Hr from '../components/Hr';
 import ImageGrid from '../components/ImageGrid';
 import Limiter from '../containers/Limiter';
+import { transforms } from '../utils/helpers';
 
 const ME = [
   {
-    src: 'https://ik.imagekit.io/ti4score/tony_ren.jpg?updatedAt=1679506626644&tr=w-300,h-300,c-maintain_ratio,fo-top_left,e-grayscale',
+    src: 'https://ik.imagekit.io/ti4score/tony_ren.jpg?updatedAt=1679506626644&tr=w-300,h-300,c-maintain_ratio,fo-top_left,e-grayscale,e-contrast',
     alt: "It's me! I am dressed as a viking, holding a drinking horn at a Renaissance festival",
   },
   {
@@ -24,11 +25,11 @@ const ME = [
 
 const PROJECTS = [
   {
-    src: 'https://ik.imagekit.io/ti4score/background-selection.png?updatedAt=1678040214361&tr=w-600,h-300,c-maintain_ratio,fo-top_left',
+    src: `https://ik.imagekit.io/ti4score/background-selection.png?updatedAt=1678040214361${transforms.wide}`,
     alt: 'Background selection screen for a Twilight Imperium score tracker',
   },
   {
-    src: 'https://ik.imagekit.io/ti4score/Portfolio/EBTH/After/browse.jpg?updatedAt=1679422453023&tr=w-600,h-300,c-maintain_ratio,fo-top_left',
+    src: `https://ik.imagekit.io/ti4score/Portfolio/EBTH/After/browse.jpg?updatedAt=1679422453023${transforms.wide}`,
     alt: 'A browse page, showing a list of product results and product filters',
   },
 ];

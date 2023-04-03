@@ -1,6 +1,6 @@
-import { transparentize } from 'polished';
 import styled, { css } from 'styled-components';
-import { breakpoints, colors } from '../constants/variables';
+import { breakpoints } from '../constants/variables';
+import ImageCard from './ImageCard';
 
 const Grid = styled.div`
   display: grid;
@@ -30,23 +30,18 @@ const Grid = styled.div`
   }
 `;
 
-const Img = styled.img`
-  border-radius: ${(props) => (props.rounded ? '50%' : '0.5rem')};
-  max-width: 100%;
-  box-shadow: 0 0.5rem 1rem ${transparentize(0.85, colors.black)};
-`;
-
-const ImageGrid = ({ columns = 3, images, gap = '1rem', rounded = false }) => {
+const ImageGrid = ({
+  columns = 3,
+  images,
+  gap = '1rem',
+  rounded = false,
+  description,
+}) => {
   return (
     <Grid columns={columns} gap={gap}>
       {images.map((image, index) => {
         return (
-          <Img
-            rounded={rounded}
-            key={`image_${index}`}
-            src={image.src}
-            alt={image.alt}
-          />
+          <ImageCard key={`image_${index}`} image={image} rounded={rounded} />
         );
       })}
     </Grid>

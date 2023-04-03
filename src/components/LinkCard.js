@@ -20,8 +20,9 @@ const Flex = styled.div`
   gap: 0.5rem;
 `;
 
-const H3 = styled.h3`
+const Span = styled.span`
   margin: 0;
+  color: ${colors.midGray};
   font-size: 1rem;
   &:not(:last-of-type) {
     border-right: solid 1px ${defaults.border};
@@ -29,9 +30,14 @@ const H3 = styled.h3`
   }
 `;
 
-const LinkCard = ({ to, linkText, tags = [], src, alt }) => {
+const H3 = styled.h3`
+  margin: 0;
+`;
+
+const LinkCard = ({ to, linkText, tags = [], src, alt, title }) => {
   return (
     <Card>
+      {title && <H3>{title}</H3>}
       <Link to={to}>
         <CardImg src={src} alt={alt} />
       </Link>
@@ -40,7 +46,7 @@ const LinkCard = ({ to, linkText, tags = [], src, alt }) => {
       </Button>
       <Flex>
         {tags.map((tag, index) => {
-          return <H3 key={index}>{tag}</H3>;
+          return <Span key={index}>{tag}</Span>;
         })}
       </Flex>
     </Card>

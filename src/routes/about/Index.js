@@ -29,7 +29,7 @@ const Index = () => {
             In addition to my design skills, I also have a strong foundation in
             coding. This allows me to have a greater level of control over the
             implementation of my designs, ensuring they are visually compelling
-            and functionally sound. My coding skills allow me to easily
+            and functionally sound. My coding skills help me to easily
             communicate with developers and bridge the gap that traditionally
             exists between design and engineering teams.
           </p>

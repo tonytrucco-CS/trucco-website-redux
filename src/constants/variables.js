@@ -22,6 +22,7 @@ export const colors = {
   lightGray: '#E0E0E0',
   midGray: '#666666',
   button: '#1B1B1B',
+  blue: '#116EB6',
 };
 
 export const defaults = {

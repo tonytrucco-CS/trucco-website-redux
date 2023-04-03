@@ -45,3 +45,11 @@ export const useOutsideClick = (callback) => {
 
   return ref;
 };
+
+export const transforms = {
+  square: '&tr=w-400,h-400,c-maintain_ratio,fo-top_left',
+  square_lg: '&tr=w-900,h-900,c-maintain_ratio,fo-top_left',
+  four3_lg: '&tr=w-900,h-675,c-maintain_ratio,fo-top_left',
+  wide: '&tr=w-600,h-300,c-maintain_ratio,fo-top_left',
+  wide_lg: '&tr=w-900,h-550,c-maintain_ratio,fo-top_left',
+};
