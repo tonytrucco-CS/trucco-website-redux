@@ -98,13 +98,12 @@ const TI4 = () => {
           <Hr />
           <h2 id="scope">Scope</h2>
           <p>
-            The goal was simple: create a tool that could easily track what the
+            The goal was simple: create a tool that can easily track what the
             current objectives are, along with which players have scored them.
           </p>
           <p>
-            Besides objectives, players also needed a way of tracking all other
-            methods of gaining points so that the tool could give an accurate
-            display of overall scores from round to round.
+            Besides objectives, players also need a way of tracking all other
+            methods of gaining points.
           </p>
           <p>
             It was created as a simple React project with no server—all
@@ -143,6 +142,7 @@ const TI4 = () => {
             important, and then get out of the way and let people play.
           </p>
           <ImageGrid images={GRID_IMGS} columns={2} />
+          <Hr />
           <h2 id="status">Status</h2>
           <p>
             The tool is currently live and can be visited by going to{' '}
@@ -153,8 +153,12 @@ const TI4 = () => {
             >
               ti4score.com
             </a>
-            . As of this website being published, the tool already has over 900
+            . As of this website being published, the app already has over 900
             unique visits.
+          </p>
+          <p>
+            If you search Google for a Twilight Imperium score tracker, this
+            tool is the #1 result.
           </p>
           <Hr />
           <h2 id="future">The Future</h2>
