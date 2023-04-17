@@ -5,6 +5,7 @@ import Container from '../../components/Container';
 import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import Limiter from '../../containers/Limiter';
+import { Link } from 'react-router-dom';
 
 const Nav = styled.nav`
   display: flex;
@@ -44,7 +45,9 @@ const Index = () => {
       <Card hero flex>
         <Limiter>
           <h2 id="work">Work Experience</h2>
-          <p>A more formal resume can be found here.</p>
+          <p>
+            Click the link for a more formal <Link to="/resume">résumé.</Link>
+          </p>
           <h3>Places I've been</h3>
           <p>
             I have experience with almost every type of company there is; from a
