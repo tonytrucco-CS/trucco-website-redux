@@ -13,6 +13,7 @@ import ProIntro from './routes/projects/Index';
 import DesIndex from './routes/designs/Index';
 import ProcessIntro from './routes/process/Index';
 import AboutIndex from './routes/about/Index';
+import ContactIndex from './routes/contact/Index';
 import ResumeIndex from './routes/resume/Index';
 import Project from './routes/projects/Project';
 import { GlobalStyle } from './styles/GlobalStyle';
@@ -109,6 +110,13 @@ const router = createBrowserRouter([
           {
             path: 'contact',
             element: <Contact />,
+            errorElement: <ErrorPage />,
+            children: [
+              {
+                index: true,
+                element: <ContactIndex />,
+              },
+            ],
           },
         ],
       },
