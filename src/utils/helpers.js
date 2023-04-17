@@ -54,4 +54,6 @@ export const transforms = {
   wide_lg: '&tr=w-900,h-550,c-maintain_ratio,fo-top_left',
   tall: '&tr=w-400,h-800,c-maintain_ratio,fo-top',
   tall_lg: '&tr=w-900,h-1800,c-maintain_ratio,fo-top_left',
+  noheight: '&tr=w-400,c-maintain_ratio,fo-top',
+  noheight_lg: '&tr=w-800,c-maintain_ratio,fo-top',
 };
