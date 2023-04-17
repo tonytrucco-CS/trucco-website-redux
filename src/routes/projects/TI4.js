@@ -78,7 +78,7 @@ const TI4 = () => {
             <Chip label="Status" to="#status" hash />
             <Chip label="The Future" to="#future" hash />
           </Nav>
-          <h2 id="problem">The Problem</h2>
+          <h2 id="problem">Problem Statement</h2>
           <p>
             There are a lot of components to keep track of in this game, all
             while trying to out-strategize your opponents. And every round a new
@@ -153,12 +153,12 @@ const TI4 = () => {
             >
               ti4score.com
             </a>
-            . As of this website being published, the app already has over 900
+            . As of this website being published, the app already has over 1000
             unique visits.
           </p>
           <p>
             If you search Google for a Twilight Imperium score tracker, this
-            tool is the #1 result.
+            tool is the #1 result (assuming you don't count the Reddit result).
           </p>
           <Hr />
           <h2 id="future">The Future</h2>

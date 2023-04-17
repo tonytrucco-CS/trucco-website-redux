@@ -52,4 +52,6 @@ export const transforms = {
   four3_lg: '&tr=w-900,h-675,c-maintain_ratio,fo-top_left',
   wide: '&tr=w-600,h-300,c-maintain_ratio,fo-top_left',
   wide_lg: '&tr=w-900,h-550,c-maintain_ratio,fo-top_left',
+  tall: '&tr=w-400,h-800,c-maintain_ratio,fo-top',
+  tall_lg: '&tr=w-900,h-1800,c-maintain_ratio,fo-top_left',
 };
