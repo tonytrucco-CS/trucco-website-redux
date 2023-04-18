@@ -18,6 +18,7 @@ import ResumeIndex from './routes/resume/Index';
 import Project from './routes/projects/Project';
 import { GlobalStyle } from './styles/GlobalStyle';
 import Resume from './routes/Resume';
+import Design from './routes/designs/Design';
 
 const router = createBrowserRouter([
   {
@@ -71,6 +72,26 @@ const router = createBrowserRouter([
               {
                 index: true,
                 element: <DesIndex />,
+              },
+              {
+                path: 'camp-trucco',
+                element: <Design id="camp-trucco" />,
+              },
+              {
+                path: 'presidents',
+                element: <Design id="presidents" />,
+              },
+              {
+                path: 'miniatures',
+                element: <Design id="miniatures" />,
+              },
+              {
+                path: 'snowpals',
+                element: <Design id="snowpals" />,
+              },
+              {
+                path: 'homespace',
+                element: <Design id="homespace" />,
               },
             ],
           },

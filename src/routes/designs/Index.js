@@ -4,6 +4,7 @@ import Container from '../../components/Container';
 import Hero from '../../components/Hero';
 import LinkCard from '../../components/LinkCard';
 import Limiter from '../../containers/Limiter';
+import { transforms } from '../../utils/helpers';
 
 const Grid = styled.section`
   display: grid;
@@ -38,7 +39,7 @@ const Index = () => {
             to="camp-trucco"
             title="Camp Trucco T-Shirts"
             linkText="View These Designs"
-            src="http://placekitten.com/400/300"
+            src={`https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/camptrucco2022.png?updatedAt=1679507761022${transforms.square}`}
             alt="kitten"
             tags={['Illustrator']}
           />
@@ -46,7 +47,7 @@ const Index = () => {
             to="presidents"
             title="Presidential Graphics and Tees"
             linkText="Explore This Series"
-            src="http://placekitten.com/400/300"
+            src={`https://ik.imagekit.io/ti4score/Portfolio/Illustration/roosevelt.png?updatedAt=1678474012219${transforms.square}`}
             alt="pres"
             tags={['Illustrator', 'Screen Printing']}
           />
@@ -54,25 +55,25 @@ const Index = () => {
             to="miniatures"
             title="Painted Miniatures"
             linkText="Dive Into Nerdom"
-            src="http://placekitten.com/400/300"
+            src={`https://ik.imagekit.io/ti4score/Portfolio/Painting/beholder.jpg?updatedAt=1679507938326${transforms.square}`}
             alt="minis"
             tags={['Acrylic']}
           />
           <LinkCard
-            to="posters"
+            to="snowpals"
             title="Snowpals Poster"
             linkText="View This Poster"
-            src="http://placekitten.com/400/300"
+            src={`https://ik.imagekit.io/ti4score/Portfolio/Posters/snowpals.jpg?updatedAt=1678473898835${transforms.square}`}
             alt="poster"
             tags={['Illustrator']}
           />
           <LinkCard
-            to="video"
+            to="homespace"
             title="Home Space"
             linkText="Learn About This Project"
-            src="http://placekitten.com/400/300"
+            src={`https://ik.imagekit.io/ti4score/Portfolio/mitchell-temp.png?updatedAt=1681838392343${transforms.square}`}
             alt="video"
-            tags={['After Effects']}
+            tags={['Cinema 4D', 'After Effects']}
           />
         </Grid>
       </Card>
