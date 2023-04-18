@@ -3,7 +3,9 @@ import Card from '../../components/Card';
 import Container from '../../components/Container';
 import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
+import ImageCard from '../../components/ImageCard';
 import Limiter from '../../containers/Limiter';
+import { transforms } from '../../utils/helpers';
 
 const Snowpals = () => {
   return (
@@ -34,6 +36,14 @@ const Snowpals = () => {
             brother keeps the poster as a constant piece of house art, much to
             my delight.
           </p>
+          <ImageCard
+            image={{
+              src: `https://ik.imagekit.io/ti4score/Portfolio/Posters/snowpals.jpg?updatedAt=1678473898835${transforms.noheight_lg}`,
+              alt: 'Hockey-themed poster for a team called Snowpals, with seven players in silhouette against an icy backdrop.',
+              description:
+                "My brother's character was Rhode Island Red, which is why it's featured.",
+            }}
+          />
         </Limiter>
       </Card>
     </Container>

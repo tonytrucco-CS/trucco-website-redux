@@ -3,8 +3,10 @@ import Card from '../../components/Card';
 import Container from '../../components/Container';
 import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
+import ImageCard from '../../components/ImageCard';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
+import { transforms } from '../../utils/helpers';
 
 const Presidents = () => {
   return (
@@ -42,6 +44,14 @@ const Presidents = () => {
             it <em>Hoodie Roosevelt</em>, and I love the idea of someone as
             "manly" as Teddy wearing a goofy hoodie with cute ears.
           </p>
+          <ImageCard
+            image={{
+              src: `https://ik.imagekit.io/ti4score/Portfolio/Illustration/roosevelt.png?updatedAt=1678474012219${transforms.noheight_lg}`,
+              alt: 'Headshot of Teddy Roosevelt smiling and wearing a hoodie with bear ears.',
+              description:
+                'Because this started as a screen printing project, I limited my palette to 3 colors plus white.',
+            }}
+          />
           <h3>Harry Truman</h3>
           <p>
             Truman was not a good person. Whereas FDR had serious reservations
@@ -59,6 +69,14 @@ const Presidents = () => {
           <p>
             This design is called <em>Truman is (not) the Man</em>.
           </p>
+          <ImageCard
+            image={{
+              src: `https://ik.imagekit.io/ti4score/Portfolio/Illustration/truman.png?updatedAt=1681847087307${transforms.noheight_lg}`,
+              alt: 'Cartoon picture of Harry Truman, posed with one eye shut and one arm extended with a thumb in the air.',
+              description:
+                'I purposefully used Vault Boy colors to enhance the connection to Fallout.',
+            }}
+          />
           <h3>George Washington</h3>
           <p>
             The first president of America. Washington is generally regarded as
