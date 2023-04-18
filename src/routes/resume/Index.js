@@ -33,7 +33,7 @@ const Index = () => {
           </p>
           <p>
             <a
-              href="/trucco-resume2023.pdf"
+              href="/Trucco Resume 2023.pdf"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -88,7 +88,7 @@ const Index = () => {
               multi-client capability.
             </li>
             <li>
-              Led the design, testing, and implemention of a website overhaul,
+              Led the design, testing, and implementation of a website overhaul,
               featuring improved navigation and filtering capabilities.
             </li>
             <li>
@@ -218,8 +218,8 @@ const Index = () => {
             </li>
             <li>
               Guided the process of updating NIOSH's custom web ticket system
-              into a robust and easy-touse application that could be implemented
-              institute-wide.
+              into a robust and easy-to-use application that could be
+              implemented institute-wide.
             </li>
             <li>
               Worked with the Branch Chief of the Information Resources and
@@ -271,7 +271,7 @@ const Index = () => {
               responsible for generating $600,000 of revenue annually.
             </li>
             <li>
-              Standardized HTML/E-mail professional services to improve cost of
+              Standardized HTML/Email professional services to improve cost of
               services.
             </li>
             <li>
@@ -303,7 +303,7 @@ const Index = () => {
             </li>
             <li>
               Created numerous designs for t-shirts utilizing multiple methods
-              of art style, including handdrawn, vector-based, and
+              of art style, including hand drawn, vector-based, and
               image-manipulated solutions.
             </li>
             <li>
