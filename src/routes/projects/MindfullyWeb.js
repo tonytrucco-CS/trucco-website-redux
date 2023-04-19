@@ -28,7 +28,7 @@ const GUIDE = [
     src: `https://ik.imagekit.io/ti4score/Portfolio/Mindfully/After/Colors.png?updatedAt=1681748430282${transforms.four3_lg}`,
     alt: 'Mindfully colors shown in a grid on the left, with usage details on the right.',
     description:
-      'Mindfully colors, with accessiblity considerations and usage details.',
+      'Mindfully colors, with accessibility considerations and usage details.',
   },
 ];
 
@@ -104,7 +104,7 @@ const MindfullyWeb = () => {
             to create a plan for how users would interact with the site, which
             involved making wireframes and doing some testing. We also moved all
             the website content into a CMS called Contentful, and we made sure
-            to integrate it smoothly with the new design.
+            to integrate it seamlessly with the new design.
           </p>
           <Hr />
           <h2 id="role">My Role</h2>
@@ -162,7 +162,7 @@ const MindfullyWeb = () => {
             every part of a webpage as accessible as possible. Mindfully's
             website redesign was no different. Throughout the entire development
             process we focused on ensuring users with many different needs would
-            be able to find the content they needed.
+            be able to find the content they were seeking.
           </p>
           <Hr />
           <h2 id="testing">Testing</h2>

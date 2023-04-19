@@ -10,26 +10,26 @@ import { transforms } from '../utils/helpers';
 
 const ME = [
   {
-    src: 'https://ik.imagekit.io/ti4score/tony_ren.jpg?updatedAt=1679506626644&tr=w-300,h-300,c-maintain_ratio,fo-top_left,e-grayscale,e-contrast',
+    src: 'https://ik.imagekit.io/ti4score/tony_ren.jpg?updatedAt=1679506626644&tr=w-600,h-600,c-maintain_ratio,fo-top_left,e-grayscale,e-contrast',
     alt: "It's me! I am dressed as a viking, holding a drinking horn at a Renaissance festival",
   },
   {
-    src: 'https://ik.imagekit.io/ti4score/tony_dink.jpg?updatedAt=1679506626403&tr=w-300,h-300,c-maintain_ratio,fo-top_left',
+    src: 'https://ik.imagekit.io/ti4score/tony_dink.jpg?updatedAt=1679506626403&tr=w-600,h-600,c-maintain_ratio,fo-top_left',
     alt: "Me again, holding one of my cats. We're looking at the camera with a brick background",
   },
   {
-    src: 'https://ik.imagekit.io/ti4score/tony_cute.jpeg?updatedAt=1679506626411&tr=w-300,h-300,c-maintain_ratio,fo-top_left',
+    src: 'https://ik.imagekit.io/ti4score/tony_cute.jpeg?updatedAt=1679506626411&tr=w-600,h-600,c-maintain_ratio,fo-top_left',
     alt: 'My hand is resting on my chin as I look to the left with a grin on my face',
   },
 ];
 
 const PROJECTS = [
   {
-    src: `https://ik.imagekit.io/ti4score/background-selection.png?updatedAt=1678040214361${transforms.wide}`,
+    src: `https://ik.imagekit.io/ti4score/background-selection.png?updatedAt=1678040214361${transforms.wide_lg}`,
     alt: 'Background selection screen for a Twilight Imperium score tracker',
   },
   {
-    src: `https://ik.imagekit.io/ti4score/Portfolio/EBTH/After/browse.jpg?updatedAt=1679422453023${transforms.wide}`,
+    src: `https://ik.imagekit.io/ti4score/Portfolio/EBTH/After/browse.jpg?updatedAt=1679422453023${transforms.wide_lg}`,
     alt: 'A browse page, showing a list of product results and product filters',
   },
 ];

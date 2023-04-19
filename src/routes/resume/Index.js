@@ -288,7 +288,7 @@ const Index = () => {
           </ul>
           <Hr />
           <h2 id="personal">Personal Projects and Services</h2>
-          <Small>Web Design, Front-End Services, Personal Art</Small>
+          <Small>Web Design, Frontend Services, Personal Art</Small>
           <h3>Achievements</h3>
           <ul>
             <li>

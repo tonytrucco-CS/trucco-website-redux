@@ -142,7 +142,7 @@ const EBTH = () => {
           <p>
             During my discovery phase, where I surveyed current customers and
             looked at analytics, I discovered that there were two methods of
-            browsing the website; by Sale or by Category. The EBTH site focused
+            browsing the website—by Sale or by Category. The EBTH site focused
             on Sales but neglected Categories, so that was one of the first
             major design problems I tackled.
           </p>
@@ -151,7 +151,7 @@ const EBTH = () => {
               src: `https://ik.imagekit.io/ti4score/Portfolio/EBTH/After/home.jpg?updatedAt=1679422443254${transforms.wide_lg}`,
               alt: 'The redesigned home page, featuring popular categories in the top navigation',
               description:
-                'The categories are listed alphabetically, but the goal was to use data and list by popularity.',
+                'The categories in the header are listed alphabetically, but the goal was to use data and list them by popularity.',
             }}
           />
           <h3>Website Aesthetics</h3>
@@ -202,7 +202,7 @@ const EBTH = () => {
           <p>
             Both internal and external customers filled out surveys that focused
             on the current website experience. I asked what features they liked,
-            which they didn't, and many questions about browsing habits.
+            what features they didn't, and many questions about browsing habits.
           </p>
           <h3>Internal Testing</h3>
           <p>

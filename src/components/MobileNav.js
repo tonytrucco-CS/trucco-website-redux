@@ -93,6 +93,11 @@ const MobileNav = ({ links }) => {
                 </Li>
               );
             })}
+            <Li>
+              <StyledNavLink to="/contact" onClick={() => setToggle(false)}>
+                Contact
+              </StyledNavLink>
+            </Li>
           </Ul>
         </Nav>
       )}

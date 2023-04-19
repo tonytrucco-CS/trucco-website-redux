@@ -27,7 +27,8 @@ const GARDEN = [
   {
     src: `https://ik.imagekit.io/ti4score/Portfolio/Mindfully/My_Garden.png?updatedAt=1681755149516${transforms.tall}`,
     alt: "'My Garden' design in Figma, showing high fidelity sections for garden statistics and buttons at the bottom for customizing the garden or visiting it.",
-    description: 'Forgive the simple graphics. Those are merely placeholders.',
+    description:
+      'Forgive the simple plant graphics. Those are merely placeholders.',
   },
 ];
 

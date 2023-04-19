@@ -6,6 +6,7 @@ import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import { fonts } from '../../constants/variables';
 import Limiter from '../../containers/Limiter';
+import ScrollTop from '../../components/ScrollTop';
 
 const Span = styled.span`
   font-family: ${fonts.serif};
@@ -187,6 +188,7 @@ const Index = () => {
             the design has been "finished." Testing must be frequent and it must
             start early.
           </p>
+          <ScrollTop />
         </Limiter>
       </Card>
     </Container>

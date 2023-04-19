@@ -6,6 +6,7 @@ import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import Limiter from '../../containers/Limiter';
 import { Link } from 'react-router-dom';
+import ScrollTop from '../../components/ScrollTop';
 
 const Nav = styled.nav`
   display: flex;
@@ -46,7 +47,16 @@ const Index = () => {
         <Limiter>
           <h2 id="work">Work Experience</h2>
           <p>
-            Click the link for a more formal <Link to="/resume">résumé.</Link>
+            View a more formal <Link to="/resume">résumé</Link> and maybe even
+            grab the{' '}
+            <a
+              href="/Trucco Resume 2023.pdf"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              PDF version
+            </a>
+            .
           </p>
           <h3>Places I've been</h3>
           <p>
@@ -67,7 +77,7 @@ const Index = () => {
           <h3>Things I've done</h3>
           <p>
             I started my career creating basic HMTL and CSS solutions, but that
-            slowly evolved into more of a traditional frontend role. I learned
+            slowly evolved into a more traditional frontend role. I learned
             Javascript and educated myself on user-centered design. Today I
             maintain all of my frontend skills while also being an advocate and
             leader for a well-crafted design process.
@@ -109,17 +119,26 @@ const Index = () => {
             wander.
           </p>
           <p>
-            If you look at my Instagram—to which I post rarely—you will notice
-            that I paint 28mm miniatures as a hobby. I use these minis in the
-            games of Pathfinder that I participate in as both a player and Game
-            Master. Although Pathfinder is the most common game I play, I am a
-            fan of just about every board game (except Monopoly).
+            If you look at my{' '}
+            <a
+              href="https://www.instagram.com/orion_in_winter/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+            —to which I post rarely—you will notice that I paint 28mm miniatures
+            as a <Link to="/designs/miniatures">hobby</Link>. I use these minis
+            in the games of Pathfinder that I participate in as both a player
+            and Game Master. Although Pathfinder is the most common game I play,
+            I am a fan of just about every board game (except Monopoly).
           </p>
           <p>
             Lastly, I am very into Renaissance Festivals. I like to dress up in
             all kinds of outfits and absorb the experience of everyone around me
             doing the same. Skol!
           </p>
+          <ScrollTop />
         </Limiter>
       </Card>
     </Container>

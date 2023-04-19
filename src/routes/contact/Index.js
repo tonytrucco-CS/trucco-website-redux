@@ -10,6 +10,7 @@ const Index = () => {
       <Hero title="Contact Me" limited />
       <Card hero flex>
         <Limiter>
+          <h2>Hello there!</h2>
           <p>
             Normally there would be something like a contact form here, but
             that's a good amount of work. Instead, enjoy some simple links to my

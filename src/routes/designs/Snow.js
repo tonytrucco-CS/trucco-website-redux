@@ -4,6 +4,7 @@ import Container from '../../components/Container';
 import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
+import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
 
@@ -28,8 +29,8 @@ const Snowpals = () => {
             As a gift one year I decided to give my brother a poster, and the
             best thing I could think to design was something for the Snowpals.
             Believe it or not, there are no ready-made vector graphics for
-            hockey players with bull heads, so I had to create all of the
-            graphics from scratch.
+            hockey players with bull heads and the like, so I had to create all
+            of the graphics from scratch.
           </p>
           <p>
             Despite moving houses and adding numerous children to his clan, my
@@ -41,9 +42,10 @@ const Snowpals = () => {
               src: `https://ik.imagekit.io/ti4score/Portfolio/Posters/snowpals.jpg?updatedAt=1678473898835${transforms.noheight_lg}`,
               alt: 'Hockey-themed poster for a team called Snowpals, with seven players in silhouette against an icy backdrop.',
               description:
-                "My brother's character was Rhode Island Red, which is why it's featured.",
+                "My brother's character was Rhode Island Red, which is why it's heavily featured.",
             }}
           />
+          <ScrollTop />
         </Limiter>
       </Card>
     </Container>

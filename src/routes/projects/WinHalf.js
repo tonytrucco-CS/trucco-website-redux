@@ -42,11 +42,15 @@ const WinHalf = () => {
           <p>
             WinHalf is a company that's working to disrupt the raffle ticket
             space by pushing every aspect into the digital realm. Traditionally,
-            customers would buy tickets with cash and receive physical
-            tickets—which in turn requires them to keep the ticket until the
-            raffle is drawn. WinHalf allows charities to easily accept credit
-            card payments and for customers to always have their "ticket" on
-            them; their phone.
+            customers buy tickets with cash (no credit cards) and receive
+            physical tickets—which requires them to keep the ticket until the
+            raffle is drawn, hopefully not losing it along the way.
+          </p>
+          <p>
+            WinHalf allows charities to easily accept credit card payments and
+            for customers to always have their "ticket" on them in the form of
+            their phone. Plus, drawings are performed digitally, meaning you no
+            longer have to be physically present in order to win.
           </p>
           <p>
             Do you own a 501c or know anyone that runs raffles currently? You
@@ -84,7 +88,9 @@ const WinHalf = () => {
             The design language for the website would be completely redone,
             utilizing reuseable components to ensure a quick and cohesive
             experience. The administrative backend would also receive an update
-            so that clients could more easily manage their raffles.
+            so that clients could more easily manage their raffles. The main
+            website's structure and navigation would be redone to make WinHalf
+            and its mission easier to understand and more pleasant to look at.
           </p>
           <Hr />
           <h2 id="role">My Role</h2>
@@ -101,10 +107,10 @@ const WinHalf = () => {
           <h3>Updated Design Language</h3>
           <p>
             I worked with the client to create a new design language that would
-            blend with their existing brand. Their main colors were red and
-            blue, which looked very unique when blended together. Because
-            charities can cover nearly every demographic, the design was given a
-            classic feel so that it could have wide appeal.
+            mesh with their existing brand. Their main colors were red and blue,
+            which looked very unique when blended together. Because charities
+            can cover nearly every demographic, the design was given a classic
+            feel so that it could have wide appeal.
           </p>
           <ImageCard
             image={{
@@ -118,13 +124,13 @@ const WinHalf = () => {
             Because WinHalf wanted customers to use their phones for signing up
             for raffles, it had to be dead simple to enter the raffle code they
             would receive. Therefore, the WinHalf website features a raffle code
-            input before the fold for virtually every mobile device.
+            input visible above the fold for all mobile devices.
           </p>
           <ImageGrid columns={2} images={WIN} />
           <h3>Backend Flow</h3>
           <p>
             The backend user experience was reworked so that clients could
-            easily manage multiple raffles at one time and see at a glance how
+            easily manage multiple raffles at one time and see at-a-glance how
             each was performing.
           </p>
           <Hr />

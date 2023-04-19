@@ -13,12 +13,12 @@ const MINIS = [
   {
     src: `https://ik.imagekit.io/ti4score/Portfolio/Painting/chandry_1.jpeg?updatedAt=1681847871813${transforms.square_lg}`,
     alt: '',
-    description: 'Originally painted Sep of 2019.',
+    description: 'An elven hero, originally painted Sep of 2019.',
   },
   {
     src: `https://ik.imagekit.io/ti4score/Portfolio/Painting/chandry_2.jpeg?updatedAt=1681847871785${transforms.square_lg}`,
     alt: '',
-    description: 'Updated and improved in Jul of 2022',
+    description: 'Same hero, updated and improved in Jul of 2022',
   },
 ];
 
@@ -31,10 +31,11 @@ const Minis = () => {
           <Back to="/designs" label="← Designs" />
           <h2>Why paint miniatures?</h2>
           <p>
-            Growing up, my older brother had board games like HeroQuest and
-            Battle Masters. These are fantasy games where monsters and magic are
-            common and the game pieces are detailed wonderfully as plastic
-            models. He painted them all and I fell in love with the concept.
+            Growing up, my older brother had board games like <em>HeroQuest</em>{' '}
+            and <em>Battle Masters</em>. These are fantasy games where monsters
+            and magic are common and the game pieces are wonderfully detailed
+            plastic models. He painted them all and I fell in love with the
+            concept and the genre.
           </p>
           <Hr />
           <h2>My Minis</h2>
@@ -49,22 +50,24 @@ const Minis = () => {
               src: `https://ik.imagekit.io/ti4score/Portfolio/Painting/miniature_inventory.png?updatedAt=1681840783159${transforms.wide_lg}`,
               alt: 'Spreadsheet listing various miniatures in alphabetical order, showing how many and whether they are painted or not.',
               description:
-                'Currently, over 60% of my collection is painted completely and only 16% is unpainted.',
+                'Currently, over 60% of my collection is painted completely and only 16% is totally unpainted.',
             }}
           />
           <h3>HeroQuest</h3>
           <p>
-            When Hasbro rereleased the game a few years ago I got inspired. I
+            When Hasbro re-released the game a few years ago I got inspired. I
             opted to download STLs of the original figures and print them myself
-            so that I could paint them all in my own design. It took many
-            months, but the finished product was worth the wait. I dare say I
-            may have even done better than my brother before me.
+            so that I could paint them all in my own design and relive some
+            nostalgia. It took many months, but the finished product was worth
+            the wait. I dare say I may have even done better than my brother
+            before me.
           </p>
           <ImageCard
             image={{
               src: `https://ik.imagekit.io/ti4score/Portfolio/Painting/all_heroquest.jpeg?updatedAt=1681848026817${transforms.noheight_lg}`,
               alt: 'HeroQuest miniatures show in multiple rows, each painted in fine detail.',
-              description: 'This took forever. The prints started pure black.',
+              description:
+                'This took forever. The prints started pure black. The four heroes stand proud, ready to battle Zargon and his minions.',
             }}
           />
           <ImageCard
@@ -77,10 +80,10 @@ const Minis = () => {
           />
           <h3>Tabletop RPGs</h3>
           <p>
-            The bulk of my miniatures are for use in tabletop games like
-            Pathfinder and Dungeons & Dragons. I've tried to collect a broad
-            swath of options so that I have a miniature for almost every
-            situation that arises.
+            The bulk of my miniatures are for use in tabletop games like{' '}
+            <em>Pathfinder</em> and <em>Dungeons & Dragons</em>. I've tried to
+            collect a broad swath of options so that I have a miniature for
+            almost every situation that arises.
           </p>
           <ImageGrid columns={2} images={MINIS} />
           <p>

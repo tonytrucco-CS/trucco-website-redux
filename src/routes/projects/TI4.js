@@ -20,24 +20,24 @@ const Nav = styled.nav`
 
 const GRID_IMGS = [
   {
-    src: `https://ik.imagekit.io/ti4score/new-game-started.png?updatedAt=1678040360012${transforms.wide}`,
+    src: `https://ik.imagekit.io/ti4score/new-game-started.png?updatedAt=1678040360012${transforms.wide_lg}`,
     alt: 'Webpage showing 5 stage 1 objectives, 5 stage 2 objecctives, and all of the current factions playing',
     description:
       'The objective view, allowing users to easily select and read objectives.',
   },
   {
-    src: `https://ik.imagekit.io/ti4score/score-chart-all-factions.png?updatedAt=1678040047786${transforms.wide}`,
+    src: `https://ik.imagekit.io/ti4score/score-chart-all-factions.png?updatedAt=1678040047786${transforms.wide_lg}`,
     alt: 'A score chart, showing the score of each faction from round to round, up to a max of 10 points over 5 rounds',
     description:
       'The score chart view, showing scores of each player from round to round.',
   },
   {
-    src: `https://ik.imagekit.io/ti4score/faction-list-one-expanded.png?updatedAt=1678040046132${transforms.wide}`,
+    src: `https://ik.imagekit.io/ti4score/faction-list-one-expanded.png?updatedAt=1678040046132${transforms.wide_lg}`,
     alt: 'Boxes for each faction, showing available scoring opportunities along with their current score',
     description: 'Close up of the score boxes for each faction.',
   },
   {
-    src: `https://ik.imagekit.io/ti4score/agenda-modal.png?updatedAt=1678040046025${transforms.wide}`,
+    src: `https://ik.imagekit.io/ti4score/agenda-modal.png?updatedAt=1678040046025${transforms.wide_lg}`,
     alt: 'Modal displaying all factions and asking which faction had its classified document leak',
     description: 'Modals exist for all score-affecting scenarios.',
   },
@@ -52,11 +52,18 @@ const TI4 = () => {
           <Back to="/projects" label="← Projects" />
           <h2>About the Game</h2>
           <p>
-            Twilight Imperium, from Fantasy Flights Games, is an epic,
-            space-based board game focusing on combat, strategy, politics, and
-            negotiation. It plays 3-8 people, and games can last upwards of 12
-            or more hours. This game is monumentally epic, and I love it dearly.
-            I try to play as often as I can.
+            <a
+              href="https://www.fantasyflightgames.com/en/products/twilight-imperium-fourth-edition/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Twilight Imperium
+            </a>
+            , from Fantasy Flights Games, is an epic, space-based board game
+            focusing on combat, strategy, politics, and negotiation. It plays
+            3-8 people, and games can last upwards of 12 or more hours. This
+            game is monumentally epic, and I love it dearly. I try to play as
+            often as I can.
           </p>
           <p>
             The game is currently in its 4th Edition, with one expansion and 3
@@ -167,8 +174,8 @@ const TI4 = () => {
             collaborating once again with my developer friend Jacob Millner.
             This iteration will feature server connectivity, meaning multiple
             users will be able to sign into the same game and track their stats
-            individually. Plus many more enhanced features that will make
-            version 1 look like it's from the Stone Age.
+            individually. It will include many more enhanced features that will
+            make version 1 look like it's from the Stone Age.
           </p>
           <ScrollTop />
         </Limiter>

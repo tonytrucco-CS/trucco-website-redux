@@ -4,12 +4,18 @@ import Container from '../../components/Container';
 import Hero from '../../components/Hero';
 import LinkCard from '../../components/LinkCard';
 import Limiter from '../../containers/Limiter';
+import { breakpoints } from '../../constants/variables';
 
 const Grid = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   grid-gap: 3rem;
+
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
 `;
 
 const Index = () => {

@@ -4,9 +4,28 @@ import Container from '../../components/Container';
 import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
+import ImageGrid from '../../components/ImageGrid';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
+
+const PRES = [
+  {
+    src: ``,
+    alt: 'Hoodie Roosevelt graphic worn by a white male on a red t-shirt.',
+    description: '',
+  },
+  {
+    src: ``,
+    alt: 'Truman is (not) the Man graphic worn by a white male on a gray t-shirt.',
+    description: '',
+  },
+  {
+    src: ``,
+    alt: 'Cyked to be President graphic worn by a white male on a black t-shirt.',
+    description: '',
+  },
+];
 
 const Presidents = () => {
   return (
@@ -35,14 +54,14 @@ const Presidents = () => {
             Teddy had some major flaws, including a strange sense of machismo,
             but one thing he got right was his desire to protect the beautiful
             landscape of America. He has been linked to bears for an incredibly
-            long time, and the teddy bear gets its name from him; this was a
-            natural opportunity for an interesting design.
+            long time, and the teddy bear gets its name from him, creating an
+            interesting opportunity for a design.
           </p>
           <p>
             The graphic started as a screen print design for a class, but I
             loved the pattern so much I turned it into a t-shirt as well. I call
             it <em>Hoodie Roosevelt</em>, and I love the idea of someone as
-            "manly" as Teddy wearing a goofy hoodie with cute ears.
+            "manly" as Teddy wearing a silly hoodie with animal ears.
           </p>
           <ImageCard
             image={{
@@ -60,9 +79,23 @@ const Presidents = () => {
           </p>
           <p>
             I wanted to create a design that would parody and critique this
-            fateful decision in a subtle manner. I settled on creating a
-            cartoonish design emulating the famous pose of Vault Boy from the
-            Fallout game series. This pose is derived from the supposed concept
+            fateful decision in a subtle manner. I settled on a cartoonish
+            design emulating the famous pose of{' '}
+            <a
+              href="https://fallout.fandom.com/wiki/Vault_Boy"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Vault Boy
+            </a>{' '}
+            from the Fallout game series. This pose is derived from the supposed{' '}
+            <a
+              href="https://vocal.media/futurism/facts-about-nuclear-fallout"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              concept
+            </a>{' '}
             that if you could cover the mushroom cloud of a nuclear blast with
             your thumb at arm's length, then you were safe from the radiation.
           </p>
@@ -88,8 +121,21 @@ const Presidents = () => {
           <p>
             This one is called <em>Cyked to be President</em>.
           </p>
+          <ImageCard
+            image={{
+              src: `https://ik.imagekit.io/ti4score/Portfolio/Illustration/washington_bw.png?updatedAt=1681912285871${transforms.square_lg}`,
+              alt: "Stylized portrait of George Washington's face in black and white with Cyclop's visor from X-Men over his eyes.",
+              description: 'This is how we won the Revolutionary War.',
+            }}
+          />
           <Hr />
-          <h2>Available for Purchase</h2>
+          <h2>T-Shirts</h2>
+          <p>
+            Each design was translated onto t-shirts, which I wear with great
+            frequency.
+          </p>
+          <ImageGrid columns={3} images={PRES} />
+          <h3>Available for Purchase</h3>
           <p>
             Each of my designs are available for purchase from{' '}
             <a
