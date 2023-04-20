@@ -1,0 +1,37 @@
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+
+const Div = styled.div`
+  border-radius: 50%;
+  width: ${(props) => (props.small ? '2rem' : '100%')};
+  padding-bottom: ${(props) => (props.small ? '2rem' : '100%')};
+  background-color: #efefef;
+  overflow: hidden;
+  position: relative;
+`;
+
+const StyledNavLink = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+`;
+
+const Img = styled.img`
+  width: 75%;
+  height: 75%;
+`;
+
+const Logo = ({ small = true }) => {
+  return (
+    <Div small={small}>
+      <StyledNavLink to="/" alt="Navigate to the home page">
+        <Img src="/logo.svg" alt="" />
+      </StyledNavLink>
+    </Div>
+  );
+};
+
+export default Logo;
