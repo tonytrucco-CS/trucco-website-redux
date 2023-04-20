@@ -15,7 +15,7 @@ const TEE2018 = [
     description: 'T-shirt design',
   },
   {
-    src: `https://placekitten.com/500/400${transforms.square_lg}`,
+    src: `https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/2018_gen.jpg?updatedAt=1682000426736${transforms.square_lg}`,
     alt: 'Red graphic tee worn by a white male against a brick background',
     description: 'Printed and worn',
   },
@@ -28,7 +28,7 @@ const TEE2020 = [
     description: 'T-shirt design',
   },
   {
-    src: `https://placekitten.com/500/400${transforms.square_lg}`,
+    src: `https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/2020_gen.jpg?updatedAt=1682000425652${transforms.square_lg}`,
     alt: 'Black graphic tee worn by a white male against a brick background',
     description: 'Printed and worn',
   },
@@ -41,7 +41,7 @@ const TEE2022 = [
     description: 'T-shirt design',
   },
   {
-    src: `https://placekitten.com/500/400${transforms.square_lg}`,
+    src: `https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/2022_gen.jpg?updatedAt=1682000424381${transforms.square_lg}`,
     alt: 'Purple graphic tee worn by a white male against a brick background',
     description: 'Printed and worn',
   },

@@ -40,7 +40,7 @@ const DESIGNS = [
     alt: 'Ice-themed poster for a ficticious hockey team called The Snowpals, which features a snowman',
   },
   {
-    src: 'https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/camptrucco2022.png?updatedAt=1679507761022&tr=w-400,h-400,c-maintain_ratio,fo-top_left',
+    src: 'https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/2022_gen.jpg?updatedAt=1682000424381&tr=w-400,h-400,c-maintain_ratio,fo-top_left',
     alt: 'Man wearing a purple t-shirt with a moon-themed design that says Camp Trucco',
   },
   {

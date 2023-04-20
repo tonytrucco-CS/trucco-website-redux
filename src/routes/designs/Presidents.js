@@ -11,17 +11,17 @@ import { transforms } from '../../utils/helpers';
 
 const PRES = [
   {
-    src: ``,
+    src: `https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/hoodie.jpg?updatedAt=1681999858612${transforms.noheight_lg}`,
     alt: 'Hoodie Roosevelt graphic worn by a white male on a red t-shirt.',
     description: '',
   },
   {
-    src: ``,
+    src: `https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/truman.jpg?updatedAt=1681999858726${transforms.noheight_lg}`,
     alt: 'Truman is (not) the Man graphic worn by a white male on a gray t-shirt.',
     description: '',
   },
   {
-    src: ``,
+    src: `https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/cyked.jpg?updatedAt=1681999856769${transforms.noheight_lg}`,
     alt: 'Cyked to be President graphic worn by a white male on a black t-shirt.',
     description: '',
   },

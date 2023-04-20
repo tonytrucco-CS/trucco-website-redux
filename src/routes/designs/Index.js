@@ -49,7 +49,7 @@ const Index = () => {
             to="camp-trucco"
             title="Camp Trucco T-Shirts"
             linkText="View These Designs"
-            src={`https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/camptrucco2022.png?updatedAt=1679507761022${transforms.square}`}
+            src={`https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/camp2022.png?updatedAt=1681928563520${transforms.square}`}
             alt="kitten"
             tags={['Illustrator']}
           />
