@@ -75,8 +75,16 @@ const Index = () => {
           </ul>
           <Hr />
           <h2 id="experience">Experience</h2>
+          <h3>Trucco Design, LLC</h3>
+          <Small>Owner (2023–Present)</Small>
+          <ul>
+            <li>
+              Freelance and contract design work, focusing specifically on user 
+              interfaces and front-end web implementations.
+            </li>
+          </ul>
           <h3>Vora Labs</h3>
-          <Small>Director of User Experience (2022–Present)</Small>
+          <Small>Director of User Experience (2022–2023)</Small>
           <ul>
             <li>
               Responsible for managing user experience objectives for multiple
