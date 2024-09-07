@@ -25,7 +25,7 @@ const Index = () => {
       <Hero title="Tony Trucco's Résumé" limited />
       <Card hero flex>
         <Limiter>
-          <Back to="/about" label="← About Me" />
+          <Back to="/about" label="About Me" />
           <h2>PDF</h2>
           <p>
             You can find the PDF version of my résumé by clicking the link
@@ -33,7 +33,7 @@ const Index = () => {
           </p>
           <p>
             <a
-              href="/Trucco Resume 2023.pdf"
+              href="/Trucco Resume.pdf"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -79,7 +79,7 @@ const Index = () => {
           <Small>Owner (2023–Present)</Small>
           <ul>
             <li>
-              Freelance and contract design work, focusing specifically on user 
+              Freelance and contract design work, focusing specifically on user
               interfaces and front-end web implementations.
             </li>
           </ul>

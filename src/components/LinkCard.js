@@ -1,18 +1,19 @@
-import { transparentize } from 'polished';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { colors, defaults } from '../constants/variables';
+import styled, { useTheme } from 'styled-components';
 import Button from './Button';
 import CardImg from './CardImg';
+import { transparentize } from 'polished';
+import { colors } from '../constants/variables';
 
 const Card = styled.div`
-  background-color: ${colors.white};
-  border-radius: 0.125rem;
+  border-radius: 0.25rem;
   padding: 1rem;
-  background-color: ${transparentize(0.97, colors.black)};
+  box-shadow: 0 1rem 2rem ${transparentize(0.95, colors.gray900)};
+  background-color: ${({ theme }) => transparentize(0.25, theme.cardBG)};
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  transition: background-color 0.3s, border 0.3s;
 `;
 
 const Flex = styled.div`
@@ -22,10 +23,10 @@ const Flex = styled.div`
 
 const Span = styled.span`
   margin: 0;
-  color: ${colors.midGray};
+  color: ${({ theme }) => transparentize(0.33, theme.text)};
   font-size: 1rem;
   &:not(:last-of-type) {
-    border-right: solid 1px ${defaults.border};
+    border-right: solid 1px ${({ theme }) => transparentize(0.75, theme.text)};
     padding-right: 0.5rem;
   }
 `;
@@ -35,10 +36,12 @@ const H3 = styled.h3`
 `;
 
 const LinkCard = ({ to, linkText, tags = [], src, alt, title }) => {
+  const theme = useTheme();
+
   return (
-    <Card>
+    <Card theme={theme}>
       {title && <H3>{title}</H3>}
-      <Link to={to}>
+      <Link to={to} tabIndex="-1">
         <CardImg src={src} alt={alt} />
       </Link>
       <Button to={to} block>
@@ -46,7 +49,11 @@ const LinkCard = ({ to, linkText, tags = [], src, alt, title }) => {
       </Button>
       <Flex>
         {tags.map((tag, index) => {
-          return <Span key={index}>{tag}</Span>;
+          return (
+            <Span key={index} theme={theme}>
+              {tag}
+            </Span>
+          );
         })}
       </Flex>
     </Card>

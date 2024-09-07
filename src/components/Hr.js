@@ -1,14 +1,21 @@
-import styled from 'styled-components';
-import { defaults } from '../constants/variables';
+import styled, { useTheme } from 'styled-components';
+import { breakpoints } from '../constants/variables';
 
 const StyledHR = styled.hr`
   padding: 0;
-  margin: 3rem 0;
-  border: solid 1px ${defaults.border};
+  margin: 3em 0;
+  border: solid 1px ${({ theme }) => theme.border};
+  transition: border 0.3s;
+
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    margin: 1em 0;
+  }
 `;
 
 const Hr = () => {
-  return <StyledHR />;
+  const theme = useTheme();
+
+  return <StyledHR theme={theme} />;
 };
 
 export default Hr;

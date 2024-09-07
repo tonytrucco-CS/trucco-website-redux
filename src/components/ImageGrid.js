@@ -5,10 +5,12 @@ import ImageCard from './ImageCard';
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(${(props) => props.columns}, 1fr);
-  grid-gap: ${(props) => props.gap};
-  margin-bottom: 1rem;
+  row-gap: ${(props) => props.gap};
+  column-gap: 1em;
+  margin-bottom: ${(props) => (props.mb ? props.mb : null)};
 
   @media only screen and (max-width: ${breakpoints.xs}) {
+    row-gap: 1em;
     ${(props) => {
       switch (props.columns) {
         case 2:
@@ -17,7 +19,7 @@ const Grid = styled.div`
           `;
         case 3:
           return css`
-            grid-gap: 1rem;
+            grid-gap: 1em;
           `;
         case 4:
           return css`
@@ -33,12 +35,12 @@ const Grid = styled.div`
 const ImageGrid = ({
   columns = 3,
   images,
-  gap = '1rem',
+  gap = '1em',
   rounded = false,
-  description,
+  mb,
 }) => {
   return (
-    <Grid columns={columns} gap={gap}>
+    <Grid columns={columns} gap={gap} mb={mb}>
       {images.map((image, index) => {
         return (
           <ImageCard key={`image_${index}`} image={image} rounded={rounded} />

@@ -16,7 +16,6 @@ import AboutIndex from './routes/about/Index';
 import ContactIndex from './routes/contact/Index';
 import ResumeIndex from './routes/resume/Index';
 import Project from './routes/projects/Project';
-import { GlobalStyle } from './styles/GlobalStyle';
 import Resume from './routes/Resume';
 import Design from './routes/designs/Design';
 
@@ -53,6 +52,10 @@ const router = createBrowserRouter([
               {
                 path: 'twilight-imperium-score-tracker',
                 element: <Project id="ti4" />,
+              },
+              {
+                path: 'pathfinder-initiative-tracker',
+                element: <Project id="pathfinder" />,
               },
               {
                 path: 'mindfully-website',
@@ -148,7 +151,6 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
     <RouterProvider router={router} />
   </React.StrictMode>
 );

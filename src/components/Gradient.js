@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { colors } from '../constants/variables';
 
 const Div = styled.div`
   background: rgb(82, 11, 153);
   background: linear-gradient(
     160deg,
-    ${colors.gradient1} 0%,
-    ${colors.gradient2} 130%
+    ${({ theme }) => theme.gradient1} 0%,
+    ${({ theme }) => theme.gradient2} 130%
   );
   min-height: 20rem;
   width: 100%;

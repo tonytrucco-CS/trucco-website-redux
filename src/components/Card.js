@@ -4,29 +4,26 @@ import { breakpoints, colors } from '../constants/variables';
 import Button from './Button';
 
 const Box = styled.div`
-  background-color: ${colors.white};
+  background-color: ${({ theme }) => theme.contentBG};
+  transition: background-color 0.3s;
   border-radius: 0.125rem;
   ${(props) => {
     if (props.hero) {
       return css`
         display: ${(props) => (props.$flex ? 'flex' : null)};
         justify-content: ${(props) => (props.$flex ? 'center' : null)};
-        box-shadow: 0 0.5rem 1rem ${transparentize(0.9, colors.black)};
-        padding: 2rem;
-        margin-bottom: 2rem;
-
-        &:last-of-type {
-          margin-bottom: 4rem;
-        }
+        padding: 4em 2em;
+        margin: 4em 0;
 
         @media only screen and (max-width: ${breakpoints.sm}) {
-          padding: 1rem;
+          padding: 2em 1em;
+          margin: 2em 0;
         }
       `;
     } else {
       return css`
         padding: 1rem;
-        background-color: ${transparentize(0.97, colors.black)};
+        background-color: ${transparentize(0.97, colors.gray900)};
       `;
     }
   }}

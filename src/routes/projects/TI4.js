@@ -1,26 +1,19 @@
-import styled from 'styled-components';
 import Back from '../../components/Back';
 import Card from '../../components/Card';
 import Chip from '../../components/Chip';
 import Container from '../../components/Container';
-import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import Limiter from '../../containers/Limiter';
 import ScrollTop from '../../components/ScrollTop';
 import ImageCard from '../../components/ImageCard';
 import { transforms } from '../../utils/helpers';
 import ImageGrid from '../../components/ImageGrid';
-
-const Nav = styled.nav`
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-`;
+import MaterialIcon from '../../components/MaterialIcon';
+import ChipScroll from '../../components/ChipScroll';
 
 const GRID_IMGS = [
   {
-    src: `https://ik.imagekit.io/ti4score/new-game-started.png?updatedAt=1678040360012${transforms.wide_lg}`,
+    src: `https://ik.imagekit.io/ti4score/objective_view.png?updatedAt=1725559798874${transforms.wide_lg}`,
     alt: 'Webpage showing 5 stage 1 objectives, 5 stage 2 objecctives, and all of the current factions playing',
     description:
       'The objective view, allowing users to easily select and read objectives.',
@@ -32,9 +25,10 @@ const GRID_IMGS = [
       'The score chart view, showing scores of each player from round to round.',
   },
   {
-    src: `https://ik.imagekit.io/ti4score/faction-list-one-expanded.png?updatedAt=1678040046132${transforms.wide_lg}`,
-    alt: 'Boxes for each faction, showing available scoring opportunities along with their current score',
-    description: 'Close up of the score boxes for each faction.',
+    src: `https://ik.imagekit.io/ti4score/agenda_view.png?updatedAt=1725559798664${transforms.wide_lg}`,
+    alt: 'Each faction displayed at the top with their number of available votes, with options for selecting current Agendas and placing votes',
+    description:
+      'The Agenda View, allowing players to easily track their votes for Directives and Laws.',
   },
   {
     src: `https://ik.imagekit.io/ti4score/agenda-modal.png?updatedAt=1678040046025${transforms.wide_lg}`,
@@ -46,18 +40,18 @@ const GRID_IMGS = [
 const TI4 = () => {
   return (
     <Container>
-      <Hero title="TI4: Score Tracker" limited />
       <Card hero>
         <Limiter>
-          <Back to="/projects" label="← Projects" />
-          <h2>About the Game</h2>
+          <Back to="/projects" label="Projects" />
+          <h1>TI4: Score Tracker</h1>
           <p>
             <a
               href="https://www.fantasyflightgames.com/en/products/twilight-imperium-fourth-edition/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              Twilight Imperium
+              <strong>Twilight Imperium</strong>
+              <MaterialIcon icon={'open_in_new'} size="18px" />
             </a>
             , from Fantasy Flights Games, is an epic, space-based board game
             focusing on combat, strategy, politics, and negotiation. It plays
@@ -77,22 +71,23 @@ const TI4 = () => {
             }}
           />
           <Hr />
-          <Nav>
+          <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
             <Chip label="My Role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
+            <Chip label="Usage" to="#usage" hash />
             <Chip label="Status" to="#status" hash />
             <Chip label="The Future" to="#future" hash />
-          </Nav>
+          </ChipScroll>
           <h2 id="problem">Problem Statement</h2>
           <p>
             There are a lot of components to keep track of in this game, all
             while trying to out-strategize your opponents. And every round a new
             objective becomes available for each player to attempt to score.
-            Thus, keeping track of who has already scored what (including
-            yourself) is vitally important. Unfortunately, this is difficult to
-            do with the materials provided by the game itself.
+            Thus, keeping track of who has already scored any given objective
+            (including yourself) is vitally important. Unfortunately, this is
+            difficult to do with the materials provided by the game itself.
           </p>
           <ImageCard
             image={{
@@ -103,18 +98,27 @@ const TI4 = () => {
             }}
           />
           <Hr />
-          <h2 id="scope">Scope</h2>
+          <h2 id="scope">Project Scope</h2>
           <p>
-            The goal was simple: create a tool that can easily track what the
-            current objectives are, along with which players have scored them.
+            The goal was simple: create a tool that could easily track the
+            current game objectives, along with which players had scored them.
           </p>
           <p>
-            Besides objectives, players also need a way of tracking all other
+            Besides objectives, players also needed a way of tracking all other
             methods of gaining points.
           </p>
           <p>
             It was created as a simple React project with no server—all
-            information is stored via Local Storage in the browser.
+            information is stored via Local Storage in the browser. A benefit to
+            using Local Storage is that users can save their games and load them
+            up later.
+          </p>
+          <h3>Accessibility</h3>
+          <p>
+            Even though this was a personal project of mine, accessibility was
+            vitally important from the start. The website holds a perfect 100
+            score from Lighthouse, and each element meets or exceeds WCAG
+            standards.
           </p>
           <Hr />
           <h2 id="role">My Role</h2>
@@ -130,52 +134,54 @@ const TI4 = () => {
           <p>
             I opted to be thematic with the designs, choosing an aesthetic that
             lended itself to the space opera nature of the game. It was also
-            important that all of the features be intuitive and easy to use on
+            important that all of the features be intuitive and easy-to-use on
             any device.
           </p>
           <ImageCard
             image={{
-              src: `https://ik.imagekit.io/ti4score/background-selection.png?updatedAt=1678040214361&tr:w-900`,
+              src: `https://ik.imagekit.io/ti4score/starting_a_new_game.png?updatedAt=1725559397467&tr:w-900`,
               alt: 'Grid of 6 images to choose from, each featuring official game art',
               description:
-                'The very first screen users see, allowing them to choose a custom background for their game.',
+                'The "New Game" screen, which allows users to select the number of players, their factions/color, and more.',
             }}
+            mb="2rem"
           />
+          <ImageGrid images={GRID_IMGS} columns={2} gap="2rem" />
+          <Hr />
+          <h2 id="usage">Usage and Philosophy</h2>
           <p>
-            The main scenario I envisioned was having the tool displayed on a TV
-            or large screen in whichever room the game was being played.
-            Therefore, size and legibility were the other primary
-            considerations. I wanted the tool to show the information that was
-            important, and then get out of the way and let people play.
+            The main usage scenario is to have the tool displayed on a TV or
+            large screen in whichever room the game is being played in.
+            Therefore, size and legibility were primary considerations. I wanted
+            the tool to show the information that was important, and then get
+            out of the way and let people play.
           </p>
-          <ImageGrid images={GRID_IMGS} columns={2} />
+          <p>
+            The score tracker focuses exclusively on the scoring aspects of the
+            game, ignoring all other concepts. This helps to keep the complexity
+            of the tool at manageable levels while allowing for maximum utility.
+          </p>
           <Hr />
           <h2 id="status">Status</h2>
           <p>
-            The tool is currently live and can be visited by going to{' '}
+            The tracker is currently live and can be visited by going to{' '}
             <a
               href="https://ti4score.com"
               target="_blank"
               rel="noreferrer noopener"
             >
               ti4score.com
+              <MaterialIcon icon={'open_in_new'} size="18px" />
             </a>
-            . As of this website being published, the app already has over 1000
-            unique visits.
-          </p>
-          <p>
-            If you search Google for a Twilight Imperium score tracker, this
-            tool is the #1 result (assuming you don't count the Reddit result).
+            . It has well over 5000 unique visits and continues to be the go-to
+            choice for players of Twilight Imperium looking to track their
+            score.
           </p>
           <Hr />
           <h2 id="future">The Future</h2>
           <p>
-            I am currently working on version 2 of the stat tracking tool,
-            collaborating once again with my developer friend Jacob Millner.
-            This iteration will feature server connectivity, meaning multiple
-            users will be able to sign into the same game and track their stats
-            individually. It will include many more enhanced features that will
-            make version 1 look like it's from the Stone Age.
+            I continue to add new features and refine my designs. Recently,
+            offline mode was added in via PWA (Progress Web App) installation.
           </p>
           <ScrollTop />
         </Limiter>

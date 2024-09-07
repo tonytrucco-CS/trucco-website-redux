@@ -1,15 +1,15 @@
-import styled from 'styled-components';
 import Back from '../../components/Back';
 import Card from '../../components/Card';
 import Chip from '../../components/Chip';
 import Container from '../../components/Container';
-import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
 import ImageGrid from '../../components/ImageGrid';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
+import MaterialIcon from '../../components/MaterialIcon';
+import ChipScroll from '../../components/ChipScroll';
 
 const EBTH_SAMPLE = [
   {
@@ -45,29 +45,19 @@ const EBTH_OLD = [
   },
 ];
 
-const Nav = styled.nav`
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-`;
-
 const EBTH = () => {
   return (
     <Container>
-      <Hero title="Everything But The House" limited />
       <Card hero>
         <Limiter>
-          <Back to="/projects" label="← Projects" />
-          <h2>About the Client</h2>
+          <Back to="/projects" label="Projects" />
+          <h1>Everything But The House</h1>
           <p>
             <strong>Everything But The House</strong> is an online auction
             website where users can find and bid on almost anything. EBTH
             specializes in one-of-a-kind finds and generally focuses on
             second-hand goods.
           </p>
-          <h3>Real items that I've purchased from EBTH</h3>
-          <ImageGrid images={EBTH_SAMPLE} columns={4} />
           <p>
             Visit their{' '}
             <a
@@ -76,31 +66,34 @@ const EBTH = () => {
               rel="noreferrer noopener"
             >
               website
+              <MaterialIcon icon={'open_in_new'} size="18px" />
             </a>{' '}
             and get yourself something nice.
           </p>
+          <ImageGrid images={EBTH_SAMPLE} columns={4} />
+          <small>Real items that I've purchased from EBTH</small>
           <Hr />
-          <Nav>
+          <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
             <Chip label="My Role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
             <Chip label="Testing" to="#testing" hash />
             <Chip label="Status" to="#status" hash />
-          </Nav>
+          </ChipScroll>
           <h2 id="problem">Problem Statement</h2>
           <p>
-            The current EBTH website does not represent the premium quality
-            desired by the brand, nor does it properly cater to the browsing
-            methods used by their customers.
+            The EBTH website does not represent the premium quality of the
+            brand, nor does it properly cater to the browsing methods used by
+            actual customers.
           </p>
           <p>
-            From an internal perspective, the current site's marketing and sales
-            content is difficult to update.
+            From an internal perspective, the site's marketing and sales content
+            is difficult to update.
           </p>
-          <ImageGrid images={EBTH_OLD} columns={1} />
+          <ImageGrid images={EBTH_OLD} columns={1} gap="3rem" />
           <Hr />
-          <h2 id="scope">Scope</h2>
+          <h2 id="scope">Project Scope</h2>
           <p>
             This project was scoped as an entire rewrite and redesign of the
             EBTH website. I originally estimated it would take a calendar year
@@ -108,41 +101,46 @@ const EBTH = () => {
             following:
           </p>
           <ul>
-            <li>Create and test wireframes for new website design and flow</li>
-            <li>Reimagine site design to better reflect branding guidelines</li>
+            <li>
+              Create and test wireframes for a new website design and flow
+            </li>
+            <li>
+              Reimagine the site design to better reflect branding guidelines
+            </li>
             <li>
               Create a design system of components for reuse across multiple
               projects
             </li>
-            <li>Test design changes with interviews and user testing</li>
+            <li>
+              Continually test design changes with user testing and interviews
+            </li>
             <li>Implement the new designs and fuctionality across the site</li>
           </ul>
           <Hr />
           <h2 id="role">My Role</h2>
           <p>
-            I was the lead designer throughout this project, eventually promoted
-            to Director of User Experience partway through. It was my job to
-            create the new user flows and conduct all testing related to them. I
-            also coordinated with the marketing team, development team, and
-            leadership to get buy-in and ensure alignment throughout the
-            process.
+            I was the lead designer throughout this project, getting promoted to
+            Director of User Experience partway through. It was my job to create
+            the new user flows and conduct all testing related to the redesign.
+            I also coordinated with marketing, development, and leadership to
+            get buy-in and ensure alignment throughout the process.
           </p>
           <p>
-            I worked with the frontend team to help build the design system
-            components in React and ensured each component was flexible enough
-            to meet our needs well into the future.
+            I worked with the frontend team to build the design system
+            components in React and Storybook, ensuring each component was
+            flexible enough to meet our needs well into the future.
           </p>
           <p>
             I created and analyzed all user testing scenarios, taking feedback
-            and incorporating it into the necessary design changes.
+            and incorporating changes as needed.
           </p>
           <Hr />
           <h2 id="designs">Designs</h2>
           <h3>Categories in the Navigation</h3>
           <p>
-            During my discovery phase, where I surveyed current customers and
-            looked at analytics, I discovered that there were two methods of
-            browsing the website—by Sale or by Category. The EBTH site focused
+            During my discovery phase—where I surveyed current customers and
+            looked at analytics—I discovered that there were two methods of
+            browsing the website: by Sale or by Category. The EBTH site focused
             on Sales but neglected Categories, so that was one of the first
             major design problems I tackled.
           </p>
@@ -188,21 +186,20 @@ const EBTH = () => {
             image={{
               src: `https://ik.imagekit.io/ti4score/Portfolio/EBTH/After/item_details.jpg?updatedAt=1679429196979${transforms.four3_lg}`,
               alt: 'Item details page, with image gallery on the left and details on the right',
-              description:
-                "Easy to discover image thumbnails. That wasn't so hard.",
+              description: 'Easy-to-discover image thumbnails.',
             }}
           />
           <Hr />
           <h2 id="testing">Testing</h2>
           <p>
             For testing, I utilized a three-pronged approach: surveys, internal
-            testing, user interviews.
+            testing, and user interviews.
           </p>
           <h3>Surveys</h3>
           <p>
             Both internal and external customers filled out surveys that focused
             on the current website experience. I asked what features they liked,
-            what features they didn't, and many questions about browsing habits.
+            what features they didn't, and about browsing habits.
           </p>
           <h3>Internal Testing</h3>
           <p>
@@ -224,9 +221,7 @@ const EBTH = () => {
           <p>
             As of right now, the website changes I worked on are yet to go live.
             I left the company in early 2022, and the only remaining hurdles at
-            that time were technical considerations on the backend. I continue
-            to check back every now and then hoping to see my work out in the
-            wild.
+            that time were technical considerations on the backend.
           </p>
           <ScrollTop />
         </Limiter>

@@ -1,21 +1,15 @@
-import styled from 'styled-components';
 import Back from '../../components/Back';
 import Card from '../../components/Card';
 import Chip from '../../components/Chip';
 import Container from '../../components/Container';
-import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import ImageGrid from '../../components/ImageGrid';
 import { transforms } from '../../utils/helpers';
-
-const Nav = styled.nav`
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-`;
+import MaterialIcon from '../../components/MaterialIcon';
+import { Link } from 'react-router-dom';
+import ChipScroll from '../../components/ChipScroll';
 
 const GARDEN = [
   {
@@ -50,17 +44,16 @@ const HOME = [
 const MindfullyApp = () => {
   return (
     <Container>
-      <Hero title="Mindfully App Redesign" limited />
       <Card hero>
         <Limiter>
-          <Back to="/projects" label="← Projects" />
-          <h2>About the Client</h2>
+          <Back to="/projects" label="Projects" />
+          <h1>Mindfully App Redesign</h1>
           <p>
-            Mindfully is a company working to provide online mental healthcare
-            for teens and adults. They have a robust roster of professionals
-            available for a wide variety of services. Clients are able to chat,
-            have online video calls, and receive many different services and
-            assessments through Mindfully's online offering.
+            <strong>Mindfully</strong> is a company working to provide online
+            mental healthcare for teens and adults. They have a robust roster of
+            professionals available for a wide variety of services. Clients are
+            able to chat, have online video calls, and receive many different
+            services and assessments through Mindfully's online offering.
           </p>
           <p>
             Mindfully provides care in a number of different states, and makes
@@ -72,27 +65,28 @@ const MindfullyApp = () => {
               rel="noreferrer noopener"
             >
               learn more
+              <MaterialIcon icon={'open_in_new'} size="18px" />
             </a>
             .
           </p>
           <Hr />
-          <Nav>
+          <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
             <Chip label="My Role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
             <Chip label="Testing" to="#testing" hash />
             <Chip label="Status" to="#status" hash />
-          </Nav>
+          </ChipScroll>
           <h2 id="problem">Problem Statement</h2>
           <p>
-            Although Mindfully currently has an app available in the App Store
-            and the Google Play Store, its functionality and utility is limited.
-            It is also out of date with Mindfully branding and inconsistent in
-            how content is shown.
+            Although Mindfully had an app available in the App Store and the
+            Google Play Store, its functionality and utility was limited. It was
+            also out-of-date with Mindfully's branding and displayed content
+            inconsistently.
           </p>
           <Hr />
-          <h2 id="scope">Scope</h2>
+          <h2 id="scope">Project Scope</h2>
           <p>
             The goal for an updated app was to make it intuitive, beautiful, and
             helpful to anyone seeking mental healthcare assistance with
@@ -100,17 +94,26 @@ const MindfullyApp = () => {
             starting with the concept of caring for a garden.
           </p>
           <p>
-            It has long been established that the outdoors are extremely
-            beneficial for our mental health. I wanted to bring this aspect into
-            the app redesign, so I conceived the idea of providing everyone with
-            a digital garden that they could grow and care for as part of their
-            journey. This garden would encourage users to "water" it and care
-            for it by performing tasks meant to enhance their mental well-being.
+            It has long been{' '}
+            <a
+              href="https://www.apa.org/monitor/2020/04/nurtured-nature"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              established
+              <MaterialIcon icon={'open_in_new'} size={'18px'} />
+            </a>{' '}
+            that the outdoors are extremely beneficial for our mental health. I
+            wanted to bring this aspect into the app redesign, so I conceived
+            the idea of providing everyone with a digital garden that they could
+            grow and care for as part of their journey. This garden would
+            encourage users to "water" it and care for it by performing tasks
+            meant to enhance their mental well-being.
           </p>
           <p>
             Beyond the entirely new garden concept, however, the app rework also
             included a new navigational structure meant to be more open-ended,
-            and a visual overhaul to bring it inline with current branding
+            and a visual overhaul to bring it in-line with current branding
             standards.
           </p>
           <Hr />
@@ -119,15 +122,15 @@ const MindfullyApp = () => {
             I took on the pivotal role of envisioning what an entirely new app
             could look like, incorporating the garden concept into every aspect
             of the design. I used Balsamiq and Figma to prove out the experience
-            and to provide the developers with a framework for what they were
-            building toward.
+            and to provide the developers with a framework for what they would
+            be building.
           </p>
           <Hr />
           <h2 id="designs">Designs</h2>
           <h3>Figma Prototype</h3>
           <p>
-            If you want to skip right to it, you can view the Figma prototype
-            concept featuring the garden by clicking the link below.
+            If you want to skip right to it, you can view the Figma prototype by
+            clicking the link below.
           </p>
           <p>
             <a
@@ -136,6 +139,7 @@ const MindfullyApp = () => {
               rel="noreferrer noopener"
             >
               View the Figma Prototype
+              <MaterialIcon icon={'open_in_new'} size="18px" />
             </a>
           </p>
           <h3>The Garden</h3>
@@ -162,10 +166,11 @@ const MindfullyApp = () => {
           <ImageGrid columns={2} images={HOME} />
           <h3>Branding and Aesthetics</h3>
           <p>
-            Similar to the issues facing the Mindfully website, the initial app
-            design did not strongly reflect the current branding guidelines.
-            Making the designs consistent and accurate was a major goal for this
-            project.
+            Similar to the issues facing the{' '}
+            <Link to="/projects/mindfully-website">Mindfully website</Link>, the
+            initial app design did not strongly reflect the current branding
+            guidelines. Making the designs consistent and accurate was a major
+            goal for this project.
           </p>
           <Hr />
           <h2 id="testing">Testing</h2>
@@ -173,16 +178,13 @@ const MindfullyApp = () => {
             The garden concept is massive in scope. Therefore, to more quickly
             work towards getting something in the hands of clients, we decided
             to first launch the overall visual and navigational changes. Once
-            those are in place, the garden concept can begin development. The
-            idea has been presented to stakeholders, staff, and external
-            resources and has received widespread acclaim.
+            those were in place, the garden concept could begin development.
           </p>
           <Hr />
           <h2 id="status">Status</h2>
           <p>
-            The app is still actively being developed and reworked into the
-            vision presented in my designs. Some of those changes are already
-            live and available to view in the app.
+            I left Vora Labs in 2023, but at that time the app was still in
+            active development.
           </p>
           <ScrollTop />
         </Limiter>

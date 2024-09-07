@@ -3,13 +3,13 @@ import Back from '../../components/Back';
 import Card from '../../components/Card';
 import Chip from '../../components/Chip';
 import Container from '../../components/Container';
-import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
 import ImageGrid from '../../components/ImageGrid';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
+import MaterialIcon from '../../components/MaterialIcon';
 
 const Nav = styled.nav`
   display: flex;
@@ -34,16 +34,15 @@ const WIN = [
 const WinHalf = () => {
   return (
     <Container>
-      <Hero title="WinHalf" limited />
       <Card hero>
         <Limiter>
-          <Back to="/projects" label="← Projects" />
-          <h2>About the Client</h2>
+          <Back to="/projects" label="Projects" />
+          <h1>WinHalf</h1>
           <p>
             WinHalf is a company that's working to disrupt the raffle ticket
             space by pushing every aspect into the digital realm. Traditionally,
             customers buy tickets with cash (no credit cards) and receive
-            physical tickets—which requires them to keep the ticket until the
+            physical tickets, which requires them to keep the ticket until the
             raffle is drawn, hopefully not losing it along the way.
           </p>
           <p>
@@ -61,8 +60,9 @@ const WinHalf = () => {
               rel="noopener noreferrer"
             >
               WinHalf
+              <MaterialIcon icon={'open_in_new'} size="18px" />
             </a>
-            .
+            . I don't work for them, I just think it's a killer idea.
           </p>
           <Hr />
           <Nav>
@@ -83,14 +83,15 @@ const WinHalf = () => {
             potential.
           </p>
           <Hr />
-          <h2 id="scope">Scope</h2>
+          <h2 id="scope">Project Scope</h2>
           <p>
             The design language for the website would be completely redone,
-            utilizing reuseable components to ensure a quick and cohesive
-            experience. The administrative backend would also receive an update
-            so that clients could more easily manage their raffles. The main
-            website's structure and navigation would be redone to make WinHalf
-            and its mission easier to understand and more pleasant to look at.
+            utilizing reuseable components in React to ensure a quick and
+            cohesive experience. The administrative backend would also receive
+            an update so that clients could more easily manage their raffles.
+            The main website's structure and navigation would be redone to make
+            WinHalf and its mission easier to understand and more pleasant to
+            look at.
           </p>
           <Hr />
           <h2 id="role">My Role</h2>
@@ -116,7 +117,7 @@ const WinHalf = () => {
             image={{
               src: `https://ik.imagekit.io/ti4score/Portfolio/WinHalf/visual_sheet.png?updatedAt=1678462019882${transforms.four3_lg}`,
               alt: 'Design sheet for WinHalf, featuring various headings, font selections, color choices, and multiple button designs',
-              description: 'The initial design sheet I provided to WinHalf',
+              description: 'The initial design sheet provided to WinHalf',
             }}
           />
           <h3>Website Redesign</h3>
