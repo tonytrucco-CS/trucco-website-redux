@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { colors, fonts } from '../constants/variables';
+import { fonts } from '../constants/variables';
 
 export const globalCSS = css`
   body,
@@ -20,8 +20,8 @@ export const globalCSS = css`
   }
 
   body {
-    background-image: url('/white-paper-background.jpg');
-    background-color: ${colors.white};
+    background-color: ${({ theme }) => theme.background};
     font-family: ${fonts.sansserif};
+    transition: background-color 0.3s, color 0.3s;
   }
 `;

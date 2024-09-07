@@ -1,16 +1,30 @@
 import styled from 'styled-components';
-import { colors } from '../constants/variables';
+import MaterialIcon from './MaterialIcon';
+import { transparentize } from 'polished';
 
 const Scroll = styled.button`
-  color: ${colors.blue};
+  color: ${({ theme }) => theme.link};
   border: none;
   background: none;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   font-size: 1rem;
   cursor: pointer;
+  padding: 0.5rem 1rem 0.5rem 0;
+  border-radius: 1rem;
+  transition: color 0.3s, box-shadow 0.3s, background-color 0.3s, padding 0.3s;
 
   &:hover {
-    text-decoration: underline;
+    background-color: ${({ theme }) =>
+      transparentize(0.9, theme.buttonBackground)};
+    padding-left: 0.5rem;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px ${({ theme }) => transparentize(0.75, theme.link)};
+    padding-left: 0.5rem;
   }
 `;
 
@@ -19,7 +33,11 @@ const ScrollTop = () => {
     window.scrollTo(0, 0);
   };
 
-  return <Scroll onClick={() => scroll()}>⬑ Back to the top</Scroll>;
+  return (
+    <Scroll onClick={() => scroll()}>
+      <MaterialIcon icon={'vertical_align_top'} /> Back to the top
+    </Scroll>
+  );
 };
 
 export default ScrollTop;

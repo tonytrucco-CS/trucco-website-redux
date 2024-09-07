@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import { breakpoints, colors } from '../constants/variables';
+import { breakpoints } from '../constants/variables';
 import Limiter from '../containers/Limiter';
 
 const H1 = styled.h1`
-  color: ${colors.white};
-  padding-top: 5rem;
+  color: ${({ theme }) => theme.text};
+  padding-top: 1em;
+  padding-bottom: 0.25em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 500;
 
   @media only screen and (max-width: ${breakpoints.sm}) {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 0.75em;
   }
 `;
 

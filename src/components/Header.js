@@ -1,37 +1,37 @@
 import { transparentize } from 'polished';
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
-import { colors, fonts } from '../constants/variables';
+import styled, { useTheme } from 'styled-components';
+import { fonts } from '../constants/variables';
 import useWindowDimensions from '../utils/helpers';
-import Button from './Button';
 import Container from './Container';
 import Logo from './Logo';
 import MobileNav from './MobileNav';
+import Toggle from './Toggle';
 
 const HeaderNav = styled.header`
   width: 100%;
-  box-shadow: 0 0.5rem 2rem ${transparentize(0.66, colors.black)};
   z-index: 10;
   position: relative;
-  background-color: ${colors.pureWhite};
+  background-color: ${({ theme }) => theme.contentBG};
   height: 4rem;
   display: flex;
   align-items: center;
+  transition: background-color 0.3s;
+`;
+
+const Div = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 `;
 
 const Nav = styled.nav`
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
 `;
-
-const Left = styled.div`
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-`;
-
-const Right = styled.div``;
 
 const Ul = styled.ul`
   list-style-type: none;
@@ -44,22 +44,37 @@ const Li = styled.li`
   margin: 0;
 `;
 
+const Box = styled.div`
+  width: 9em;
+  display: flex;
+  justify-content: ${(props) => (props.$right ? 'flex-end' : 'flex-start')};
+`;
+
 const StyledNavLink = styled(NavLink)`
-  color: ${colors.button};
+  color: ${({ theme }) => theme.text};
   padding: 1rem 1.5rem;
   display: block;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
   background-color: transparent;
   font-family: ${fonts.sansserif};
   font-size: 1rem;
+  font-weight: 400;
 
   &.active {
-    background-color: ${transparentize(0.95, colors.black)};
+    background-color: ${({ theme }) =>
+      transparentize(0.9, theme.buttonBackground)};
   }
 
   &:hover {
-    background-color: ${transparentize(0.95, colors.black)};
+    background-color: ${({ theme }) =>
+      transparentize(0.9, theme.buttonBackground)};
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px
+      ${({ theme }) => transparentize(0.75, theme.buttonBackground)};
+    outline: 0;
   }
 `;
 
@@ -80,39 +95,50 @@ const LINKS = [
     to: 'about',
     label: 'About',
   },
+  {
+    to: 'contact',
+    label: 'Contact',
+  },
 ];
 
-const Header = () => {
+const Header = ({ toggleTheme }) => {
   const { width } = useWindowDimensions();
+  const theme = useTheme();
+
+  const handleToggle = () => {
+    toggleTheme();
+  };
 
   return (
     <HeaderNav>
       <Container>
-        <Nav>
-          <Left>
+        <Div>
+          <Box>
             <Logo />
+          </Box>
+          <Nav>
             {width > 1024 && (
               <Ul>
                 {LINKS.map((link) => {
                   return (
                     <Li key={link.to}>
-                      <StyledNavLink to={link.to}>{link.label}</StyledNavLink>
+                      <StyledNavLink theme={theme} to={link.to}>
+                        {link.label}
+                      </StyledNavLink>
                     </Li>
                   );
                 })}
               </Ul>
             )}
-          </Left>
-          <Right>
-            {width > 1024 ? (
-              <Button to="contact" size="sm">
-                Contact
-              </Button>
-            ) : (
-              <MobileNav links={LINKS} />
-            )}
-          </Right>
-        </Nav>
+          </Nav>
+          {width > 1024 ? (
+            <Box $right>
+              <Toggle handleToggle={handleToggle} />
+            </Box>
+          ) : (
+            <MobileNav links={LINKS} handleToggle={handleToggle} />
+          )}
+        </Div>
       </Container>
     </HeaderNav>
   );

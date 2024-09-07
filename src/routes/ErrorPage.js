@@ -3,7 +3,6 @@ import Button from '../components/Button';
 import Card from '../components/Card';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
-import Gradient from '../components/Gradient';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Main from '../components/Main';
@@ -14,7 +13,6 @@ const ErrorPage = () => {
   return (
     <>
       <Header />
-      <Gradient />
       <Main>
         <Container>
           <Hero title="Oops!" limited />

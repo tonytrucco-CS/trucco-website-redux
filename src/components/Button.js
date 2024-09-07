@@ -1,49 +1,49 @@
 import { lighten, transparentize } from 'polished';
 import { Link } from 'react-router-dom';
-import styled, { css } from 'styled-components';
-import { colors, fonts } from '../constants/variables';
+import styled, { css, useTheme } from 'styled-components';
+import { fonts } from '../constants/variables';
 
 const StyledButton = styled.button`
-  background-color: ${colors.button};
-  border: solid 1px ${colors.button};
-  color: ${colors.white};
+  background-color: ${({ theme }) => theme.buttonBackground};
+  border: solid 1px ${({ theme }) => theme.buttonBackground};
+  color: ${({ theme }) => theme.buttonText};
   ${(props) => {
     switch (props.size) {
       case 'xs':
         return css`
           padding: ${props.square ? '0.25rem' : '0.25rem 0.5rem'};
-          font-size: 1rem;
+          font-size: 0.5rem;
         `;
       case 'sm':
         return css`
           padding: ${props.square ? '0.5rem' : '0.5rem 1rem'};
-          font-size: 1rem;
+          font-size: 0.75rem;
         `;
       default:
         return css`
-          padding: ${props.square ? '1.5rem' : '0.75rem 1rem'};
-          font-size: 1.25rem;
+          padding: ${props.square ? '1.5rem' : '0.65rem 1rem'};
+          font-size: 1rem;
         `;
     }
   }}
-  border-radius: 0.35rem;
+  border-radius: 0.25rem;
   display: flex;
-  font-family: ${fonts.sansserif};
-  font-weight: 300;
+  font-family: ${fonts.button};
+  font-weight: 400;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
   width: ${(props) => (props.$block ? '100%' : 'fit-content')};
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 
   &:hover:not([disabled]) {
     cursor: pointer;
-    background-color: ${lighten(0.1, colors.button)};
-    border: solid 1px ${lighten(0.1, colors.button)};
+    background-color: ${({ theme }) => lighten(0.1, theme.buttonBackground)};
+    border: solid 1px ${({ theme }) => lighten(0.1, theme.buttonBackground)};
   }
 
   svg {
-    fill: ${colors.white};
+    fill: ${(theme) => theme.buttonText};
   }
 
   &:disabled {
@@ -52,38 +52,39 @@ const StyledButton = styled.button`
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px ${transparentize(0.5, colors.button)};
+    box-shadow: 0 0 0 3px
+      ${({ theme }) => transparentize(0.75, theme.buttonBackground)};
   }
 `;
 
 const StyledLink = styled(Link)`
-  background-color: ${colors.button};
-  border: solid 1px ${colors.button};
-  color: ${colors.white};
+  background-color: ${({ theme }) => theme.buttonBackground};
+  border: solid 1px ${({ theme }) => theme.buttonBackground};
+  color: ${({ theme }) => theme.buttonText};
   text-decoration: none;
   ${(props) => {
     switch (props.size) {
       case 'xs':
         return css`
           padding: ${props.square ? '0.25rem' : '0.25rem 0.5rem'};
-          font-size: 1rem;
+          font-size: 0.75rem;
         `;
       case 'sm':
         return css`
           padding: ${props.square ? '0.5rem' : '0.5rem 1rem'};
-          font-size: 1rem;
+          font-size: 0.75rem;
         `;
       default:
         return css`
-          padding: ${props.square ? '1.5rem' : '0.75rem 1rem'};
-          font-size: 1.25rem;
+          padding: ${props.square ? '1.5rem' : '0.65rem 1rem'};
+          font-size: 1rem;
         `;
     }
   }}
-  border-radius: 0.35rem;
+  border-radius: 0.25rem;
   display: flex;
-  font-family: ${fonts.sansserif};
-  font-weight: 300;
+  font-family: ${fonts.button};
+  font-weight: 500;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
@@ -92,12 +93,12 @@ const StyledLink = styled(Link)`
 
   &:hover:not([disabled]) {
     cursor: pointer;
-    background-color: ${lighten(0.1, colors.button)};
-    border: solid 1px ${lighten(0.1, colors.button)};
+    background-color: ${({ theme }) => lighten(0.1, theme.buttonBackground)};
+    border: solid 1px ${({ theme }) => lighten(0.1, theme.buttonBackground)};
   }
 
   svg {
-    fill: ${colors.white};
+    fill: ${({ theme }) => theme.buttonText};
   }
 
   &:disabled {
@@ -106,7 +107,8 @@ const StyledLink = styled(Link)`
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px ${transparentize(0.5, colors.button)};
+    box-shadow: 0 0 0 3px
+      ${({ theme }) => transparentize(0.75, theme.buttonBackground)};
   }
 `;
 
@@ -122,6 +124,7 @@ const Button = ({
   to,
   ...props
 }) => {
+  const theme = useTheme();
   if (!to) {
     return (
       <StyledButton
@@ -132,6 +135,8 @@ const Button = ({
         size={size}
         square={square}
         $block={block}
+        theme={theme}
+        {...props}
       >
         {children}
       </StyledButton>
@@ -147,6 +152,7 @@ const Button = ({
         square={square}
         to={to}
         $block={block}
+        theme={theme}
       >
         {children}
       </StyledLink>

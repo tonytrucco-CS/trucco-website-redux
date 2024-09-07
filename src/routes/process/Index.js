@@ -2,14 +2,13 @@ import styled from 'styled-components';
 import Card from '../../components/Card';
 import Chip from '../../components/Chip';
 import Container from '../../components/Container';
-import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import { fonts } from '../../constants/variables';
 import Limiter from '../../containers/Limiter';
 import ScrollTop from '../../components/ScrollTop';
 
 const Span = styled.span`
-  font-family: ${fonts.serif};
+  font-family: ${fonts.sansserif};
 `;
 
 const Nav = styled.nav`
@@ -21,10 +20,9 @@ const Nav = styled.nav`
 const Index = () => {
   return (
     <Container>
-      <Hero title="Process" limited />
       <Card hero>
         <Limiter>
-          <h2>What is process?</h2>
+          <h1>Process</h1>
           <p>
             Process is a set of organized tasks that can be followed to achieve
             a desired objective.
@@ -48,15 +46,12 @@ const Index = () => {
             <Chip label="Code" to="#code" hash />
             <Chip label="Testing" to="#testing" hash />
           </Nav>
-        </Limiter>
-      </Card>
-      <Card hero>
-        <Limiter>
+          <Hr />
           <img
             src="https://ik.imagekit.io/ti4score/Portfolio/diamond_design.svg?updatedAt=1679427387742"
             alt="Double Diamond design methodology, which starts with a problem, expands out during discovery, condenses as a problem is defined, then expands again as solutions are created and finally condenses once more on the final solution."
           />
-          <small>
+          <small style={{ display: 'block', marginBottom: '2em' }}>
             Any design process is almost never rigidly sequential. Steps loop
             back and sometimes repeat. The double diamond design system above
             illustrates the natural expansion and contraction of every design

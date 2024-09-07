@@ -1,21 +1,14 @@
 import Card from '../../components/Card';
 import Container from '../../components/Container';
-import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import Limiter from '../../containers/Limiter';
 
 const Index = () => {
   return (
     <Container>
-      <Hero title="Contact Me" limited />
       <Card hero flex>
         <Limiter>
-          <h2>Hello there!</h2>
-          <p>
-            Normally there would be something like a contact form here, but
-            that's a good amount of work. Instead, enjoy some simple links to my
-            preferred methods of contact.
-          </p>
+          <h1>Contact</h1>
           <p>
             I would be happy to hear your thoughts on me, my website, or any
             work we might collaborate on in the future. I look forward to

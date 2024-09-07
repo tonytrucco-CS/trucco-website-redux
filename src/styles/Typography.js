@@ -1,19 +1,27 @@
 import { css } from 'styled-components';
-import { breakpoints, colors, fonts } from '../constants/variables';
+import { breakpoints, fonts } from '../constants/variables';
+import { transparentize } from 'polished';
 
 export const typographyCSS = css`
   body {
     font-family: ${fonts.sansserif};
     font-weight: 400;
+    color: ${({ theme }) => theme.text};
   }
 
   h1 {
+    color: ${({ theme }) => theme.text};
+    padding: 0;
     margin: 0;
-    font-size: 2.5rem;
-    font-weight: 400;
+    margin-bottom: 0.25em;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s;
 
-    @media only screen and (max-width: ${breakpoints.md}) {
-      font-size: 2rem;
+    @media only screen and (max-width: ${breakpoints.sm}) {
+      margin-bottom: 0;
+      font-size: 2em;
     }
   }
 
@@ -21,6 +29,7 @@ export const typographyCSS = css`
     font-size: 1.75rem;
     margin-bottom: 1rem;
     margin-top: 0;
+    font-weight: 500;
 
     &:not(:first-of-type) {
       margin-top: 2rem;
@@ -32,10 +41,11 @@ export const typographyCSS = css`
   }
 
   h3 {
-    font-size: 1.5rem;
-    color: ${colors.midGray};
-    font-weight: 400;
+    font-size: 1.25rem;
+    color: ${({ theme }) => theme.text};
+    font-weight: 500;
     margin-bottom: 0.5rem;
+    transition: color 0.3s;
 
     @media only screen and (max-width: ${breakpoints.md}) {
       font-size: 1.25rem;
@@ -46,19 +56,33 @@ export const typographyCSS = css`
   li {
     line-height: 1.5;
     font-size: 1.25rem;
-    font-family: ${fonts.serif};
+    font-family: ${fonts.sansserif};
     margin-top: 0;
+    font-weight: 300;
+  }
+
+  p,
+  ol,
+  ul {
+    margin-bottom: 1.5em;
   }
 
   small {
-    color: ${colors.midGray};
-    margin-bottom: 1rem;
+    color: ${({ theme }) => transparentize(0.4, theme.text)};
     display: block;
-    font-family: ${fonts.serif};
+    font-family: ${fonts.sansserif};
     line-height: 1.5;
+    transition: color 0.3s;
+  }
+
+  h2,
+  p {
+    color: ${({ theme }) => theme.text};
+    transition: color 0.3s;
   }
 
   a {
-    color: ${colors.blue};
+    color: ${({ theme }) => theme.link};
+    transition: color 0.3s;
   }
 `;

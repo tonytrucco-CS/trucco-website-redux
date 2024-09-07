@@ -1,3 +1,4 @@
+import { transparentize } from 'polished';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -17,6 +18,10 @@ const StyledNavLink = styled(NavLink)`
   height: 100%;
   width: 100%;
   position: absolute;
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px ${({ theme }) => transparentize(0.75, theme.link)};
+  }
 `;
 
 const Img = styled.img`

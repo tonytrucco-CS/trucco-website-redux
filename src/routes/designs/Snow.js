@@ -1,7 +1,6 @@
 import Back from '../../components/Back';
 import Card from '../../components/Card';
 import Container from '../../components/Container';
-import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
 import ScrollTop from '../../components/ScrollTop';
@@ -11,11 +10,10 @@ import { transforms } from '../../utils/helpers';
 const Snowpals = () => {
   return (
     <Container>
-      <Hero title="Snowpals Poster" limited />
       <Card hero>
         <Limiter>
-          <Back to="/designs" label="← Designs" />
-          <h2>Who or what is a Snowpal?</h2>
+          <Back to="/designs" label="Designs" />
+          <h1>Snowpals Poster</h1>
           <p>
             If you're old enough, you may recall a game on the PS2 called{' '}
             <em>NHL Hitz</em>. This game would allow you to create your own
@@ -42,8 +40,9 @@ const Snowpals = () => {
               src: `https://ik.imagekit.io/ti4score/Portfolio/Posters/snowpals.jpg?updatedAt=1678473898835${transforms.noheight_lg}`,
               alt: 'Hockey-themed poster for a team called Snowpals, with seven players in silhouette against an icy backdrop.',
               description:
-                "My brother's character was Rhode Island Red, which is why it's heavily featured.",
+                "My brother's character was Rhode Island Red, which is why he's heavily featured.",
             }}
+            mb={'2em'}
           />
           <ScrollTop />
         </Limiter>

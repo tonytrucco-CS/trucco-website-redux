@@ -1,22 +1,15 @@
-import styled from 'styled-components';
 import Back from '../../components/Back';
 import Card from '../../components/Card';
 import Chip from '../../components/Chip';
 import Container from '../../components/Container';
-import Hero from '../../components/Hero';
 import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
 import ImageGrid from '../../components/ImageGrid';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
-
-const Nav = styled.nav`
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-`;
+import MaterialIcon from '../../components/MaterialIcon';
+import ChipScroll from '../../components/ChipScroll';
 
 const GUIDE = [
   {
@@ -49,17 +42,16 @@ const FILTER = [
 const MindfullyWeb = () => {
   return (
     <Container>
-      <Hero title="Mindfully Website Redesign" limited />
       <Card hero>
         <Limiter>
-          <Back to="/projects" label="← Projects" />
-          <h2>About the Client</h2>
+          <Back to="/projects" label="Projects" />
+          <h1>Mindfully Website Redesign</h1>
           <p>
-            Mindfully is a company working to provide online mental healthcare
-            for teens and adults. They have a robust roster of professionals
-            available for a wide variety of services. Clients are able to chat,
-            have online video calls, and receive many different services and
-            assessments through Mindfully's online offering.
+            <strong>Mindfully</strong> is a company working to provide online
+            mental healthcare for teens and adults. They have a robust roster of
+            professionals available for a wide variety of services. Clients are
+            able to chat, have online video calls, and receive many different
+            services and assessments through Mindfully's online offering.
           </p>
           <p>
             Mindfully provides care in a number of different states, and makes
@@ -71,18 +63,18 @@ const MindfullyWeb = () => {
               rel="noreferrer noopener"
             >
               learn more
+              <MaterialIcon icon={'open_in_new'} size="18px" />
             </a>
             .
           </p>
           <Hr />
-          <Nav>
+          <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
             <Chip label="My Role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
             <Chip label="Testing" to="#testing" hash />
-            <Chip label="Status" to="#status" hash />
-          </Nav>
+          </ChipScroll>
           <h2 id="problem">Problem Statement</h2>
           <p>
             The initial website for Mindfully was built with a do-it-yourself
@@ -92,27 +84,27 @@ const MindfullyWeb = () => {
           </p>
           <p>
             Another issue facing Mindfully's website was a lack of accessibility
-            and the impact that can have on SEO. Lastly, because of the
-            restricted tools in Weebly, the branding of the initial site never
-            quite achieved the desired aesthetic.
+            and the impact it can have on SEO. Lastly, because of the restricted
+            tools in Weebly, the branding of the initial site never quite
+            achieved the desired aesthetic.
           </p>
           <Hr />
-          <h2 id="scope">Scope</h2>
+          <h2 id="scope">Project Scope</h2>
           <p>
             The Mindfully website needed to be redone, so we decided to use
-            React as the framework. Before we could start working on it, we had
-            to create a plan for how users would interact with the site, which
-            involved making wireframes and doing some testing. We also moved all
-            the website content into a CMS called Contentful, and we made sure
-            to integrate it seamlessly with the new design.
+            React as the frontend framework. Before we could start working on
+            it, we had to create a plan for how users would interact with the
+            site, which involved making wireframes and doing rounds of testing.
+            We also moved all of the website content into a CMS called
+            Contentful, making sure to integrate it seamlessly with the new
+            design.
           </p>
           <Hr />
           <h2 id="role">My Role</h2>
           <p>
-            I was brought in to manage not only the user experience for the
-            updated website, but also the creation of a web-focused branding
-            guide (which did not exist), and the full implementation of these
-            changes using React.
+            I was brought in to manage the user experience for the updated
+            website, oversee the creation of a website branding guide, and code
+            the full frontend implementation of the site redesign.
           </p>
           <ImageGrid columns={2} images={GUIDE} />
           <Hr />
@@ -123,8 +115,7 @@ const MindfullyWeb = () => {
             navigation across the site. In the previous iteration, too many
             links were getting lost in dropdown menus and the main header was
             beginning to suffer from bloat. I trimmed the list of links down as
-            much as was feasible and ensured that all labels were clear with
-            respect to their destination.
+            much as was feasible and ensured that all labels were clear.
           </p>
           <ImageCard
             image={{
@@ -133,6 +124,7 @@ const MindfullyWeb = () => {
               description:
                 'Original Mindfully website navigation. Each link shown was a dropdown menu, despite the lack of signifier.',
             }}
+            mb={'2em'}
           />
           <ImageCard
             image={{
@@ -141,6 +133,7 @@ const MindfullyWeb = () => {
               description:
                 'Updated header design. Notice the updated phrasing to make navigation more clear.',
             }}
+            mb={'2em'}
           />
           <h3>Robust Filtering</h3>
           <p>
@@ -156,27 +149,20 @@ const MindfullyWeb = () => {
             filter options to help narrow down the results.
           </p>
           <ImageGrid columns={2} images={FILTER} />
-          <h3>Accessibility, Accessibility, Accessibility</h3>
+          <h3>Accessibility</h3>
           <p>
-            Anyone that works with me knows that I am a huge advocate for making
-            every part of a webpage as accessible as possible. Mindfully's
-            website redesign was no different. Throughout the entire development
-            process we focused on ensuring users with many different needs would
-            be able to find the content they were seeking.
+            Throughout the entire development process we focused on ensuring
+            users with many different needs would be able to find the content
+            they were seeking, with every element on the site meeting or
+            exceeding WCAG standards.
           </p>
           <Hr />
           <h2 id="testing">Testing</h2>
           <p>
-            With a compressed timeline for getting this work accomplished, I was
-            unable to perform the robust testing that I prefer. However, we
-            managed to work with internal stakeholders throughout the process to
-            test and improve the site at various milestones.
-          </p>
-          <Hr />
-          <h2 id="status">Status</h2>
-          <p>
-            The current Mindfully website continues to make use of my design,
-            receiving regular updates with new pages and enhancements.
+            With a compressed timeline for getting this work accomplished (4
+            months), I was unable to perform the robust testing that I prefer.
+            However, we managed to work with internal stakeholders throughout
+            the process to test and improve the site at various milestones.
           </p>
           <ScrollTop />
         </Limiter>
