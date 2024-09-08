@@ -1,7 +1,7 @@
 import { transparentize } from 'polished';
 import { NavLink } from 'react-router-dom';
 import styled, { useTheme } from 'styled-components';
-import { fonts } from '../constants/variables';
+import { breakpoints, fonts } from '../constants/variables';
 import useWindowDimensions from '../utils/helpers';
 import Container from './Container';
 import Logo from './Logo';
@@ -13,10 +13,14 @@ const HeaderNav = styled.header`
   z-index: 10;
   position: relative;
   background-color: ${({ theme }) => theme.contentBG};
-  height: 4rem;
+  height: 4em;
   display: flex;
   align-items: center;
   transition: background-color 0.3s;
+
+  @media only screen and (max-width: ${breakpoints.xs}) {
+    padding: 0 1em;
+  }
 `;
 
 const Div = styled.div`
