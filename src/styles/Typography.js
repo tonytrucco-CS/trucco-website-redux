@@ -20,8 +20,7 @@ export const typographyCSS = css`
     transition: color 0.3s;
 
     @media only screen and (max-width: ${breakpoints.sm}) {
-      margin-bottom: 0;
-      font-size: 2em;
+      font-size: 1.75em;
     }
   }
 

@@ -10,6 +10,7 @@ const Nav = styled.nav`
   @media only screen and (max-width: ${breakpoints.xs}) {
     flex-wrap: nowrap;
     overflow-x: auto;
+    padding-bottom: 0.5em;
   }
 `;
 

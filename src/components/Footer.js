@@ -12,7 +12,11 @@ const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.contentBG};
   display: flex;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3em 0;
+
+  @media only screen and (max-width: ${breakpoints.xs}) {
+    padding: 3em 1em;
+  }
 `;
 
 const Grid = styled.div`

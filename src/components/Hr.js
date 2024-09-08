@@ -8,7 +8,7 @@ const StyledHR = styled.hr`
   transition: border 0.3s;
 
   @media only screen and (max-width: ${breakpoints.sm}) {
-    margin: 1em 0;
+    margin: 2em 0;
   }
 `;
 

@@ -6,6 +6,10 @@ const Div = styled.div`
   max-width: ${breakpoints.lg};
   margin: 0 auto;
   padding: 0 1rem;
+
+  @media only screen and (max-width: ${breakpoints.xs}) {
+    padding: 0;
+  }
 `;
 
 const Container = ({ children, ...props }) => {

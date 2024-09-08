@@ -7,19 +7,22 @@ import Limiter from '../../containers/Limiter';
 import { Link } from 'react-router-dom';
 import ScrollTop from '../../components/ScrollTop';
 import MaterialIcon from '../../components/MaterialIcon';
-
-const Nav = styled.nav`
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-`;
+import { breakpoints } from '../../constants/variables';
+import ChipScroll from '../../components/ChipScroll';
 
 const Img = styled.img`
   float: right;
-  padding-left: 1rem;
   height: 15em;
   border-radius: 0.25rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1em 1em;
+
+  @media only screen and (max-width: ${breakpoints.sm}) {
+    height: 10em;
+  }
+
+  @media only screen and (max-width: ${breakpoints.xs}) {
+    display: none;
+  }
 `;
 
 const ME = {
@@ -53,12 +56,12 @@ const Index = () => {
             gap that traditionally exists between design and engineering teams.
           </p>
           <p>Would you like to know more?</p>
-          <Nav>
+          <Hr />
+          <ChipScroll>
             <Chip label="Work Experience" to="#work" hash />
             <Chip label="Education" to="#education" hash />
             <Chip label="Personal Life" to="#personal" hash />
-          </Nav>
-          <Hr />
+          </ChipScroll>
           <h2 id="work">Work Experience</h2>
           <p>
             Here's the{' '}
