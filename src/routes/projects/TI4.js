@@ -10,6 +10,7 @@ import { transforms } from '../../utils/helpers';
 import ImageGrid from '../../components/ImageGrid';
 import MaterialIcon from '../../components/MaterialIcon';
 import ChipScroll from '../../components/ChipScroll';
+import Next from '../../components/Next';
 
 const GRID_IMGS = [
   {
@@ -44,6 +45,15 @@ const TI4 = () => {
         <Limiter>
           <Back to="/projects" label="Projects" />
           <h1>TI4: Score Tracker</h1>
+          <ChipScroll>
+            <Chip label="Problem" to="#problem" hash />
+            <Chip label="Scope" to="#scope" hash />
+            <Chip label="My Role" to="#role" hash />
+            <Chip label="Designs" to="#designs" hash />
+            <Chip label="Usage" to="#usage" hash />
+            <Chip label="Status" to="#status" hash />
+            <Chip label="The Future" to="#future" hash />
+          </ChipScroll>
           <p>
             <a
               href="https://www.fantasyflightgames.com/en/products/twilight-imperium-fourth-edition/"
@@ -71,15 +81,6 @@ const TI4 = () => {
             }}
           />
           <Hr />
-          <ChipScroll>
-            <Chip label="Problem" to="#problem" hash />
-            <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
-            <Chip label="Designs" to="#designs" hash />
-            <Chip label="Usage" to="#usage" hash />
-            <Chip label="Status" to="#status" hash />
-            <Chip label="The Future" to="#future" hash />
-          </ChipScroll>
           <h2 id="problem">Problem Statement</h2>
           <p>
             There are a lot of components to keep track of in this game, all
@@ -184,6 +185,8 @@ const TI4 = () => {
             offline mode was added in via PWA (Progress Web App) installation.
           </p>
           <ScrollTop />
+          <Hr />
+          <Next type={'projects'} id={2} />
         </Limiter>
       </Card>
     </Container>

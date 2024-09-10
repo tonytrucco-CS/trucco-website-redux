@@ -39,6 +39,11 @@ const Index = () => {
       <Card hero flex>
         <Limiter>
           <h1>About Me</h1>
+          <ChipScroll>
+            <Chip label="Work Experience" to="#work" hash />
+            <Chip label="Education" to="#education" hash />
+            <Chip label="Personal Life" to="#personal" hash />
+          </ChipScroll>
           <Img src={ME.src} alt={ME.alt} />
           <p>
             My name is Tony Trucco, and I am a designer/developer specializing
@@ -57,11 +62,6 @@ const Index = () => {
           </p>
           <p>Would you like to know more?</p>
           <Hr />
-          <ChipScroll>
-            <Chip label="Work Experience" to="#work" hash />
-            <Chip label="Education" to="#education" hash />
-            <Chip label="Personal Life" to="#personal" hash />
-          </ChipScroll>
           <h2 id="work">Work Experience</h2>
           <p>
             Here's the{' '}

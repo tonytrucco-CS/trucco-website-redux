@@ -5,6 +5,7 @@ import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
 import ImageGrid from '../../components/ImageGrid';
 import MaterialIcon from '../../components/MaterialIcon';
+import Next from '../../components/Next';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
@@ -144,6 +145,8 @@ const Presidents = () => {
             .
           </p>
           <ScrollTop />
+          <Hr />
+          <Next type={'designs'} id={2} />
         </Limiter>
       </Card>
     </Container>

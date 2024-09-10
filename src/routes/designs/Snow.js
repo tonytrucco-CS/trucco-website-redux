@@ -3,6 +3,7 @@ import Card from '../../components/Card';
 import Container from '../../components/Container';
 import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
+import Next from '../../components/Next';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
@@ -45,6 +46,8 @@ const Snowpals = () => {
             mb={'2em'}
           />
           <ScrollTop />
+          <Hr />
+          <Next type={'designs'} id={4} />
         </Limiter>
       </Card>
     </Container>

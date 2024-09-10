@@ -4,6 +4,7 @@ import Container from '../../components/Container';
 import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
 import ImageGrid from '../../components/ImageGrid';
+import Next from '../../components/Next';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
@@ -98,6 +99,8 @@ const Minis = () => {
             mb={'2em'}
           />
           <ScrollTop />
+          <Hr />
+          <Next type={'designs'} id={3} />
         </Limiter>
       </Card>
     </Container>

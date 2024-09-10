@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import Back from '../../components/Back';
 import Card from '../../components/Card';
 import Chip from '../../components/Chip';
@@ -10,13 +9,8 @@ import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
 import MaterialIcon from '../../components/MaterialIcon';
-
-const Nav = styled.nav`
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-`;
+import ChipScroll from '../../components/ChipScroll';
+import Next from '../../components/Next';
 
 const WIN = [
   {
@@ -38,6 +32,13 @@ const WinHalf = () => {
         <Limiter>
           <Back to="/projects" label="Projects" />
           <h1>WinHalf</h1>
+          <ChipScroll>
+            <Chip label="Problem" to="#problem" hash />
+            <Chip label="Scope" to="#scope" hash />
+            <Chip label="My Role" to="#role" hash />
+            <Chip label="Designs" to="#designs" hash />
+            <Chip label="Status" to="#status" hash />
+          </ChipScroll>
           <p>
             WinHalf is a company that's working to disrupt the raffle ticket
             space by pushing every aspect into the digital realm. Traditionally,
@@ -65,13 +66,6 @@ const WinHalf = () => {
             . I don't work for them, I just think it's a killer idea.
           </p>
           <Hr />
-          <Nav>
-            <Chip label="Problem" to="#problem" hash />
-            <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
-            <Chip label="Designs" to="#designs" hash />
-            <Chip label="Status" to="#status" hash />
-          </Nav>
           <h2 id="problem">Problem Statement</h2>
           <p>
             Despite the high-quality service that WinHalf offered its customers,
@@ -142,6 +136,8 @@ const WinHalf = () => {
             years ago.
           </p>
           <ScrollTop />
+          <Hr />
+          <Next type={'projects'} id={6} />
         </Limiter>
       </Card>
     </Container>

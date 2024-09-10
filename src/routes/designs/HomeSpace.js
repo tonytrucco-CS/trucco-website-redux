@@ -2,6 +2,7 @@ import Back from '../../components/Back';
 import Card from '../../components/Card';
 import Container from '../../components/Container';
 import Hr from '../../components/Hr';
+import Next from '../../components/Next';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 
@@ -55,6 +56,8 @@ const HomeSpace = () => {
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
           <ScrollTop />
+          <Hr />
+          <Next type={'designs'} id={5} />
         </Limiter>
       </Card>
     </Container>
