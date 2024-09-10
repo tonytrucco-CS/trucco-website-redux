@@ -10,6 +10,7 @@ import { transforms } from '../../utils/helpers';
 import MaterialIcon from '../../components/MaterialIcon';
 import { Link } from 'react-router-dom';
 import ChipScroll from '../../components/ChipScroll';
+import Next from '../../components/Next';
 
 const GARDEN = [
   {
@@ -48,6 +49,14 @@ const MindfullyApp = () => {
         <Limiter>
           <Back to="/projects" label="Projects" />
           <h1>Mindfully App Redesign</h1>
+          <ChipScroll>
+            <Chip label="Problem" to="#problem" hash />
+            <Chip label="Scope" to="#scope" hash />
+            <Chip label="My Role" to="#role" hash />
+            <Chip label="Designs" to="#designs" hash />
+            <Chip label="Testing" to="#testing" hash />
+            <Chip label="Status" to="#status" hash />
+          </ChipScroll>
           <p>
             <strong>Mindfully</strong> is a company working to provide online
             mental healthcare for teens and adults. They have a robust roster of
@@ -70,14 +79,6 @@ const MindfullyApp = () => {
             .
           </p>
           <Hr />
-          <ChipScroll>
-            <Chip label="Problem" to="#problem" hash />
-            <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
-            <Chip label="Designs" to="#designs" hash />
-            <Chip label="Testing" to="#testing" hash />
-            <Chip label="Status" to="#status" hash />
-          </ChipScroll>
           <h2 id="problem">Problem Statement</h2>
           <p>
             Although Mindfully had an app available in the App Store and the
@@ -187,6 +188,8 @@ const MindfullyApp = () => {
             active development.
           </p>
           <ScrollTop />
+          <Hr />
+          <Next type={'projects'} id={5} />
         </Limiter>
       </Card>
     </Container>

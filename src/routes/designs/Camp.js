@@ -3,6 +3,7 @@ import Card from '../../components/Card';
 import Container from '../../components/Container';
 import Hr from '../../components/Hr';
 import ImageGrid from '../../components/ImageGrid';
+import Next from '../../components/Next';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
@@ -117,6 +118,8 @@ const Camp = () => {
           </p>
           <ImageGrid columns={2} images={TEE2018} mb={'2em'} />
           <ScrollTop />
+          <Hr />
+          <Next type={'designs'} id={1} />
         </Limiter>
       </Card>
     </Container>

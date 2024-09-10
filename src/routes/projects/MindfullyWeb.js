@@ -10,6 +10,7 @@ import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
 import MaterialIcon from '../../components/MaterialIcon';
 import ChipScroll from '../../components/ChipScroll';
+import Next from '../../components/Next';
 
 const GUIDE = [
   {
@@ -46,6 +47,13 @@ const MindfullyWeb = () => {
         <Limiter>
           <Back to="/projects" label="Projects" />
           <h1>Mindfully Website Redesign</h1>
+          <ChipScroll>
+            <Chip label="Problem" to="#problem" hash />
+            <Chip label="Scope" to="#scope" hash />
+            <Chip label="My Role" to="#role" hash />
+            <Chip label="Designs" to="#designs" hash />
+            <Chip label="Testing" to="#testing" hash />
+          </ChipScroll>
           <p>
             <strong>Mindfully</strong> is a company working to provide online
             mental healthcare for teens and adults. They have a robust roster of
@@ -68,13 +76,6 @@ const MindfullyWeb = () => {
             .
           </p>
           <Hr />
-          <ChipScroll>
-            <Chip label="Problem" to="#problem" hash />
-            <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
-            <Chip label="Designs" to="#designs" hash />
-            <Chip label="Testing" to="#testing" hash />
-          </ChipScroll>
           <h2 id="problem">Problem Statement</h2>
           <p>
             The initial website for Mindfully was built with a do-it-yourself
@@ -165,6 +166,8 @@ const MindfullyWeb = () => {
             the process to test and improve the site at various milestones.
           </p>
           <ScrollTop />
+          <Hr />
+          <Next type={'projects'} id={4} />
         </Limiter>
       </Card>
     </Container>

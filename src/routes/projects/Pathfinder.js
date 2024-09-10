@@ -11,6 +11,7 @@ import { transforms } from '../../utils/helpers';
 import ScrollTop from '../../components/ScrollTop';
 import MaterialIcon from '../../components/MaterialIcon';
 import ChipScroll from '../../components/ChipScroll';
+import Next from '../../components/Next';
 
 const Box = styled.div`
   display: grid;
@@ -40,6 +41,14 @@ const Pathfinder = () => {
         <Limiter>
           <Back to="/projects" label="Projects" />
           <h1>Pathfinder Initiative Tracker</h1>
+          <ChipScroll>
+            <Chip label="Problem" to="#problem" hash />
+            <Chip label="Scope" to="#scope" hash />
+            <Chip label="My Role" to="#role" hash />
+            <Chip label="Designs" to="#designs" hash />
+            <Chip label="Usage" to="#usage" hash />
+            <Chip label="Status" to="#status" hash />
+          </ChipScroll>
           <p>
             <strong>Pathfinder</strong>, created by{' '}
             <a
@@ -56,14 +65,6 @@ const Pathfinder = () => {
             roleplaying environment controlled by the Game Master.
           </p>
           <Hr />
-          <ChipScroll>
-            <Chip label="Problem" to="#problem" hash />
-            <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
-            <Chip label="Designs" to="#designs" hash />
-            <Chip label="Usage" to="#usage" hash />
-            <Chip label="Status" to="#status" hash />
-          </ChipScroll>
           <h2 id="problem">Problem Statement</h2>
           <p>
             A frequent element of tabletop roleplaying games is combat. Players
@@ -167,6 +168,8 @@ const Pathfinder = () => {
             .
           </p>
           <ScrollTop />
+          <Hr />
+          <Next type={'projects'} id={3} />
         </Limiter>
       </Card>
     </Container>

@@ -10,6 +10,7 @@ import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
 import MaterialIcon from '../../components/MaterialIcon';
 import ChipScroll from '../../components/ChipScroll';
+import Next from '../../components/Next';
 
 const EBTH_SAMPLE = [
   {
@@ -52,6 +53,14 @@ const EBTH = () => {
         <Limiter>
           <Back to="/projects" label="Projects" />
           <h1>Everything But The House</h1>
+          <ChipScroll>
+            <Chip label="Problem" to="#problem" hash />
+            <Chip label="Scope" to="#scope" hash />
+            <Chip label="My Role" to="#role" hash />
+            <Chip label="Designs" to="#designs" hash />
+            <Chip label="Testing" to="#testing" hash />
+            <Chip label="Status" to="#status" hash />
+          </ChipScroll>
           <p>
             <strong>Everything But The House</strong> is an online auction
             website where users can find and bid on almost anything. EBTH
@@ -73,14 +82,6 @@ const EBTH = () => {
           <ImageGrid images={EBTH_SAMPLE} columns={4} />
           <small>Real items that I've purchased from EBTH</small>
           <Hr />
-          <ChipScroll>
-            <Chip label="Problem" to="#problem" hash />
-            <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
-            <Chip label="Designs" to="#designs" hash />
-            <Chip label="Testing" to="#testing" hash />
-            <Chip label="Status" to="#status" hash />
-          </ChipScroll>
           <h2 id="problem">Problem Statement</h2>
           <p>
             The EBTH website does not represent the premium quality of the
@@ -224,6 +225,8 @@ const EBTH = () => {
             that time were technical considerations on the backend.
           </p>
           <ScrollTop />
+          <Hr />
+          <Next type={'projects'} id={1} />
         </Limiter>
       </Card>
     </Container>
