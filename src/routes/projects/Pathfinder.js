@@ -44,7 +44,7 @@ const Pathfinder = () => {
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
+            <Chip label="My role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
             <Chip label="Usage" to="#usage" hash />
             <Chip label="Status" to="#status" hash />
@@ -59,13 +59,14 @@ const Pathfinder = () => {
               Paizo
               <MaterialIcon icon={'open_in_new'} size="18px" />
             </a>
-            , is a tabletop roleplaying game similar to Dungeons & Dragons.
-            Players create their characters—choosing from various ancestries,
-            backgrounds, and classes—and then immerse themselves in a
-            roleplaying environment controlled by the Game Master.
+            , is a tabletop roleplaying game similar to{' '}
+            <em>Dungeons & Dragons</em>. Players create their
+            characters—choosing from various ancestries, backgrounds, and
+            classes—and then immerse themselves in a roleplaying environment
+            controlled by the Game Master.
           </p>
           <Hr />
-          <h2 id="problem">Problem Statement</h2>
+          <h2 id="problem">Problem statement</h2>
           <p>
             A frequent element of tabletop roleplaying games is combat. Players
             are often pitted against various monsters and enemies, which they
@@ -80,7 +81,7 @@ const Pathfinder = () => {
             decided to create a digital version.
           </p>
           <Hr />
-          <h2 id="scope">Project Scope</h2>
+          <h2 id="scope">Project scope</h2>
           <p>
             I wanted to keep the project rather simple, so it's a basic React
             implementation that utilizes a mixture of Material UI and custom
@@ -88,17 +89,17 @@ const Pathfinder = () => {
             keep focus on managing turn order during combat.
           </p>
           <p>
-            Note taking is a frequent occurence in combat, so a side panel for
+            Note taking is a frequent occurrence in combat, so a side panel for
             that task is available, and users can optionally tag participants
             with various ailments and conditions that have an effect on combat.
           </p>
           <Hr />
-          <h2 id="role">My Role</h2>
+          <h2 id="role">My role</h2>
           <p>
             I designed, built, and tested every aspect of the initiative
-            tracker. Because Pathfinder is a game system I actively participate
-            in, I was able to test and debug the application during actual
-            sessions of play.
+            tracker. Because <em>Pathfinder</em> is a game system I actively
+            participate in, I was able to test and debug the application during
+            actual sessions of play.
           </p>
           <Hr />
           <h2 id="designs">Designs</h2>

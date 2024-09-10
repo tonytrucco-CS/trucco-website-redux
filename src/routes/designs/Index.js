@@ -40,11 +40,11 @@ const Index = () => {
             to chat more about my work or potential projects.
           </p>
           <Hr />
-          <h2>Featured Designs</h2>
+          <h2>Featured designs</h2>
           <Grid>
             <LinkCard
               to="camp-trucco"
-              title="Camp Trucco T-Shirts"
+              title="Camp Trucco t-shirts"
               linkText="View These Designs"
               src={`https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/camp2022.png?updatedAt=1681928563520${transforms.square}`}
               alt="kitten"
@@ -52,7 +52,7 @@ const Index = () => {
             />
             <LinkCard
               to="presidents"
-              title="Graphics and Tees"
+              title="Graphics and tees"
               linkText="Explore This Series"
               src={`https://ik.imagekit.io/ti4score/Portfolio/Illustration/roosevelt.png?updatedAt=1678474012219${transforms.square},f-jpg,bg-FFFFFF`}
               alt="pres"
@@ -60,7 +60,7 @@ const Index = () => {
             />
             <LinkCard
               to="miniatures"
-              title="Painted Miniatures"
+              title="Painted miniatures"
               linkText="Dive Into Nerdom"
               src={`https://ik.imagekit.io/ti4score/Portfolio/Painting/beholder.jpg?updatedAt=1679507938326${transforms.square}`}
               alt="minis"
@@ -68,7 +68,7 @@ const Index = () => {
             />
             <LinkCard
               to="snowpals"
-              title="Snowpals Poster"
+              title="Snowpals poster"
               linkText="View This Poster"
               src={`https://ik.imagekit.io/ti4score/Portfolio/Posters/snowpals.jpg?updatedAt=1678473898835${transforms.square}`}
               alt="poster"

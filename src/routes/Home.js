@@ -57,26 +57,26 @@ const Home = () => {
             </p>
             <Button to="about">Learn More About Me</Button>
             <Hr />
-            <h2>Web design and development projects</h2>
+            <h2>Projects</h2>
             <p>
-              This is work showcasing a few of my professional and side projects
-              over the years, highlighting my skills and experience.
+              This work showcases a few of my professional and side projects,
+              highlighting my skills and experience.
             </p>
             <ImageGrid images={PROJECTS} columns={2} mb={'2em'} />
             <Button to="projects">View More Projects</Button>
             <Hr />
-            <h2>Graphic design and more</h2>
+            <h2>Designs</h2>
             <p>
-              A bit more of a personal touch. These are things I'm interested in
-              that go beyond web design.
+              A bit more of a personal touch, creative work I'm interested in
+              that goes beyond web design.
             </p>
             <ImageGrid images={DESIGNS} columns={4} mb={'2em'} />
             <Button to="designs">See More Designs</Button>
             <Hr />
-            <h2>How I work</h2>
+            <h2>Process</h2>
             <p>
               Every designer has a process, and they can't wait to tell you
-              about it. I am no different.
+              about it. I'm no different.
             </p>
             <Button to="process">Dive Deep into Process</Button>
           </Limiter>

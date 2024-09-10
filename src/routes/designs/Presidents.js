@@ -36,10 +36,10 @@ const Presidents = () => {
           <Back to="/designs" label="Designs" />
           <h1>Graphics and Tees</h1>
           <p>
-            I have an interest in many of the presidents from American history.
+            I have an interest in many of the Presidents from American history.
             I also enjoy a good mash-up and creating unexpected designs. The
             natural cross section of those interests is a series of designs and
-            t-shirts that feature presidents <em>and</em> mash-ups.
+            t-shirts that feature Presidents <em>and</em> mash-ups.
           </p>
           <Hr />
           <h2>My Designs</h2>
@@ -66,7 +66,7 @@ const Presidents = () => {
           />
           <h3>Harry Truman</h3>
           <p>
-            Truman was President when the decision was made to use nuclear
+            Truman was President when he made the decision to use nuclear
             weapons on Japan during World War II.
           </p>
           <p>
@@ -107,7 +107,7 @@ const Presidents = () => {
           />
           <h3>George Washington</h3>
           <p>
-            The first president of America. Washington is generally
+            The first President of America. Washington is generally
             well-regarded as a leader and wartime commander. My combination for
             him revolved around incorporating elements from another
             well-established leader, Cyclops from the X-Men. This design doesn't
