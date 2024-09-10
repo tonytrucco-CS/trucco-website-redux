@@ -35,7 +35,7 @@ const WinHalf = () => {
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
+            <Chip label="My role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
             <Chip label="Status" to="#status" hash />
           </ChipScroll>
@@ -66,7 +66,7 @@ const WinHalf = () => {
             . I don't work for them, I just think it's a killer idea.
           </p>
           <Hr />
-          <h2 id="problem">Problem Statement</h2>
+          <h2 id="problem">Problem statement</h2>
           <p>
             Despite the high-quality service that WinHalf offered its customers,
             the initial website and mobile service fell short in terms of visual
@@ -77,10 +77,10 @@ const WinHalf = () => {
             potential.
           </p>
           <Hr />
-          <h2 id="scope">Project Scope</h2>
+          <h2 id="scope">Project scope</h2>
           <p>
             The design language for the website would be completely redone,
-            utilizing reuseable components in React to ensure a quick and
+            utilizing reusable components in React to ensure a quick and
             cohesive experience. The administrative backend would also receive
             an update so that clients could more easily manage their raffles.
             The main website's structure and navigation would be redone to make
@@ -88,7 +88,7 @@ const WinHalf = () => {
             look at.
           </p>
           <Hr />
-          <h2 id="role">My Role</h2>
+          <h2 id="role">My role</h2>
           <p>
             As the sole designer on the project, I undertook the task of
             creating a new design language that would seamlessly integrate with
@@ -99,7 +99,7 @@ const WinHalf = () => {
           </p>
           <Hr />
           <h2 id="designs">Designs</h2>
-          <h3>Updated Design Language</h3>
+          <h3>Updated design language</h3>
           <p>
             I worked with the client to create a new design language that would
             mesh with their existing brand. Their main colors were red and blue,
@@ -113,16 +113,17 @@ const WinHalf = () => {
               alt: 'Design sheet for WinHalf, featuring various headings, font selections, color choices, and multiple button designs',
               description: 'The initial design sheet provided to WinHalf',
             }}
+            mb={'2em'}
           />
-          <h3>Website Redesign</h3>
+          <h3>Website redesign</h3>
           <p>
             Because WinHalf wanted customers to use their phones for signing up
-            for raffles, it had to be dead simple to enter the raffle code they
-            would receive. Therefore, the WinHalf website features a raffle code
-            input visible above the fold for all mobile devices.
+            for raffles, it had to be simple to enter the raffle code they would
+            receive. Therefore, the WinHalf website features a raffle code input
+            visible above the fold for all mobile devices.
           </p>
-          <ImageGrid columns={2} images={WIN} />
-          <h3>Backend Flow</h3>
+          <ImageGrid columns={2} images={WIN} mb={'2em'} />
+          <h3>Backend flow</h3>
           <p>
             The backend user experience was reworked so that clients could
             easily manage multiple raffles at one time and see at-a-glance how

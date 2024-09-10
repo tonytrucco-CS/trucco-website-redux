@@ -16,20 +16,19 @@ const Snowpals = () => {
           <Back to="/designs" label="Designs" />
           <h1>Snowpals Poster</h1>
           <p>
-            If you're old enough, you may recall a game on the PS2 called{' '}
-            <em>NHL Hitz</em>. This game would allow you to create your own
-            custom team, complete with logo and nicknames for each of the
-            players. My younger brother established a team consisting of animals
-            and weirdos for him and his friends, calling it Snowpals.
+            If you're old enough, you might remember a PS2 game called{' '}
+            <em>NHL Hitz</em>. It let you create custom teams, complete with
+            logos and player nicknames. My younger brother made a team of
+            animals and odd characters for him and his friends, naming it
+            "Snowpals".
           </p>
           <Hr />
           <h2>My Poster</h2>
           <p>
-            As a gift one year I decided to give my brother a poster, and the
-            best thing I could think to design was something for the Snowpals.
-            Believe it or not, there are no ready-made vector graphics for
-            hockey players with bull heads and the like, so I had to create all
-            of the graphics from scratch.
+            One year, I decided to give my brother a poster as a gift and chose
+            to design something for his "Snowpals" team. Since there were no
+            premade vector graphics for hockey players with bull heads and such,
+            I had to create all the graphics from scratch.
           </p>
           <p>
             Despite moving houses and adding numerous children to his clan, my

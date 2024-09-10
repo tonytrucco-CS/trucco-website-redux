@@ -50,7 +50,7 @@ const MindfullyWeb = () => {
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
+            <Chip label="My role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
             <Chip label="Testing" to="#testing" hash />
           </ChipScroll>
@@ -76,7 +76,7 @@ const MindfullyWeb = () => {
             .
           </p>
           <Hr />
-          <h2 id="problem">Problem Statement</h2>
+          <h2 id="problem">Problem statement</h2>
           <p>
             The initial website for Mindfully was built with a do-it-yourself
             service called Weebly, which limited the ability to create
@@ -90,7 +90,7 @@ const MindfullyWeb = () => {
             achieved the desired aesthetic.
           </p>
           <Hr />
-          <h2 id="scope">Project Scope</h2>
+          <h2 id="scope">Project scope</h2>
           <p>
             The Mindfully website needed to be redone, so we decided to use
             React as the frontend framework. Before we could start working on
@@ -101,7 +101,7 @@ const MindfullyWeb = () => {
             design.
           </p>
           <Hr />
-          <h2 id="role">My Role</h2>
+          <h2 id="role">My role</h2>
           <p>
             I was brought in to manage the user experience for the updated
             website, oversee the creation of a website branding guide, and code
@@ -110,7 +110,7 @@ const MindfullyWeb = () => {
           <ImageGrid columns={2} images={GUIDE} />
           <Hr />
           <h2 id="designs">Designs</h2>
-          <h3>Improved Navigation</h3>
+          <h3>Improved navigation</h3>
           <p>
             One of my main areas of concern was the improvement of overall
             navigation across the site. In the previous iteration, too many
@@ -136,7 +136,7 @@ const MindfullyWeb = () => {
             }}
             mb={'2em'}
           />
-          <h3>Robust Filtering</h3>
+          <h3>Robust filtering</h3>
           <p>
             A shortcoming of the initial website was its inability to surface
             care providers that matched the needs of potential clients. The
@@ -149,7 +149,7 @@ const MindfullyWeb = () => {
             paginated list of the entire care team and implemented intuitive
             filter options to help narrow down the results.
           </p>
-          <ImageGrid columns={2} images={FILTER} />
+          <ImageGrid columns={2} images={FILTER} mb={'2em'} />
           <h3>Accessibility</h3>
           <p>
             Throughout the entire development process we focused on ensuring

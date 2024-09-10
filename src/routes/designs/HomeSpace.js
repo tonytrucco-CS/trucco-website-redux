@@ -14,16 +14,16 @@ const HomeSpace = () => {
           <Back to="/designs" label="Designs" />
           <h1>Home Space</h1>
           <p>
-            <em>Home Space</em> is a 3D rendered video, created as part of my
-            senior capstone when I was at DAAP (2008). It features a fictional
-            character named Captain Mitchel on his quest to find water on the
-            moon.
+            <strong>Home Space</strong> is a 3D rendered video, created as part
+            of my senior capstone when I was at DAAP (2008). It features a
+            fictional character named Captain Mitchel on his quest to find water
+            on the moon.
           </p>
           <p>
             It would be natural to ask why I am including a school project from
-            2008 on my professional website. The answer is: because it's a great
-            reflection of who I am and what I'm interested in. Plus, despite its
-            flaws and limitations, I adore it.
+            2008 on my professional website. The answer: because it's a great
+            reflection of who I am, and what I'm interested in. Plus, despite
+            its flaws and limitations, I adore it.
           </p>
           <Hr />
           <h2>Watch the Video</h2>

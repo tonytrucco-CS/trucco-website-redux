@@ -46,23 +46,22 @@ const Index = () => {
           </ChipScroll>
           <Img src={ME.src} alt={ME.alt} />
           <p>
-            My name is Tony Trucco, and I am a designer/developer specializing
-            in frontend implementations and user experience design. That means I
-            create and advocate for friendly, intuitive, easy-to-use experiences
-            for web and mobile. I started my career in 2008, so I've been
-            creating meaningful experiences for {careerLength} years.
+            I'm Tony Trucco, a designer/developer specializing in frontend
+            implementations and user experience design. I focus on creating
+            intuitive, user-friendly experiences for web and mobile. With{' '}
+            {careerLength} years of experience, I've been crafting meaningful
+            designs since 2008.
           </p>
           <p>
-            In addition to my design skills, I am also a very talented frontend
-            developer. Working in both disciplines allows me to have a greater
-            level of control over the implementation of my designs, ensuring
-            they are visually compelling and functionally sound. My coding
-            skills help me to easily communicate with developers and bridge the
-            gap that traditionally exists between design and engineering teams.
+            In addition to design, I'm a skilled frontend developer. This dual
+            expertise gives me control over the execution of my designs,
+            ensuring they are both visually compelling and functionally sound.
+            My coding skills also allow me to bridge the gap between design and
+            engineering teams, improving collaboration and implementation.
           </p>
           <p>Would you like to know more?</p>
           <Hr />
-          <h2 id="work">Work Experience</h2>
+          <h2 id="work">Work experience</h2>
           <p>
             Here's the{' '}
             <a
@@ -76,11 +75,11 @@ const Index = () => {
           </p>
           <h3>Places I've been</h3>
           <p>
-            I have experience with almost every type of company there is; from
-            startups of fewer than 10 people to multi-national corporations with
-            thousands of employees across the globe. Additionally, I have worked
-            in the following sectors:
+            I have experience with almost every type of company; from startups
+            of fewer than 10 people to multinational corporations with thousands
+            of employees across the globe.
           </p>
+          <p>Additionally, I have worked in the following sectors:</p>
           <ul>
             <li>Education</li>
             <li>Finance</li>
@@ -92,66 +91,51 @@ const Index = () => {
           </ul>
           <h3>Things I've done</h3>
           <p>
-            I started my career creating basic HMTL and CSS solutions, which
-            naturally led me towards frontend design and development. I learned
-            Javascript and furthered my education in user-centered design
-            principles. Today, I maintain all of my frontend skills while also
-            being an advocate and leader for a well-crafted design process.
+            I began my career with basic HTML and CSS, which led me into
+            frontend design and development. Along the way, I learned JavaScript
+            and deepened my understanding of user-centered design principles.
+            Today, I maintain my frontend skills while advocating for
+            well-crafted design processes.
           </p>
           <p>
-            I have worked on short-term projects as well as complex redesigns of
-            entire frontend systems. I have led user interviews and conducted
-            surveys for internal and external customers. I have built—and even
-            rebuilt—internal tools to improve processes, making them
-            better/faster/cheaper.
+            I've worked on both short-term projects and large-scale frontend
+            redesigns, leading user interviews and surveys for internal and
+            external clients. I've also built and improved internal tools,
+            optimizing them for efficiency.
           </p>
           <p>
-            During my career I have had many opportunities to both present and
-            discuss design solutions with C-level executives and stakeholders. I
-            know how to have a meaningful conversation that will balance design
-            needs with business goals.
+            Throughout my career, I've presented and discussed design solutions
+            with C-level executives and stakeholders, balancing design needs
+            with business goals.
           </p>
 
           <Hr />
 
           <h2 id="education">Education</h2>
           <p>
-            Bachelor's Degree in Digital Design from the DAAP program at the
-            University of Cincinnati.
+            Bachelor's of Science Degree in <em>Digital Design</em> from the
+            DAAP program at the University of Cincinnati.
           </p>
 
           <Hr />
 
-          <h2 id="personal">Personal Life</h2>
+          <h2 id="personal">Personal life</h2>
           <p>
-            In 2022 I married the love of my life, Nikki. She is an astounding
-            designer in her own right, and sexy as hell. Together we have
-            created an amazing array of designs and art. We live in Covington,
-            KY, with an assortment of cats and cat accessories.
+            In 2022, I married Nikki, the love of my life and an amazing
+            designer. Together, we live in Covington, KY, with our three cats
+            and have created a variety of unique designs and artwork.
           </p>
           <p>
-            I am an avid runner and enjoy running in at least one half-marathon
-            each year. There is something very peaceful and centering about
-            running so many miles and just letting the mind wander.
+            I'm a passionate runner, completing at least one half-marathon each
+            year. There's something peaceful about covering so many miles,
+            letting my mind wander along the way.
           </p>
           <p>
-            If you look at my{' '}
-            <a
-              href="https://www.instagram.com/orion_in_winter/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Instagram
-              <MaterialIcon icon="open_in_new" size={'18px'} />
-            </a>
-            —to which I post rarely—you will notice that I paint 28mm miniatures
-            as a <Link to="/designs/miniatures">hobby</Link>. I use these minis
-            in the games of Pathfinder that I participate in as both a player
-            and Game Master. Although Pathfinder is the most common game I play,
-            I am a fan of just about every board game (except Monopoly).
-          </p>
-          <p>
-            Check out my Twilight Imperium{' '}
+            As a <Link to="/designs/miniatures">hobby</Link>, I paint 28mm
+            miniatures, which I use in <em>Pathfinder</em> games where I play
+            and GM. While <em>Pathfinder</em> is my favorite, I enjoy almost any
+            board game (except Monopoly). Check out my{' '}
+            <em>Twilight Imperium</em>{' '}
             <a
               href="https://ti4score.com"
               target="_blank"
@@ -160,7 +144,7 @@ const Index = () => {
               score tracker
               <MaterialIcon icon="open_in_new" size={'18px'} />
             </a>{' '}
-            or my Pathfinder 2e{' '}
+            and <em>Pathfinder 2e</em>{' '}
             <a
               href="https://p2etracker.com"
               target="_blank"
@@ -172,9 +156,8 @@ const Index = () => {
             websites.
           </p>
           <p>
-            Lastly, I am very into Renaissance Festivals. I like to dress up in
-            all kinds of outfits and absorb the experience of everyone around me
-            doing the same. Skol!
+            I'm also a big fan of Renaissance Festivals, where I love dressing
+            up and immersing myself in the lively atmosphere. Skol!
           </p>
           <ScrollTop />
         </Limiter>

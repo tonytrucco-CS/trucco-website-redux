@@ -25,14 +25,13 @@ const Index = () => {
         <Limiter>
           <h1>Projects</h1>
           <p>
-            Throughout my career I've worked on projects both large and small.
-            Some remain in use as internal tools. Others have never been
-            released publicly. A few, sadly, have been lost to the sands of
-            time. What follows is a series of projects that showcase my
-            capabilities and interests.
+            Throughout my career, I've worked on projects both large and small.
+            Some are still in use, while others were never publicly released,
+            and a few have faded into obscurity. The following projects showcase
+            my skills and interests.
           </p>
           <Hr />
-          <h2>Featured Projects</h2>
+          <h2>Featured projects</h2>
           <Grid>
             <LinkCard
               to="ebth"
@@ -44,7 +43,7 @@ const Index = () => {
             />
             <LinkCard
               to="twilight-imperium-score-tracker"
-              title="Twilight Imperium Score Tracker"
+              title="Twilight Imperium score tracker"
               linkText="View This Project"
               src="https://ik.imagekit.io/ti4score/objective_view.png?updatedAt=1725559798874&tr=fo-top_left,c-maintain_ratio,w-800,ar-16-9"
               alt="Two public objectives available in a six player game of Twilight Imperium"
@@ -52,7 +51,7 @@ const Index = () => {
             />
             <LinkCard
               to="pathfinder-initiative-tracker"
-              title="Pathfinder Initiative Tracker"
+              title="Pathfinder initiative tracker"
               linkText="View This Project"
               src="https://ik.imagekit.io/ti4score/p2etracker_tablet.jpg?updatedAt=1725564926698&tr=fo-top_left,c-maintain_ratio,w-800,ar-16-9"
               alt="List of combat participants, listed in initiative order, for Pathfinder 2nd Edition"
@@ -60,7 +59,7 @@ const Index = () => {
             />
             <LinkCard
               to="mindfully-website"
-              title="Mindfully Website Redesign"
+              title="Mindfully website redesign"
               linkText="View This Project"
               src="https://ik.imagekit.io/ti4score/Portfolio/Mindfully/After/Care.png?updatedAt=1678462213668&tr=fo-top_left,c-maintain_ratio,w-800,ar-16-9"
               alt="Find a care provider, listing care providers in alphabetical order and showing a series of filter options to refine the results"
@@ -68,7 +67,7 @@ const Index = () => {
             />
             <LinkCard
               to="mindfully-app"
-              title="Mindfully App Redesign"
+              title="Mindfully app redesign"
               linkText="View This Project"
               src="https://ik.imagekit.io/ti4score/Portfolio/Mindfully/Goals-side-by-side.jpg?updatedAt=1679495560574&tr=fo-top_left,c-maintain_ratio,w-800,ar-16-9"
               alt="Side-by-side view of redesigned Mindfully app, showing the goals screen as a sketch and a high fidelity mockup"

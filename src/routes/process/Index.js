@@ -24,19 +24,11 @@ const Index = () => {
         <Limiter>
           <h1>Process</h1>
           <p>
-            Process is a set of organized tasks that can be followed to achieve
-            a desired objective.
-          </p>
-          <p>
             When people think of process, they think of something laborious and
-            time consuming. Often it's considered, and then discarded in favor
-            of "getting work done". The truth is, however, that a good process
+            time consuming. Often it's considered and then discarded in favor of
+            "getting work done." The truth is, however, that a good process
             accelerates productivity and limits the amount of rework down the
-            line. When I work with companies and clients, this is what I try to
-            keep in mind.
-          </p>
-          <p>
-            So, let's get into it. What is <em>my</em> process?
+            line.
           </p>
           <Nav>
             <Chip label="Discovery" to="#discovery" hash />
@@ -55,7 +47,7 @@ const Index = () => {
             Any design process is almost never rigidly sequential. Steps loop
             back and sometimes repeat. The double diamond design system above
             illustrates the natural expansion and contraction of every design
-            flow; the problem space is explored until the problem is properly
+            flow. The problem space is explored until the problem is properly
             defined, then solutions are rapidly built and tested until the final
             product is delivered.
           </small>
@@ -64,29 +56,25 @@ const Index = () => {
           </h2>
           <p>
             The most important part of my design process has nothing to do with
-            creating designs. When a new task or project is given to me, the
-            first thing I do is ask questions. Any good designer will tell you
-            that the problem they've been given is almost never the actual
-            problem that needs solving. It is up to me to discover what is
-            actually going on, and then help the client find a solution.
+            creating designs. When given a new task or project, the first thing
+            I do is ask questions. Any good designer will tell you that the
+            problem they've been given is almost never the actual problem that
+            needs solving. It's up to me to discover what is actually going on,
+            and then help the client find a solution.
           </p>
           <p>
-            Asking questions, however, is about more than just getting to the
-            root problem. It's also about learning as much as I can about the
-            client and whomever is going to be using whatever solution I create.
+            Asking questions is about more than just getting to the root
+            problem. It's also about learning as much as I can about the client
+            and whomever is going to be using whatever solution I create.
           </p>
           <h3>
-            <Span>Step 1a (optional):</Span> Meet with SMEs
+            <Span>Step 1a (optional):</Span> Meet with Subject Matter Experts
           </h3>
           <p>
             Throughout my career I have often worked on internal tools that
             require specialized training or institutional knowledge. This is
             where it's important to have a discussion with Subject Matter
             Experts (SMEs) and utilize their wealth of experience.
-          </p>
-          <p>
-            Almost every problem you can imagine in a given system has been
-            encountered by the SMEs, whether they realize it or not.
           </p>
 
           <Hr />
@@ -95,20 +83,16 @@ const Index = () => {
             <Span>Step 2:</Span> Sketches
           </h2>
           <p>
-            Often, sketching is literally pulling out paper and pencil and
-            crafting an initial solution in the most simple terms. However, when
-            I think of sketching, what I'm really thinking about is creating a
-            mental model of the system I'm dealing with. Afterall, how can I
-            confidently give my client a reliable solution if I don't have an
-            understanding of the space I'm working in?
+            Sketching often means simply using paper and pencil to draft a basic
+            solution. For me, it's more about building a mental model of the
+            system. I can't offer a reliable solution without first
+            understanding the space I'm working in.
           </p>
           <p>
-            Sometimes a sketch can be a conversation. This means talking to the
-            client and reiterating the process that leads up to the problem I'm
-            trying to solve, along with the desired result. It is only when I
-            can accurately articulate this scenario to the client—either through
-            a sketch or a conversation—that I feel confident enough to begin
-            designing in earnest.
+            Sometimes, a sketch is a conversation—discussing the problem and
+            desired outcome with the client. Only when I can clearly articulate
+            the scenario to them, whether visually or verbally, do I feel ready
+            to start designing.
           </p>
 
           <Hr />
@@ -167,9 +151,8 @@ const Index = () => {
           <p>
             Accessibility is incredibly important to me, so every page I build{' '}
             <em>starts</em> with accessiblity in mind, rather than something
-            that gets tacked on later.
+            that gets tacked on later. The internet is for everyone.
           </p>
-          <p>The internet is for everyone.</p>
 
           <Hr />
 
@@ -177,7 +160,7 @@ const Index = () => {
             <Span>Special Mention:</Span> Testing
           </h2>
           <p>
-            When I am working through a design problem it's important to keep
+            When I am working through a design problem, it's important to keep
             testing in mind. Testing can include interviews, surveys, A:B
             testing, etc. The only true requirement is that it cannot wait until
             the design has been "finished." Testing must be frequent and it must

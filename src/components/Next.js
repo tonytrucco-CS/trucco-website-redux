@@ -46,7 +46,7 @@ const StyledLink = styled(Link)`
 const Next = ({ id, type }) => {
   const [posts, setPosts] = useState(projects);
   const label =
-    type === 'projects' ? 'More Projects to View' : 'More Designs to View';
+    type === 'projects' ? 'More projects to view' : 'More designs to view';
 
   const usablePosts = posts.filter((post) => post.id !== id);
 

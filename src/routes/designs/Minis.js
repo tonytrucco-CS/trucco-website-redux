@@ -55,10 +55,10 @@ const Minis = () => {
           <h3>HeroQuest</h3>
           <p>
             When Hasbro re-released the game a few years ago, I got inspired. I
-            opted to download STLs of the original figures and print them myself
-            so that I could paint them in my own aesthetic and relive some
-            nostalgia. It took many months, but the finished product was worth
-            the wait.
+            opted to download STLs (a 3D image format) of the original figures
+            and print them myself so that I could paint them in my own aesthetic
+            and relive some nostalgia. It took many months, but the finished
+            product was worth the wait.
           </p>
           <ImageCard
             image={{
@@ -78,7 +78,7 @@ const Minis = () => {
             }}
             mb={'2em'}
           />
-          <h3>Tabletop RPGs</h3>
+          <h3>Tabletop Roleplaying Games</h3>
           <p>
             The bulk of my miniatures are for use in tabletop games like{' '}
             <em>Pathfinder</em> and <em>Dungeons & Dragons</em>. I've tried to

@@ -52,7 +52,7 @@ const MindfullyApp = () => {
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
+            <Chip label="My role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
             <Chip label="Testing" to="#testing" hash />
             <Chip label="Status" to="#status" hash />
@@ -79,7 +79,7 @@ const MindfullyApp = () => {
             .
           </p>
           <Hr />
-          <h2 id="problem">Problem Statement</h2>
+          <h2 id="problem">Problem statement</h2>
           <p>
             Although Mindfully had an app available in the App Store and the
             Google Play Store, its functionality and utility was limited. It was
@@ -87,7 +87,7 @@ const MindfullyApp = () => {
             inconsistently.
           </p>
           <Hr />
-          <h2 id="scope">Project Scope</h2>
+          <h2 id="scope">Project scope</h2>
           <p>
             The goal for an updated app was to make it intuitive, beautiful, and
             helpful to anyone seeking mental healthcare assistance with
@@ -118,7 +118,7 @@ const MindfullyApp = () => {
             standards.
           </p>
           <Hr />
-          <h2 id="role">My Role</h2>
+          <h2 id="role">My role</h2>
           <p>
             I took on the pivotal role of envisioning what an entirely new app
             could look like, incorporating the garden concept into every aspect
@@ -128,7 +128,7 @@ const MindfullyApp = () => {
           </p>
           <Hr />
           <h2 id="designs">Designs</h2>
-          <h3>Figma Prototype</h3>
+          <h3>Figma prototype</h3>
           <p>
             If you want to skip right to it, you can view the Figma prototype by
             clicking the link below.
@@ -139,11 +139,11 @@ const MindfullyApp = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              View the Figma Prototype
+              View the Figma prototype
               <MaterialIcon icon={'open_in_new'} size="18px" />
             </a>
           </p>
-          <h3>The Garden</h3>
+          <h3>The garden</h3>
           <p>
             Providing a digital garden to clients gives them something to care
             for and helps gamify the experience within the app. A big hurdle for
@@ -151,8 +151,8 @@ const MindfullyApp = () => {
             design encourages and rewards constant interaction, which in turn
             creates the habit of clients caring for their mental health.
           </p>
-          <ImageGrid columns={2} images={GARDEN} />
-          <h3>Navigational Structure</h3>
+          <ImageGrid columns={2} images={GARDEN} mb={'2em'} />
+          <h3>Navigational structure</h3>
           <p>
             The initial app featured a bottom bar for navigation to the various
             sections of the app. Although this seems like a reasonable approach
@@ -164,8 +164,8 @@ const MindfullyApp = () => {
             displayed in one view, it eliminated the limited space that bottom
             navigation provides.
           </p>
-          <ImageGrid columns={2} images={HOME} />
-          <h3>Branding and Aesthetics</h3>
+          <ImageGrid columns={2} images={HOME} mb={'2em'} />
+          <h3>Branding and aesthetics</h3>
           <p>
             Similar to the issues facing the{' '}
             <Link to="/projects/mindfully-website">Mindfully website</Link>, the

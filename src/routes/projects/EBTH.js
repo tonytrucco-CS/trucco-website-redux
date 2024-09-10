@@ -56,7 +56,7 @@ const EBTH = () => {
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
+            <Chip label="My role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
             <Chip label="Testing" to="#testing" hash />
             <Chip label="Status" to="#status" hash />
@@ -82,24 +82,19 @@ const EBTH = () => {
           <ImageGrid images={EBTH_SAMPLE} columns={4} />
           <small>Real items that I've purchased from EBTH</small>
           <Hr />
-          <h2 id="problem">Problem Statement</h2>
+          <h2 id="problem">Problem statement</h2>
           <p>
-            The EBTH website does not represent the premium quality of the
-            brand, nor does it properly cater to the browsing methods used by
-            actual customers.
-          </p>
-          <p>
-            From an internal perspective, the site's marketing and sales content
-            is difficult to update.
+            The EBTH website doesn't represent the premium quality of the brand,
+            and doesn't properly cater to the browsing methods used by actual
+            customers. From an internal perspective, the site's marketing and
+            sales content is difficult to update.
           </p>
           <ImageGrid images={EBTH_OLD} columns={1} gap="3rem" />
           <Hr />
-          <h2 id="scope">Project Scope</h2>
+          <h2 id="scope">Project scope</h2>
           <p>
             This project was scoped as an entire rewrite and redesign of the
-            EBTH website. I originally estimated it would take a calendar year
-            to complete the initial redesign. The design tasks included the
-            following:
+            EBTH website. The design tasks included the following:
           </p>
           <ul>
             <li>
@@ -118,26 +113,19 @@ const EBTH = () => {
             <li>Implement the new designs and fuctionality across the site</li>
           </ul>
           <Hr />
-          <h2 id="role">My Role</h2>
+          <h2 id="role">My role</h2>
           <p>
-            I was the lead designer throughout this project, getting promoted to
-            Director of User Experience partway through. It was my job to create
-            the new user flows and conduct all testing related to the redesign.
-            I also coordinated with marketing, development, and leadership to
-            get buy-in and ensure alignment throughout the process.
-          </p>
-          <p>
-            I worked with the frontend team to build the design system
-            components in React and Storybook, ensuring each component was
-            flexible enough to meet our needs well into the future.
-          </p>
-          <p>
-            I created and analyzed all user testing scenarios, taking feedback
-            and incorporating changes as needed.
+            As lead designer, I was promoted to Director of User Experience
+            during this project. I created new user flows, led all testing, and
+            coordinated with marketing, development, and leadership for
+            alignment. I collaborated with the frontend team to build flexible
+            design system components in React and Storybook. I also developed
+            and analyzed user testing scenarios, incorporating feedback to
+            improve the design.
           </p>
           <Hr />
           <h2 id="designs">Designs</h2>
-          <h3>Categories in the Navigation</h3>
+          <h3>Categories in the navigation</h3>
           <p>
             During my discovery phase—where I surveyed current customers and
             looked at analytics—I discovered that there were two methods of
@@ -153,7 +141,7 @@ const EBTH = () => {
                 'The categories in the header are listed alphabetically, but the goal was to use data and list them by popularity.',
             }}
           />
-          <h3>Website Aesthetics</h3>
+          <h3>Website aesthetics</h3>
           <p>
             The marketing team had long lamented that the aesthetics of the
             website did not match the current direction of the branding. Even
@@ -176,7 +164,7 @@ const EBTH = () => {
               },
             ]}
           />
-          <h3>Image Thumbnails</h3>
+          <h3>Image thumbnails</h3>
           <p>
             A subtle change on the item details page, aside from the new
             branding, was the addition of clickable thumbnails. I learned that
@@ -202,7 +190,7 @@ const EBTH = () => {
             on the current website experience. I asked what features they liked,
             what features they didn't, and about browsing habits.
           </p>
-          <h3>Internal Testing</h3>
+          <h3>Internal testing</h3>
           <p>
             At each stage of design, internal testing was conducted to gauge the
             efficacy of designs and to ensure it met expectations. I like using
@@ -210,7 +198,7 @@ const EBTH = () => {
             many different departments, which is especially helpful on long-term
             projects.
           </p>
-          <h3>User Interviews</h3>
+          <h3>User interviews</h3>
           <p>
             As development progressed, I made use of a tool called UserTesting
             to test designs and interview testers about their experience. These

@@ -48,7 +48,7 @@ const TI4 = () => {
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />
             <Chip label="Scope" to="#scope" hash />
-            <Chip label="My Role" to="#role" hash />
+            <Chip label="My role" to="#role" hash />
             <Chip label="Designs" to="#designs" hash />
             <Chip label="Usage" to="#usage" hash />
             <Chip label="Status" to="#status" hash />
@@ -66,12 +66,7 @@ const TI4 = () => {
             , from Fantasy Flights Games, is an epic, space-based board game
             focusing on combat, strategy, politics, and negotiation. It plays
             3-8 people, and games can last upwards of 12 or more hours. This
-            game is monumentally epic, and I love it dearly. I try to play as
-            often as I can.
-          </p>
-          <p>
-            The game is currently in its 4th Edition, with one expansion and 3
-            codices released.
+            game is monumentally epic, and I love it dearly.
           </p>
           <ImageCard
             image={{
@@ -81,7 +76,7 @@ const TI4 = () => {
             }}
           />
           <Hr />
-          <h2 id="problem">Problem Statement</h2>
+          <h2 id="problem">Problem statement</h2>
           <p>
             There are a lot of components to keep track of in this game, all
             while trying to out-strategize your opponents. And every round a new
@@ -99,7 +94,7 @@ const TI4 = () => {
             }}
           />
           <Hr />
-          <h2 id="scope">Project Scope</h2>
+          <h2 id="scope">Project scope</h2>
           <p>
             The goal was simple: create a tool that could easily track the
             current game objectives, along with which players had scored them.
@@ -122,7 +117,7 @@ const TI4 = () => {
             standards.
           </p>
           <Hr />
-          <h2 id="role">My Role</h2>
+          <h2 id="role">My role</h2>
           <p>
             Initially, I handled the entire scope of the project. This included
             sketches, design aesthetics, UI/UX, and all of the frontend and
@@ -134,7 +129,7 @@ const TI4 = () => {
           <h2 id="designs">Designs</h2>
           <p>
             I opted to be thematic with the designs, choosing an aesthetic that
-            lended itself to the space opera nature of the game. It was also
+            lends itself to the space-opera nature of the game. It was also
             important that all of the features be intuitive and easy-to-use on
             any device.
           </p>
@@ -149,18 +144,17 @@ const TI4 = () => {
           />
           <ImageGrid images={GRID_IMGS} columns={2} gap="2rem" />
           <Hr />
-          <h2 id="usage">Usage and Philosophy</h2>
+          <h2 id="usage">Usage and philosophy</h2>
           <p>
-            The main usage scenario is to have the tool displayed on a TV or
-            large screen in whichever room the game is being played in.
-            Therefore, size and legibility were primary considerations. I wanted
-            the tool to show the information that was important, and then get
-            out of the way and let people play.
+            The tool is designed to be displayed on a TV or large screen in the
+            game room, so size and legibility were key considerations. I aimed
+            for it to present only the essential information clearly and then
+            stay out of the way to allow for uninterrupted gameplay.
           </p>
           <p>
-            The score tracker focuses exclusively on the scoring aspects of the
-            game, ignoring all other concepts. This helps to keep the complexity
-            of the tool at manageable levels while allowing for maximum utility.
+            The score tracker focuses solely on scoring aspects, deliberately
+            avoiding other game concepts. This approach keeps the tool simple
+            and user-friendly while maximizing its effectiveness.
           </p>
           <Hr />
           <h2 id="status">Status</h2>
@@ -179,7 +173,7 @@ const TI4 = () => {
             score.
           </p>
           <Hr />
-          <h2 id="future">The Future</h2>
+          <h2 id="future">The future</h2>
           <p>
             I continue to add new features and refine my designs. Recently,
             offline mode was added in via PWA (Progress Web App) installation.
