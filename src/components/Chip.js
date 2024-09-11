@@ -8,7 +8,7 @@ const StyledHash = styled(HashLink)`
   text-decoration: none;
   color: ${({ theme }) => theme.text};
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   font-family: ${fonts.button};
   border-radius: 1rem;
   width: fit-content;
@@ -37,7 +37,7 @@ const StyledLink = styled(NavLink)`
   text-decoration: none;
   color: ${({ theme }) => theme.text};
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   font-family: ${fonts.button};
   border-radius: 1rem;
   width: fit-content;

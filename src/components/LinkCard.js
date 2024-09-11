@@ -6,19 +6,19 @@ import { transparentize } from 'polished';
 import { colors } from '../constants/variables';
 
 const Card = styled.div`
-  border-radius: 0.25rem;
-  padding: 1rem;
-  box-shadow: 0 1rem 2rem ${transparentize(0.95, colors.gray900)};
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 16px 32px ${transparentize(0.95, colors.gray900)};
   background-color: ${({ theme }) => transparentize(0.25, theme.cardBG)};
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
   transition: background-color 0.3s, border 0.3s;
 `;
 
 const Flex = styled.div`
   display: flex;
-  gap: 0.5rem;
+  gap: 8px;
 `;
 
 const Span = styled.span`
@@ -27,7 +27,7 @@ const Span = styled.span`
   font-size: 1rem;
   &:not(:last-of-type) {
     border-right: solid 1px ${({ theme }) => transparentize(0.75, theme.text)};
-    padding-right: 0.5rem;
+    padding-right: 8px;
   }
 `;
 

@@ -6,8 +6,9 @@ import ScrollToTop from './components/ScrollToTop';
 import { ThemeProvider } from 'styled-components';
 import { useEffect, useState } from 'react';
 import { lightTheme, darkTheme } from './constants/variables';
-import { GlobalStyle } from './styles/GlobalStyle';
+import GlobalFontSizeStyle from './styles/GlobalStyle';
 import ModeContext from './context/ModeContext';
+import { FontSizeProvider } from './context/FontSizeContext';
 
 function App() {
   const [modeValues, setModeValues] = useState({
@@ -31,15 +32,17 @@ function App() {
 
   return (
     <ModeContext.Provider value={{ modeValues, setModeValues }}>
-      <ThemeProvider theme={modeValues.darkMode ? darkTheme : lightTheme}>
-        <GlobalStyle />
-        <ScrollToTop />
-        <Header toggleTheme={toggleTheme} />
-        <Main>
-          <Outlet />
-        </Main>
-        <Footer />
-      </ThemeProvider>
+      <FontSizeProvider>
+        <ThemeProvider theme={modeValues.darkMode ? darkTheme : lightTheme}>
+          <GlobalFontSizeStyle />
+          <ScrollToTop />
+          <Header toggleTheme={toggleTheme} />
+          <Main>
+            <Outlet />
+          </Main>
+          <Footer />
+        </ThemeProvider>
+      </FontSizeProvider>
     </ModeContext.Provider>
   );
 }

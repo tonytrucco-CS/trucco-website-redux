@@ -61,7 +61,7 @@ const TI4 = () => {
               rel="noreferrer noopener"
             >
               <strong>Twilight Imperium</strong>
-              <MaterialIcon icon={'open_in_new'} size="18px" />
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
             </a>
             , from Fantasy Flights Games, is an epic, space-based board game
             focusing on combat, strategy, politics, and negotiation. It plays
@@ -166,7 +166,7 @@ const TI4 = () => {
               rel="noreferrer noopener"
             >
               ti4score.com
-              <MaterialIcon icon={'open_in_new'} size="18px" />
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
             </a>
             . It has well over 5000 unique visits and continues to be the go-to
             choice for players of Twilight Imperium looking to track their

@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const Div = styled.div`
   border-radius: 50%;
-  width: ${(props) => (props.small ? '2rem' : '100%')};
-  padding-bottom: ${(props) => (props.small ? '2rem' : '100%')};
+  width: ${(props) => (props.small ? '32px' : '100%')};
+  padding-bottom: ${(props) => (props.small ? '32px' : '100%')};
   background-color: #efefef;
   overflow: hidden;
   position: relative;

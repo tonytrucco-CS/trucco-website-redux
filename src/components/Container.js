@@ -5,7 +5,7 @@ const Div = styled.div`
   width: 100%;
   max-width: ${breakpoints.lg};
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 16px;
 
   @media only screen and (max-width: ${breakpoints.xs}) {
     padding: 0;

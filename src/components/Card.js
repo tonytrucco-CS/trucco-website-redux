@@ -6,23 +6,23 @@ import Button from './Button';
 const Box = styled.div`
   background-color: ${({ theme }) => theme.contentBG};
   transition: background-color 0.3s;
-  border-radius: 0.125rem;
+  border-radius: 4px;
   ${(props) => {
     if (props.hero) {
       return css`
         display: ${(props) => (props.$flex ? 'flex' : null)};
         justify-content: ${(props) => (props.$flex ? 'center' : null)};
-        padding: 4em 2em;
-        margin: 4em 0;
+        padding: 64px 32px;
+        margin: 64px 0;
 
         @media only screen and (max-width: ${breakpoints.sm}) {
-          padding: 2em 1em;
-          margin: 2em 0;
+          padding: 32px 16px;
+          margin: 32px 0;
         }
       `;
     } else {
       return css`
-        padding: 1rem;
+        padding: 16px;
         background-color: ${transparentize(0.97, colors.gray900)};
       `;
     }

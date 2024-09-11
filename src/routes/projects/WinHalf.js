@@ -61,7 +61,7 @@ const WinHalf = () => {
               rel="noopener noreferrer"
             >
               WinHalf
-              <MaterialIcon icon={'open_in_new'} size="18px" />
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
             </a>
             . I don't work for them, I just think it's a killer idea.
           </p>

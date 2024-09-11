@@ -74,7 +74,7 @@ const MindfullyApp = () => {
               rel="noreferrer noopener"
             >
               learn more
-              <MaterialIcon icon={'open_in_new'} size="18px" />
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
             </a>
             .
           </p>
@@ -102,7 +102,7 @@ const MindfullyApp = () => {
               rel="noreferrer noopener"
             >
               established
-              <MaterialIcon icon={'open_in_new'} size={'18px'} />
+              <MaterialIcon icon={'open_in_new'} size={'1.125rem'} />
             </a>{' '}
             that the outdoors are extremely beneficial for our mental health. I
             wanted to bring this aspect into the app redesign, so I conceived
@@ -140,7 +140,7 @@ const MindfullyApp = () => {
               rel="noreferrer noopener"
             >
               View the Figma prototype
-              <MaterialIcon icon={'open_in_new'} size="18px" />
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
             </a>
           </p>
           <h3>The garden</h3>

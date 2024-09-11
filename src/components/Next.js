@@ -8,29 +8,30 @@ import { lighten } from 'polished';
 
 const Section = styled.section`
   display: flex;
-  gap: 1em;
+  gap: 16px;
   flex-direction: column;
 `;
 
 const Flex = styled.nav`
   display: flex;
-  gap: 2em;
+  gap: 32px;
 
   @media only screen and (max-width: ${breakpoints.sm}) {
     flex-direction: column;
-    gap: 1em;
+    gap: 16px;
   }
 `;
 
 const Post = styled.div`
-  padding: 1em;
-  border-radius: 0.25em;
+  padding: 16px;
+  border-radius: 4px;
   background-color: ${({ theme }) => theme.cardBG};
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5em;
+  gap: 8px;
   transition: background-color 0.3s;
+  height: 100%;
 
   &:hover {
     background-color: ${({ theme }) => lighten(0.05, theme.cardBG)};
@@ -79,13 +80,13 @@ const Next = ({ id, type }) => {
         <StyledLink to={usablePosts[post1].to}>
           <Post>
             {usablePosts[post1].title}
-            <MaterialIcon icon={'arrow_forward'} />
+            <MaterialIcon icon={'arrow_forward'} size={'1.5rem'} />
           </Post>
         </StyledLink>
         <StyledLink to={usablePosts[post2].to}>
           <Post>
             {usablePosts[post2].title}
-            <MaterialIcon icon={'arrow_forward'} />
+            <MaterialIcon icon={'arrow_forward'} size={'1.5rem'} />
           </Post>
         </StyledLink>
       </Flex>

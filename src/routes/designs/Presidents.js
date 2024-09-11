@@ -79,7 +79,7 @@ const Presidents = () => {
               rel="noreferrer noopener"
             >
               Vault Boy
-              <MaterialIcon icon={'open_in_new'} size={'18px'} />
+              <MaterialIcon icon={'open_in_new'} size={'1.125rem'} />
             </a>{' '}
             from the Fallout game series. This pose is derived from the supposed{' '}
             <a
@@ -88,7 +88,7 @@ const Presidents = () => {
               rel="noreferrer noopener"
             >
               concept
-              <MaterialIcon icon={'open_in_new'} size={'18px'} />
+              <MaterialIcon icon={'open_in_new'} size={'1.125rem'} />
             </a>{' '}
             that if you could cover the mushroom cloud of a nuclear blast with
             your thumb at arm's length, then you were safe from the radiation.
@@ -140,7 +140,7 @@ const Presidents = () => {
               rel="noreferrer noopener"
             >
               my Etsy store
-              <MaterialIcon icon={'open_in_new'} size={'18px'} />
+              <MaterialIcon icon={'open_in_new'} size={'1.125rem'} />
             </a>
             .
           </p>

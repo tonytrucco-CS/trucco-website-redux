@@ -7,13 +7,13 @@ const Div = styled.div`
 `;
 
 const Img = styled(ModalImage)`
-  border-radius: ${(props) => (props.rounded ? '50%' : '0.25rem')};
+  border-radius: ${(props) => (props.rounded ? '50%' : '4px')};
   max-width: 100%;
   border: solid 1px ${({ theme }) => theme.border};
 `;
 
 const LinkImage = styled.img`
-  border-radius: ${(props) => (props.rounded ? '50%' : '0.25rem')};
+  border-radius: ${(props) => (props.rounded ? '50%' : '4px')};
   max-width: 100%;
   border: solid 1px ${({ theme }) => theme.border};
 `;

@@ -6,7 +6,6 @@ export const globalCSS = css`
   html {
     margin: 0;
     height: 100%;
-    font-size: 1rem;
   }
 
   #root {

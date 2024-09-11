@@ -71,7 +71,7 @@ const MindfullyWeb = () => {
               rel="noreferrer noopener"
             >
               learn more
-              <MaterialIcon icon={'open_in_new'} size="18px" />
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
             </a>
             .
           </p>

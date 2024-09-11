@@ -1,6 +1,6 @@
 import { transparentize } from 'polished';
 import { NavLink } from 'react-router-dom';
-import styled, { useTheme } from 'styled-components';
+import styled from 'styled-components';
 import { breakpoints, fonts } from '../constants/variables';
 import useWindowDimensions from '../utils/helpers';
 import Container from './Container';
@@ -13,13 +13,13 @@ const HeaderNav = styled.header`
   z-index: 10;
   position: relative;
   background-color: ${({ theme }) => theme.contentBG};
-  height: 4em;
+  height: 4rem;
   display: flex;
   align-items: center;
   transition: background-color 0.3s;
 
   @media only screen and (max-width: ${breakpoints.xs}) {
-    padding: 0 1em;
+    padding: 0 16px;
   }
 `;
 
@@ -49,14 +49,14 @@ const Li = styled.li`
 `;
 
 const Box = styled.div`
-  width: 9em;
+  width: 144px;
   display: flex;
   justify-content: ${(props) => (props.$right ? 'flex-end' : 'flex-start')};
 `;
 
 const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.text};
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
   display: block;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
@@ -107,7 +107,6 @@ const LINKS = [
 
 const Header = ({ toggleTheme }) => {
   const { width } = useWindowDimensions();
-  const theme = useTheme();
 
   const handleToggle = () => {
     toggleTheme();
@@ -126,9 +125,7 @@ const Header = ({ toggleTheme }) => {
                 {LINKS.map((link) => {
                   return (
                     <Li key={link.to}>
-                      <StyledNavLink theme={theme} to={link.to}>
-                        {link.label}
-                      </StyledNavLink>
+                      <StyledNavLink to={link.to}>{link.label}</StyledNavLink>
                     </Li>
                   );
                 })}

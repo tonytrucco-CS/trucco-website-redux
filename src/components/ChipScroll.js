@@ -3,14 +3,14 @@ import { breakpoints } from '../constants/variables';
 
 const Nav = styled.nav`
   display: flex;
-  gap: 0.5rem;
+  gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 
   @media only screen and (max-width: ${breakpoints.xs}) {
     flex-wrap: nowrap;
     overflow-x: auto;
-    padding-bottom: 0.5em;
+    padding-bottom: 8px;
   }
 `;
 

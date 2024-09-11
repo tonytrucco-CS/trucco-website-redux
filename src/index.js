@@ -14,9 +14,7 @@ import DesIndex from './routes/designs/Index';
 import ProcessIntro from './routes/process/Index';
 import AboutIndex from './routes/about/Index';
 import ContactIndex from './routes/contact/Index';
-import ResumeIndex from './routes/resume/Index';
 import Project from './routes/projects/Project';
-import Resume from './routes/Resume';
 import Design from './routes/designs/Design';
 
 const router = createBrowserRouter([
@@ -117,17 +115,6 @@ const router = createBrowserRouter([
               {
                 index: true,
                 element: <AboutIndex />,
-              },
-            ],
-          },
-          {
-            path: 'resume',
-            element: <Resume />,
-            errorElement: <ErrorPage />,
-            children: [
-              {
-                index: true,
-                element: <ResumeIndex />,
               },
             ],
           },

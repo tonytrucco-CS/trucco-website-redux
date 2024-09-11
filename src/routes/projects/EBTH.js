@@ -75,7 +75,7 @@ const EBTH = () => {
               rel="noreferrer noopener"
             >
               website
-              <MaterialIcon icon={'open_in_new'} size="18px" />
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
             </a>{' '}
             and get yourself something nice.
           </p>

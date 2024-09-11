@@ -6,7 +6,7 @@ import ModeContext from '../context/ModeContext';
 const Label = styled.label`
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 4px;
 
   &:hover {
     cursor: pointer;
@@ -24,7 +24,7 @@ const Well = styled.div`
   border-radius: 1rem;
   display: flex;
   align-items: center;
-  padding: 0.25rem;
+  padding: 4px;
   position: relative;
   transition: box-shadow 0.3s, background-color 0.3s;
 `;
@@ -32,7 +32,7 @@ const Well = styled.div`
 const Cog = styled.div`
   width: 1.5rem;
   height: 1.5rem;
-  padding: 0.25rem;
+  padding: 4px;
   background-color: ${({ theme }) => transparentize(0.25, theme.link)};
   border-radius: 50%;
   position: absolute;
