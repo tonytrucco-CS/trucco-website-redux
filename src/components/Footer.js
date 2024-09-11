@@ -1,9 +1,10 @@
-import styled, { useTheme } from 'styled-components';
+import styled from 'styled-components';
 import { breakpoints, colors, fonts } from '../constants/variables';
 import Chip from './Chip';
 import Container from './Container';
 import Logo from './Logo';
 import { transparentize } from 'polished';
+import FontSizeAdjust from './FontSizeAdjust';
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -12,17 +13,17 @@ const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.contentBG};
   display: flex;
   align-items: center;
-  padding: 3em 0;
+  padding: 48px 0;
 
   @media only screen and (max-width: ${breakpoints.xs}) {
-    padding: 3em 1em;
+    padding: 48px 16px;
   }
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 8rem 1fr 1fr;
-  grid-gap: 3rem;
+  grid-template-columns: 128px 1fr 1fr;
+  grid-gap: 48px;
 
   @media only screen and (max-width: ${breakpoints.sm}) {
     grid-template-columns: 1fr;
@@ -33,10 +34,10 @@ const Copy = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
 
   @media only screen and (max-width: ${breakpoints.md}) {
-    max-width: 10em;
+    max-width: 160px;
     margin: 0 auto;
   }
 `;
@@ -49,7 +50,7 @@ const Small = styled.small`
 const LinkSection = styled.section`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
   align-items: ${(props) => (props.direction === 'end' ? 'flex-end' : null)};
 
   @media only screen and (max-width: ${breakpoints.sm}) {
@@ -67,7 +68,7 @@ const H2 = styled.h2`
   font-family: ${fonts.sansserif};
   font-size: 1.25rem;
   color: ${({ theme }) => transparentize(0.33, theme.text)};
-  margin: 1rem 0 0;
+  margin: 16px 0 0;
 `;
 
 const A = styled.a`
@@ -86,7 +87,7 @@ const A = styled.a`
 
 const Flex = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 
   @media only screen and (max-width: ${breakpoints.md}) {
     flex-direction: column;
@@ -101,9 +102,9 @@ const Flex = styled.div`
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const theme = useTheme();
   return (
-    <StyledFooter theme={theme}>
+    <StyledFooter>
+      <FontSizeAdjust />
       <Container>
         <Grid>
           <Copy>
@@ -123,17 +124,12 @@ const Footer = () => {
           <LinkSection aria-labelledby="connect" direction="end">
             <H1 id="connect">Connect with me</H1>
             <Flex>
-              <A theme={theme} href="mailto:tonytrucco@gmail.com">
-                tonytrucco@gmail.com
-              </A>
-              <A theme={theme} href="tel:614-282-8186">
-                (614) 282-8186
-              </A>
+              <A href="mailto:tonytrucco@gmail.com">tonytrucco@gmail.com</A>
+              <A href="tel:614-282-8186">(614) 282-8186</A>
             </Flex>
-            <H2 theme={theme}>My profiles</H2>
+            <H2>My profiles</H2>
             <Flex>
               <A
-                theme={theme}
                 href="https://www.linkedin.com/in/tonytrucco/"
                 target="_blank"
                 rel="noopener noreferer"
@@ -141,7 +137,6 @@ const Footer = () => {
                 LinkedIn
               </A>
               <A
-                theme={theme}
                 href="https://github.com/tonytrucco-CS"
                 target="_blank"
                 rel="noopener noreferer"
@@ -149,7 +144,6 @@ const Footer = () => {
                 Github
               </A>
               <A
-                theme={theme}
                 href="https://www.instagram.com/orion_in_winter/"
                 target="_blank"
                 rel="noopener noreferer"
@@ -159,7 +153,6 @@ const Footer = () => {
             </Flex>
             <small>
               <A
-                theme={theme}
                 href="https://www.freepik.com/free-photo/white-paper-background_932597.htm#query=seamless%20paper%20texture&position=0&from_view=keyword"
                 target="_blank"
                 rel="noopener noreferer"

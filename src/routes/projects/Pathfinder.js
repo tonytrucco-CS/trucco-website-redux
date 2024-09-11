@@ -57,7 +57,7 @@ const Pathfinder = () => {
               target="_blank"
             >
               Paizo
-              <MaterialIcon icon={'open_in_new'} size="18px" />
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
             </a>
             , is a tabletop roleplaying game similar to{' '}
             <em>Dungeons & Dragons</em>. Players create their
@@ -164,7 +164,7 @@ const Pathfinder = () => {
               rel="noreferrer noopener"
             >
               p2etracker.com
-              <MaterialIcon icon={'open_in_new'} size="18px" />
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
             </a>
             .
           </p>

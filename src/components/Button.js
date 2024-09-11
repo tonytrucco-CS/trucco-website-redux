@@ -11,22 +11,22 @@ const StyledButton = styled.button`
     switch (props.size) {
       case 'xs':
         return css`
-          padding: ${props.square ? '0.25rem' : '0.25rem 0.5rem'};
+          padding: ${props.square ? '4px' : '4px 8px'};
           font-size: 0.5rem;
         `;
       case 'sm':
         return css`
-          padding: ${props.square ? '0.5rem' : '0.5rem 1rem'};
+          padding: ${props.square ? '8px' : '8px 16px'};
           font-size: 0.75rem;
         `;
       default:
         return css`
-          padding: ${props.square ? '1.5rem' : '0.65rem 1rem'};
+          padding: ${props.square ? '1.5rem' : '0.65rem 16px'};
           font-size: 1rem;
         `;
     }
   }}
-  border-radius: 0.25rem;
+  border-radius: 4px;
   display: flex;
   font-family: ${fonts.button};
   font-weight: 400;
@@ -50,7 +50,7 @@ const StyledButton = styled.button`
     opacity: 0.5;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px
       ${({ theme }) => transparentize(0.75, theme.buttonBackground)};
@@ -66,22 +66,22 @@ const StyledLink = styled(Link)`
     switch (props.size) {
       case 'xs':
         return css`
-          padding: ${props.square ? '0.25rem' : '0.25rem 0.5rem'};
+          padding: ${props.square ? '4px' : '4px 8px'};
           font-size: 0.75rem;
         `;
       case 'sm':
         return css`
-          padding: ${props.square ? '0.5rem' : '0.5rem 1rem'};
+          padding: ${props.square ? '8px' : '8px 16px'};
           font-size: 0.75rem;
         `;
       default:
         return css`
-          padding: ${props.square ? '1.5rem' : '0.65rem 1rem'};
+          padding: ${props.square ? '1.5rem' : '0.65rem 16px'};
           font-size: 1rem;
         `;
     }
   }}
-  border-radius: 0.25rem;
+  border-radius: 4px;
   display: flex;
   font-family: ${fonts.button};
   font-weight: 500;
@@ -105,7 +105,7 @@ const StyledLink = styled(Link)`
     opacity: 0.5;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px
       ${({ theme }) => transparentize(0.75, theme.buttonBackground)};

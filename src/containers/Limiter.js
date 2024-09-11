@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Div = styled.div`
-  max-width: 75ch;
+  max-width: 770px;
   margin: 0 auto;
 `;
 

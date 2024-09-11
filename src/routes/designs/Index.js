@@ -11,11 +11,11 @@ const Grid = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  grid-gap: 3rem;
+  grid-gap: 32px;
 
   @media only screen and (max-width: ${breakpoints.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 16px;
   }
 
   @media only screen and (max-width: ${breakpoints.xs}) {

@@ -14,18 +14,18 @@ const Div = styled.div`
 const Nav = styled.nav`
   position: absolute;
   background-color: ${({ theme }) => theme.contentBG};
-  border-radius: 0.25rem;
-  padding: 1rem 0;
-  min-width: 10em;
+  border-radius: 4px;
+  padding: 16px 0;
+  min-width: 160px;
   right: 0;
   top: 115%;
-  box-shadow: 0 0.5rem 1rem ${transparentize(0.85, colors.gray900)};
+  box-shadow: 0 8px 16px ${transparentize(0.85, colors.gray900)};
 `;
 
 const Box = styled.div`
   display: flex;
   justify-content: center;
-  padding: 0 0.5rem 1rem;
+  padding: 0 8px 16px;
 `;
 
 const Ul = styled.ul`
@@ -58,7 +58,7 @@ const StyledButton = styled(Button)`
 
 const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.text};
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
   font-weight: 400;
   display: block;
   text-decoration: none;
@@ -86,9 +86,9 @@ const MobileNav = ({ links, handleToggle }) => {
         {toggle ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="24px"
+            height="1.5rem"
             viewBox="0 0 24 24"
-            width="24px"
+            width="1.5rem"
             fill={theme.text}
           >
             <path d="M0 0h24v24H0z" fill="none" />
@@ -97,9 +97,9 @@ const MobileNav = ({ links, handleToggle }) => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="24px"
+            height="1.5rem"
             viewBox="0 0 24 24"
-            width="24px"
+            width="1.5rem"
             fill={theme.text}
           >
             <path d="M0 0h24v24H0z" fill="none" />

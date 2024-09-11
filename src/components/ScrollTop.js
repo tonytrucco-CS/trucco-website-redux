@@ -8,23 +8,23 @@ const Scroll = styled.button`
   background: none;
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 4px;
   font-size: 1rem;
   cursor: pointer;
-  padding: 0.5rem 1rem 0.5rem 0;
+  padding: 8px 16px 8px 0;
   border-radius: 1rem;
   transition: color 0.3s, box-shadow 0.3s, background-color 0.3s, padding 0.3s;
 
   &:hover {
     background-color: ${({ theme }) =>
       transparentize(0.9, theme.buttonBackground)};
-    padding-left: 0.5rem;
+    padding-left: 8px;
   }
 
   &:focus-visible {
     outline: none;
     box-shadow: 0 0 0 3px ${({ theme }) => transparentize(0.75, theme.link)};
-    padding-left: 0.5rem;
+    padding-left: 8px;
   }
 `;
 

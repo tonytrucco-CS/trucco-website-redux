@@ -142,7 +142,7 @@ const Index = () => {
               rel="noreferrer noopener"
             >
               score tracker
-              <MaterialIcon icon="open_in_new" size={'18px'} />
+              <MaterialIcon icon="open_in_new" size={'1.125rem'} />
             </a>{' '}
             and <em>Pathfinder 2e</em>{' '}
             <a
@@ -151,7 +151,7 @@ const Index = () => {
               rel="noreferrer noopener"
             >
               initiative tracker
-              <MaterialIcon icon="open_in_new" size={'18px'} />
+              <MaterialIcon icon="open_in_new" size={'1.125rem'} />
             </a>{' '}
             websites.
           </p>

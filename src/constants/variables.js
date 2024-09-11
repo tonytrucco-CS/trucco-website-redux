@@ -1,13 +1,15 @@
 import { lighten } from 'polished';
 
+export const baseFontSize = '16px';
+
 export const breakpoints = {
-  xxl: '120em',
-  xl: '100em',
-  lg: '85.375em',
-  md: '64em',
-  sm: '48em',
-  xs: '32em',
-  xxs: '25.6875em',
+  xxl: '1920px',
+  xl: '1600px',
+  lg: '1366px',
+  md: '1024px',
+  sm: '768px',
+  xs: '512px',
+  xxs: '411px',
 };
 
 export const fonts = {
