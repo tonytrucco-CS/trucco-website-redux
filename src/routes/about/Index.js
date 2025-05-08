@@ -62,17 +62,6 @@ const Index = () => {
           <p>Would you like to know more?</p>
           <Hr />
           <h2 id="work">Work experience</h2>
-          <p>
-            Here's the{' '}
-            <a
-              href="/Trucco Resume.pdf"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              PDF version
-            </a>{' '}
-            of my resume.
-          </p>
           <h3>Places I've been</h3>
           <p>
             I have experience with almost every type of company; from startups
@@ -108,6 +97,36 @@ const Index = () => {
             with C-level executives and stakeholders, balancing design needs
             with business goals.
           </p>
+          <h3>Philosophy and accessibility</h3>
+          <p>
+            I believe the internet is for everyone. That means websites{' '}
+            <strong>need</strong> to be accessible, intuitive, and easy-to-use.
+            I strive to meet or exceed WCAG guidelines on every project I work
+            on, including personal projects. Beyond traditional accessibility
+            requirements, however, being married to someone with ADD has taught
+            me that the best websites are the ones that get to the point and
+            make their content obvious. No scroll-jacking, no distracting
+            animations in the background, no hidden/changing navigation.
+          </p>
+          <p>
+            I believe in collaboration. Designers rarely have the best ideas,
+            myself included. I want to ask questions, understand the problem,
+            and then collaborate with stakeholders and developers to come up
+            with the best solution within the constraints of the business.
+          </p>
+          <p>
+            <a
+              href="https://tron.fandom.com/wiki/Tron"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              I fight for the user
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
+            </a>
+            . There is no such thing as a dumb user. If someone can't figure out
+            how to use a site, that's because the interface is poorly optimized
+            or built unintuitively.
+          </p>
 
           <Hr />
 
@@ -132,14 +151,15 @@ const Index = () => {
           </p>
           <p>
             As a <Link to="/designs/miniatures">hobby</Link>, I paint 28mm
-            miniatures, which I use in <em>Pathfinder</em> games where I play
-            and GM. While <em>Pathfinder</em> is my favorite, I enjoy almost any
-            board game (except Monopoly). Check out my{' '}
+            miniatures, which I use in <em>Pathfinder</em> games as a player and
+            GM (Game Master). While <em>Pathfinder</em> is my favorite, I enjoy
+            almost any board game (except Monopoly). Check out my{' '}
             <em>Twilight Imperium</em>{' '}
             <a
               href="https://ti4score.com"
               target="_blank"
               rel="noreferrer noopener"
+              style={{ whiteSpace: 'nowrap' }}
             >
               score tracker
               <MaterialIcon icon="open_in_new" size={'1.125rem'} />
@@ -149,6 +169,7 @@ const Index = () => {
               href="https://p2etracker.com"
               target="_blank"
               rel="noreferrer noopener"
+              style={{ whiteSpace: 'nowrap' }}
             >
               initiative tracker
               <MaterialIcon icon="open_in_new" size={'1.125rem'} />

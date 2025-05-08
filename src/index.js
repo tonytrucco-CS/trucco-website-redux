@@ -44,6 +44,10 @@ const router = createBrowserRouter([
                 element: <Project id="winhalf" />,
               },
               {
+                path: 'apollo',
+                element: <Project id="apollo" />,
+              },
+              {
                 path: 'ebth',
                 element: <Project id="ebth" />,
               },

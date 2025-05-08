@@ -34,6 +34,14 @@ const Index = () => {
           <h2>Featured projects</h2>
           <Grid>
             <LinkCard
+              to="apollo"
+              title="Apollo Music Player"
+              linkText="View This Project"
+              src="https://ik.imagekit.io/ti4score/Portfolio/Apollo/apollo_home-view.png?updatedAt=1746716314886&tr=fo-top_left,c-maintain_ratio,w-800,ar-16-9"
+              alt="High-fidelity view of home screen, featuring a greeting to the user and recent albums"
+              tags={['Figma', 'React', 'Material UI', 'TypeScript', 'Electron']}
+            />
+            <LinkCard
               to="ebth"
               title="Everything But The House"
               linkText="View This Project"
@@ -58,6 +66,14 @@ const Index = () => {
               tags={['Material UI', 'React']}
             />
             <LinkCard
+              to="winhalf"
+              title="WinHalf"
+              linkText="View This Project"
+              src="https://ik.imagekit.io/ti4score/Portfolio/WinHalf/desktop.png?updatedAt=1678462019962&tr=fo-top_left,c-maintain_ratio,w-800,ar-16-9"
+              alt="Home page for WinHalf, providing users the ability to enter a raffle code and details on why they should use WinHalf"
+              tags={['Balsamiq', 'Sketch', 'React']}
+            />
+            <LinkCard
               to="mindfully-website"
               title="Mindfully website redesign"
               linkText="View This Project"
@@ -72,14 +88,6 @@ const Index = () => {
               src="https://ik.imagekit.io/ti4score/Portfolio/Mindfully/Goals-side-by-side.jpg?updatedAt=1679495560574&tr=fo-top_left,c-maintain_ratio,w-800,ar-16-9"
               alt="Side-by-side view of redesigned Mindfully app, showing the goals screen as a sketch and a high fidelity mockup"
               tags={['Balsamiq', 'Figma']}
-            />
-            <LinkCard
-              to="winhalf"
-              title="WinHalf"
-              linkText="View This Project"
-              src="https://ik.imagekit.io/ti4score/Portfolio/WinHalf/desktop.png?updatedAt=1678462019962&tr=fo-top_left,c-maintain_ratio,w-800,ar-16-9"
-              alt="Home page for WinHalf, providing users the ability to enter a raffle code and details on why they should use WinHalf"
-              tags={['Balsamiq', 'Sketch', 'React']}
             />
           </Grid>
         </Limiter>

@@ -1,3 +1,4 @@
+import Apollo from './Apollo';
 import EBTH from './EBTH';
 import MindfullyApp from './MindfullyApp';
 import MindfullyWeb from './MindfullyWeb';
@@ -19,6 +20,8 @@ const Project = ({ id }) => {
       return <MindfullyApp />;
     case 'pathfinder':
       return <Pathfinder />;
+    case 'apollo':
+      return <Apollo />;
     default:
       return null;
   }

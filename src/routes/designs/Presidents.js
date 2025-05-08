@@ -3,30 +3,11 @@ import Card from '../../components/Card';
 import Container from '../../components/Container';
 import Hr from '../../components/Hr';
 import ImageCard from '../../components/ImageCard';
-import ImageGrid from '../../components/ImageGrid';
 import MaterialIcon from '../../components/MaterialIcon';
 import Next from '../../components/Next';
 import ScrollTop from '../../components/ScrollTop';
 import Limiter from '../../containers/Limiter';
 import { transforms } from '../../utils/helpers';
-
-const PRES = [
-  {
-    src: `https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/hoodie.jpg?updatedAt=1681999858612${transforms.noheight_lg}`,
-    alt: 'Hoodie Roosevelt graphic worn by a white male on a red t-shirt.',
-    description: '',
-  },
-  {
-    src: `https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/truman.jpg?updatedAt=1681999858726${transforms.noheight_lg}`,
-    alt: 'Truman is (not) the Man graphic worn by a white male on a gray t-shirt.',
-    description: '',
-  },
-  {
-    src: `https://ik.imagekit.io/ti4score/Portfolio/T-Shirts/cyked.jpg?updatedAt=1681999856769${transforms.noheight_lg}`,
-    alt: 'Cyked to be President graphic worn by a white male on a black t-shirt.',
-    description: '',
-  },
-];
 
 const Presidents = () => {
   return (
@@ -124,26 +105,6 @@ const Presidents = () => {
             }}
             mb={'2em'}
           />
-          <Hr />
-          <h2>T-Shirts</h2>
-          <p>
-            Each design was translated onto t-shirts, which I wear with great
-            frequency.
-          </p>
-          <ImageGrid columns={3} images={PRES} mb={'1em'} />
-          <h3>Available for Purchase</h3>
-          <p>
-            Each of my designs are available for purchase from{' '}
-            <a
-              href="https://www.etsy.com/shop/PardontheApparel"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              my Etsy store
-              <MaterialIcon icon={'open_in_new'} size={'1.125rem'} />
-            </a>
-            .
-          </p>
           <ScrollTop />
           <Hr />
           <Next type={'designs'} id={2} />

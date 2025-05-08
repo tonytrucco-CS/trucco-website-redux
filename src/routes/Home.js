@@ -8,9 +8,9 @@ import { transforms } from '../utils/helpers';
 
 const PROJECTS = [
   {
-    src: `https://ik.imagekit.io/ti4score/objective_view.png?updatedAt=1725559798874${transforms.wide_lg}`,
-    alt: 'Background selection screen for a Twilight Imperium score tracker',
-    href: '/projects/twilight-imperium-score-tracker',
+    src: `https://ik.imagekit.io/ti4score/Portfolio/Apollo/apollo_home-view.png?updatedAt=1746716314886${transforms.wide_lg}`,
+    alt: 'Figma home view, featuring a greeting and recently added albums',
+    href: '/projects/apollo',
   },
   {
     src: `https://ik.imagekit.io/ti4score/Portfolio/EBTH/After/browse.jpg?updatedAt=1679422453023${transforms.wide_lg}`,
