@@ -14,6 +14,7 @@ const StyledHash = styled(HashLink)`
   width: fit-content;
   border: solid 1px transparent;
   transition: box-shadow 0.3s, background-color 0.3s, border 0.3s, color 0.3s;
+  white-space: nowrap;
   background-color: ${({ theme }) => transparentize(0.9, theme.headerButton)};
   white-space: nowrap;
 
@@ -43,6 +44,7 @@ const StyledLink = styled(NavLink)`
   width: fit-content;
   border: solid 1px transparent;
   transition: box-shadow 0.3s, background-color 0.3s, border 0.3s;
+  white-space: nowrap;
   background-color: ${({ theme }) => transparentize(0.9, theme.headerButton)};
 
   &:hover:not(.active) {

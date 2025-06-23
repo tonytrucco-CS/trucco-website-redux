@@ -43,7 +43,7 @@ const TI4 = () => {
     <Container>
       <Card hero>
         <Limiter>
-          <Back to="/projects" label="Projects" />
+          <Back to="/projects" label="Case Studies" />
           <h1>TI4: Score Tracker</h1>
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />

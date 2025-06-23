@@ -114,9 +114,9 @@ const Footer = () => {
           <LinkSection aria-label="Website links for tonytrucco.com">
             <H1>tonytrucco.com</H1>
             <Flex>
-              <Chip to="projects" label="Projects" />
-              <Chip to="designs" label="Designs" />
+              <Chip to="projects" label="Case Studies" />
               <Chip to="process" label="Process" />
+              <Chip to="designs" label="Other Projects" />
               <Chip to="about" label="About" />
               <Chip to="contact" label="Contact" />
             </Flex>
@@ -151,15 +151,6 @@ const Footer = () => {
                 Instagram
               </A>
             </Flex>
-            <small>
-              <A
-                href="https://www.freepik.com/free-photo/white-paper-background_932597.htm#query=seamless%20paper%20texture&position=0&from_view=keyword"
-                target="_blank"
-                rel="noopener noreferer"
-              >
-                Paper background image by kues
-              </A>
-            </small>
           </LinkSection>
         </Grid>
       </Container>

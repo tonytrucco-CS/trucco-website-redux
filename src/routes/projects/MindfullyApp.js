@@ -47,7 +47,7 @@ const MindfullyApp = () => {
     <Container>
       <Card hero>
         <Limiter>
-          <Back to="/projects" label="Projects" />
+          <Back to="/projects" label="Case Studies" />
           <h1>Mindfully App Redesign</h1>
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />

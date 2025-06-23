@@ -85,15 +85,15 @@ const StyledNavLink = styled(NavLink)`
 const LINKS = [
   {
     to: 'projects',
-    label: 'Projects',
-  },
-  {
-    to: 'designs',
-    label: 'Designs',
+    label: 'Case Studies',
   },
   {
     to: 'process',
     label: 'Process',
+  },
+  {
+    to: 'designs',
+    label: 'Other Projects',
   },
   {
     to: 'about',
