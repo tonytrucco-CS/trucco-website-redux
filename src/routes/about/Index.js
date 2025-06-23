@@ -26,7 +26,7 @@ const Img = styled.img`
 `;
 
 const ME = {
-  src: 'https://ik.imagekit.io/ti4score/felix-40_05.png?updatedAt=1679506626403&tr=w-600,h-600,c-maintain_ratio,fo-top_left',
+  src: 'https://ik.imagekit.io/ti4score/felix-40_05.png?updatedAt=1750709224098&tr=w-600,h-600,c-maintain_ratio,fo-top_left',
   alt: "Me again, holding one of my cats. We're looking at the camera with a brick background",
 };
 
