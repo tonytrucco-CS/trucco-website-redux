@@ -26,7 +26,7 @@ const Img = styled.img`
 `;
 
 const ME = {
-  src: 'https://ik.imagekit.io/ti4score/tony_dink.jpg?updatedAt=1679506626403&tr=w-600,h-600,c-maintain_ratio,fo-top_left',
+  src: 'https://ik.imagekit.io/ti4score/felix-40_05.png?updatedAt=1679506626403&tr=w-600,h-600,c-maintain_ratio,fo-top_left',
   alt: "Me again, holding one of my cats. We're looking at the camera with a brick background",
 };
 
@@ -45,6 +45,16 @@ const Index = () => {
             <Chip label="Personal Life" to="#personal" hash />
           </ChipScroll>
           <Img src={ME.src} alt={ME.alt} />
+          <p>
+            <a
+              href="./Trucco%20Resume.pdf"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              View or download my resumé
+              <MaterialIcon icon={'open_in_new'} size="1.125rem" />
+            </a>
+          </p>
           <p>
             I'm Tony Trucco, a designer/developer specializing in frontend
             implementations and user experience design. I focus on creating

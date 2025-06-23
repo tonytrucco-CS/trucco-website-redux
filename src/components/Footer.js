@@ -114,9 +114,9 @@ const Footer = () => {
           <LinkSection aria-label="Website links for tonytrucco.com">
             <H1>tonytrucco.com</H1>
             <Flex>
-              <Chip to="projects" label="Projects" />
-              <Chip to="designs" label="Designs" />
+              <Chip to="projects" label="Case Studies" />
               <Chip to="process" label="Process" />
+              <Chip to="designs" label="Other Projects" />
               <Chip to="about" label="About" />
               <Chip to="contact" label="Contact" />
             </Flex>

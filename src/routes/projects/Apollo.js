@@ -30,7 +30,7 @@ const Apollo = () => {
     <Container>
       <Card hero>
         <Limiter>
-          <Back to="/projects" label="Projects" />
+          <Back to="/projects" label="Case Studies" />
           <h1>Apollo Music Player</h1>
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />

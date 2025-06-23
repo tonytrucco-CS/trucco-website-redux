@@ -51,7 +51,7 @@ const EBTH = () => {
     <Container>
       <Card hero>
         <Limiter>
-          <Back to="/projects" label="Projects" />
+          <Back to="/projects" label="Case Studies" />
           <h1>Everything But The House</h1>
           <ChipScroll>
             <Chip label="Problem" to="#problem" hash />

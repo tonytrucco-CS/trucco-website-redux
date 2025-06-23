@@ -28,7 +28,7 @@ const Index = () => {
     <Container>
       <Card hero>
         <Limiter>
-          <h1>Designs</h1>
+          <h1>Other Projects</h1>
           <p>
             I've always been enamored with the creative process, whether it's
             building a website, drawing an illustration, creating a 3D model, or
@@ -40,7 +40,7 @@ const Index = () => {
             to chat more about my work or potential projects.
           </p>
           <Hr />
-          <h2>Featured designs</h2>
+          <h2>Featured projects</h2>
           <Grid>
             <LinkCard
               to="camp-trucco"

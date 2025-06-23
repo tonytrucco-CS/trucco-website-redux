@@ -57,21 +57,13 @@ const Home = () => {
             </p>
             <Button to="about">Learn More About Me</Button>
             <Hr />
-            <h2>Projects</h2>
+            <h2>Case Studies</h2>
             <p>
               This work showcases a few of my professional and side projects,
               highlighting my skills and experience.
             </p>
             <ImageGrid images={PROJECTS} columns={2} mb={'2em'} />
-            <Button to="projects">View More Projects</Button>
-            <Hr />
-            <h2>Designs</h2>
-            <p>
-              A bit more of a personal touch, creative work I'm interested in
-              that goes beyond web design.
-            </p>
-            <ImageGrid images={DESIGNS} columns={4} mb={'2em'} />
-            <Button to="designs">See More Designs</Button>
+            <Button to="projects">View More Case Studies</Button>
             <Hr />
             <h2>Process</h2>
             <p>
@@ -79,6 +71,14 @@ const Home = () => {
               about it. I'm no different.
             </p>
             <Button to="process">Dive Deep into Process</Button>
+            <Hr />
+            <h2>Other Projects</h2>
+            <p>
+              A bit more of a personal touch, this is creative work I'm
+              interested in that goes beyond web design.
+            </p>
+            <ImageGrid images={DESIGNS} columns={4} mb={'2em'} />
+            <Button to="designs">See More Designs</Button>
           </Limiter>
         </Card>
       </Container>
